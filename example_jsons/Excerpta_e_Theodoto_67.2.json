@@ -1,0 +1,573 @@
+{
+  "sentences": [
+    {
+      "sentence_id": "s1",
+      "sentence_text": "Καὶ ὅταν ὁ Σωτὴρ πρὸς Σαλώμην λέγῃ « μέχρι τότε εἶναι θάνατον ἄχρις ἂν αἱ γυναῖκες τίκτωσιν », οὐ τὴν γένεσιν κακίζων ἔλεγεν, ἀναγκαίαν οὖσαν διὰ τὴν σωτηρίαν τῶν πιστευόντων.",
+      "translation_nl": "En wanneer de Verlosser tot Salome zegt « totdat er dood zal zijn totdat de vrouwen baren », niet de geboorte lakerend sprak hij, die noodzakelijk is voor de redding van hen die geloven.",
+      "translation_en": "And when the Savior to Salome says « until there will be death until the women give birth », not birth censuring was he speaking, which is necessary for the salvation of those who believe.",
+      "translation_fr": "Et quand le Sauveur à Salomé dit « jusqu'à ce qu'il y ait mort jusqu'à ce que les femmes enfantent », ce n'est pas la naissance censurant qu'il parlait, qui est nécessaire pour le salut de ceux qui croient.",
+      "analysis": [
+        {
+          "token": "Καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "conjunction",
+          "semantic_role": "connective",
+          "syntactic_head": "λέγῃ"
+        },
+        {
+          "token": "ὅταν",
+          "lemma": "ὅταν",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hotan",
+          "gloss": "when",
+          "dictionary_entry_nl": null,
+          "clause_role": "subordinating_conjunction",
+          "semantic_role": "temporal",
+          "syntactic_head": "λέγῃ"
+        },
+        {
+          "token": "ὁ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ho",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "Σωτὴρ"
+        },
+        {
+          "token": "Σωτὴρ",
+          "lemma": "σωτήρ",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "soter",
+          "gloss": "savior",
+          "dictionary_entry_nl": "Redder, behoeder, beschermer. Met genitief gebruikt om aan te duiden wie of wat gered wordt. Afgeleid van het werkwoord σῴζω (redden). Verwijst naar iemand die redding, bescherming of behoud brengt aan anderen.",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "λέγῃ"
+        },
+        {
+          "token": "πρὸς",
+          "lemma": "πρός",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pros",
+          "gloss": "to",
+          "dictionary_entry_nl": null,
+          "clause_role": "preposition",
+          "semantic_role": "directional",
+          "syntactic_head": "Σαλώμην"
+        },
+        {
+          "token": "Σαλώμην",
+          "lemma": "Σαλώμη",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "salomen",
+          "gloss": "Salome",
+          "dictionary_entry_nl": "Eigennaam voor een vrouw. In de vroegchristelijke literatuur vaak een figuur die vragen stelt aan Jezus of dialogen voert over spirituele onderwerpen.",
+          "clause_role": "indirect_object",
+          "semantic_role": "recipient",
+          "syntactic_head": "λέγῃ"
+        },
+        {
+          "token": "λέγῃ",
+          "lemma": "λέγω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "subjunctive",
+            "person": "third"
+          },
+          "transliteration": "lege",
+          "gloss": "says",
+          "dictionary_entry_nl": "Zeggen, spreken, vertellen. Een van de meest voorkomende werkwoorden in het Grieks voor verbale communicatie. Kan gebruikt worden met verschillende constructies: absoluut (zonder object), met accusatief (directe rede), met datief (tot iemand spreken), met infinitief (bevelen), en vele andere. Ook: noemen, bedoelen, opdracht geven, voordragen.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "μέχρι",
+          "lemma": "μέχρι",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "mechri",
+          "gloss": "until",
+          "dictionary_entry_nl": "Tot, tot aan. Kan functioneren als bijwoord, voorzetsel met genitief, of als voegwoord. Bij tijd: 'totdat', 'zolang als'. Bij plaats: 'tot aan'. Bij overdrachtelijk gebruik: 'tot aan de grens van'. Als voegwoord met conjunctief of indicatief: 'totdat', 'zolang als'.",
+          "clause_role": "preposition",
+          "semantic_role": "temporal_boundary",
+          "syntactic_head": "εἶναι"
+        },
+        {
+          "token": "τότε",
+          "lemma": "τότε",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tote",
+          "gloss": "then",
+          "dictionary_entry_nl": null,
+          "clause_role": "temporal_adverb",
+          "semantic_role": "temporal",
+          "syntactic_head": "εἶναι"
+        },
+        {
+          "token": "εἶναι",
+          "lemma": "εἰμί",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": "present",
+            "voice": "active",
+            "mood": "infinitive",
+            "person": null
+          },
+          "transliteration": "einai",
+          "gloss": "to be",
+          "dictionary_entry_nl": null,
+          "clause_role": "copula",
+          "semantic_role": "existence",
+          "syntactic_head": "λέγῃ"
+        },
+        {
+          "token": "θάνατον",
+          "lemma": "θάνατος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thanaton",
+          "gloss": "death",
+          "dictionary_entry_nl": "De dood, het sterven. Kan verwijzen naar het feitelijke overlijden, de manier van sterven, of figuurlijk naar ondergang. Ook gebruikt voor de doodstraf. Soms gepersonifieerd als de god Thanatos. In het meervoud: verschillende manieren van sterven.",
+          "clause_role": "object",
+          "semantic_role": "patient",
+          "syntactic_head": "εἶναι"
+        },
+        {
+          "token": "ἄχρις",
+          "lemma": "ἄχρι",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "achris",
+          "gloss": "until",
+          "dictionary_entry_nl": null,
+          "clause_role": "preposition",
+          "semantic_role": "temporal_boundary",
+          "syntactic_head": "τίκτωσιν"
+        },
+        {
+          "token": "ἂν",
+          "lemma": "ἄν",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "an",
+          "gloss": "modal particle",
+          "dictionary_entry_nl": null,
+          "clause_role": "modal_particle",
+          "semantic_role": "modality",
+          "syntactic_head": "τίκτωσιν"
+        },
+        {
+          "token": "αἱ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hai",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "γυναῖκες"
+        },
+        {
+          "token": "γυναῖκες",
+          "lemma": "γυνή",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "gynaikes",
+          "gloss": "women",
+          "dictionary_entry_nl": "Vrouw, in onderscheid tot man, echtgenoot, of godin. Kan ook gebruikt worden voor slavinnen. Bij dieren: wijfje. Een algemene term voor volwassen vrouwelijke personen in verschillende rollen en contexten.",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "τίκτωσιν"
+        },
+        {
+          "token": "τίκτωσιν",
+          "lemma": "τίκτω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "subjunctive",
+            "person": "third"
+          },
+          "transliteration": "tiktosin",
+          "gloss": "give birth",
+          "dictionary_entry_nl": "Ter wereld brengen, baren (van de moeder). Van de vader: voortbrengen, verwekken. Overdrachtelijk: produceren, voortbrengen. Als substantief: ἡ τεκοῦσα = de moeder, ὁ τεκών = de vader, οἱ τεκόντες = de ouders. Kan ook gebruikt worden voor natuurlijke processen van voortbrenging.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "οὐ",
+          "lemma": "οὐ",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ou",
+          "gloss": "not",
+          "dictionary_entry_nl": null,
+          "clause_role": "negation",
+          "semantic_role": "negation",
+          "syntactic_head": "ἔλεγεν"
+        },
+        {
+          "token": "τὴν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ten",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "γένεσιν"
+        },
+        {
+          "token": "γένεσιν",
+          "lemma": "γένεσις",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "genesin",
+          "gloss": "birth",
+          "dictionary_entry_nl": "Oorsprong, begin, geboorte. Kan verwijzen naar het ontstaan van iets, het geboren worden van personen, of de wording van dingen in het algemeen. Ook gebruikt voor geslacht, ras, soort, of generatie/tijdperk. Verwant aan γίγνομαι (worden, ontstaan).",
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "κακίζων"
+        },
+        {
+          "token": "κακίζων",
+          "lemma": "κακίζω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "kakizon",
+          "gloss": "censuring",
+          "dictionary_entry_nl": "Iemand een lafaard noemen, beschuldigen, de schuld geven. In actieve vorm: beschuldigen van lafheid of slechtheid. In passieve vorm: zich laf gedragen, een slechte naam hebben. Een werkwoord dat negatieve beoordeling of kritiek uitdrukt.",
+          "clause_role": "participle",
+          "semantic_role": "manner",
+          "syntactic_head": "ἔλεγεν"
+        },
+        {
+          "token": "ἔλεγεν",
+          "lemma": "λέγω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "imperfect",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "elegen",
+          "gloss": "was speaking",
+          "dictionary_entry_nl": "Zeggen, spreken, vertellen. Een van de meest voorkomende werkwoorden in het Grieks voor verbale communicatie. Kan gebruikt worden met verschillende constructies: absoluut (zonder object), met accusatief (directe rede), met datief (tot iemand spreken), met infinitief (bevelen), en vele andere. Ook: noemen, bedoelen, opdracht geven, voordragen.",
+          "clause_role": "main_predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "ἀναγκαίαν",
+          "lemma": "ἀναγκαῖος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "anankaian",
+          "gloss": "necessary",
+          "dictionary_entry_nl": "Dwingend, met of van dwang. Noodzakelijk, onvermijdelijk. Kan verwijzen naar fysieke dwang, omstandigheden die geen keuze laten, of logische noodzakelijkheid. Ook gebruikt voor bloedverwantschap. Als substantief: τὰ ἀναγκαῖα = primaire levensbehoeften, wat gedaan moet worden.",
+          "clause_role": "predicate_adjective",
+          "semantic_role": "attribute",
+          "syntactic_head": "οὖσαν"
+        },
+        {
+          "token": "οὖσαν",
+          "lemma": "εἰμί",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "ousan",
+          "gloss": "being",
+          "dictionary_entry_nl": null,
+          "clause_role": "participle",
+          "semantic_role": "attribute",
+          "syntactic_head": "γένεσιν"
+        },
+        {
+          "token": "διὰ",
+          "lemma": "διά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "dia",
+          "gloss": "for",
+          "dictionary_entry_nl": null,
+          "clause_role": "preposition",
+          "semantic_role": "causal",
+          "syntactic_head": "σωτηρίαν"
+        },
+        {
+          "token": "τὴν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ten",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "σωτηρίαν"
+        },
+        {
+          "token": "σωτηρίαν",
+          "lemma": "σωτηρία",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "soterian",
+          "gloss": "salvation",
+          "dictionary_entry_nl": "Lijfsbehoud, redding. Het bewaren van leven of het ontkomen aan gevaar. Kan ook verwijzen naar reddingswijze, reddingsmiddel, manier om te ontkomen, of veilige terugkeer. In christelijke context: verlossing. Afgeleid van σωτήρ (redder).",
+          "clause_role": "object_of_preposition",
+          "semantic_role": "purpose",
+          "syntactic_head": "διὰ"
+        },
+        {
+          "token": "τῶν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ton",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "πιστευόντων"
+        },
+        {
+          "token": "πιστευόντων",
+          "lemma": "πιστεύω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "pisteuonton",
+          "gloss": "believing",
+          "dictionary_entry_nl": "Vertrouwen stellen in, vertrouwen op, geloven. Kan gebruikt worden met datief (vertrouwen op iemand/iets), met accusatief (geloof hechten aan iets), met infinitief (geloven dat iets waar is), of absoluut (geloven in religieuze zin). In christelijke context vaak: geloven in God of Christus. Als substantief: οἱ πιστεύοντες = de gelovigen.",
+          "clause_role": "genitive_modifier",
+          "semantic_role": "attribute",
+          "syntactic_head": "σωτηρίαν"
+        }
+      ]
+    }
+  ]
+}

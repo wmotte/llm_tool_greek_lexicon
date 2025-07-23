@@ -1,0 +1,1282 @@
+{
+  "sentences": [
+    {
+      "sentence_id": "s1",
+      "sentence_text": "ἠλάττωσας αὐτὸν βραχύ τι παρ᾽ ἀγγέλους, δόξῃ καὶ τιμῇ ἐστεφάνωσας αὐτόν· καὶ κατέστησας αὐτὸν ἐπὶ τὰ ἔργα τῶν χειρῶν σου, πάντα ὑπέταξας ὑποκάτω τῶν ποδῶν αὐτοῦ, πρόβατα καὶ βόας πάσας, ἔτι δὲ καὶ τὰ κτήνη τοῦ πεδίου, τὰ πετεινὰ τοῦ οὐρανοῦ καὶ τοὺς ἰχθύας τῆς θαλάσσης, τὰ διαπορευόμενα τρίβους θαλασσῶν.",
+      "translation_nl": "Jij hebt hem een weinig geminderd van engelen, met glorie en eer hebt jij hem bekranst; en jij stelde hem over de werken van jouw handen, alles onderworpen jij onder zijn voeten, schapen en runderen allemaal, nog en ook de beesten van het veld, de gevleugelde van de hemel en de vissen van de zee, de doorwandelende paden van zeeën.",
+      "translation_en": "You diminished him a little from angels, with glory and honor you crowned him; and you established him over the works of your hands, all things you subjected under his feet, sheep and cattle all, yet also the beasts of the field, the birds of heaven and the fish of the sea, those traversing paths of seas.",
+      "translation_fr": "Tu l'as diminué un peu par rapport aux anges, de gloire et d'honneur tu l'as couronné; et tu l'as établi sur les œuvres de tes mains, toutes choses tu as soumises sous ses pieds, moutons et bovins tous, encore aussi les bêtes du champ, les oiseaux du ciel et les poissons de la mer, ceux qui parcourent les sentiers des mers.",
+      "analysis": [
+        {
+          "token": "ἠλάττωσας",
+          "lemma": "ἐλαττόω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "2nd"
+          },
+          "transliteration": "ēlattōsas",
+          "gloss": "you diminished",
+          "dictionary_entry_nl": "Verkleinen, verminderen, of zwakker maken. In de passieve vorm: verloren gaan, onderdoen voor iemand, het onderspit delven. Het werkwoord betekent letterlijk 'minder maken' of 'in omvang of waarde verkleinen', zowel in fysieke als figuurlijke zin.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "αὐτὸν",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "3rd"
+          },
+          "transliteration": "auton",
+          "gloss": "him",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "ἠλάττωσας"
+        },
+        {
+          "token": "βραχύ",
+          "lemma": "βραχύς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "brachy",
+          "gloss": "little",
+          "dictionary_entry_nl": "Kort, klein in ruimte, tijd, afstand, lengte of omvang. Ook van kwaliteit of belang: klein, gering, onbeduidend. Kan gebruikt worden adverbiaal om 'een beetje' of 'in korte tijd' aan te duiden.",
+          "clause_role": "adverbial",
+          "semantic_role": "manner",
+          "syntactic_head": "ἠλάττωσας"
+        },
+        {
+          "token": "τι",
+          "lemma": "τις",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ti",
+          "gloss": "something",
+          "dictionary_entry_nl": null,
+          "clause_role": "adverbial",
+          "semantic_role": "extent",
+          "syntactic_head": "βραχύ"
+        },
+        {
+          "token": "παρ᾽",
+          "lemma": "παρά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "par'",
+          "gloss": "from",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "comparison",
+          "syntactic_head": "ἀγγέλους"
+        },
+        {
+          "token": "ἀγγέλους",
+          "lemma": "ἄγγελος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "angelous",
+          "gloss": "angels",
+          "dictionary_entry_nl": "Bode, boodschapper. Oorspronkelijk iemand die een bericht overbrengt of als tussenligger optreedt. In christelijke context: engel, een hemelse boodschapper Gods.",
+          "clause_role": "prepositional_object",
+          "semantic_role": "standard_of_comparison",
+          "syntactic_head": "παρ᾽"
+        },
+        {
+          "token": "δόξῃ",
+          "lemma": "δόξα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "doxē",
+          "gloss": "glory",
+          "dictionary_entry_nl": "Mening, vaste overtuiging, indruk of idee. Ook verwachting. Verder roep, roem, reputatie, naam en aanzien. In christelijke context: heerlijkheid, glorie, eer als goddelijke eigenschap.",
+          "clause_role": "instrumental",
+          "semantic_role": "instrument",
+          "syntactic_head": "ἐστεφάνωσας"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connector",
+          "semantic_role": "conjunction",
+          "syntactic_head": "τιμῇ"
+        },
+        {
+          "token": "τιμῇ",
+          "lemma": "τιμή",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "timē",
+          "gloss": "honor",
+          "dictionary_entry_nl": "Eer, eerbewijs, privilege. Ook beloning. Eervolle positie, ambt, functie. Kan ook betekenen: schatting, taxatie, prijs, waarde. In juridische context: genoegdoening, boete.",
+          "clause_role": "instrumental",
+          "semantic_role": "instrument",
+          "syntactic_head": "ἐστεφάνωσας"
+        },
+        {
+          "token": "ἐστεφάνωσας",
+          "lemma": "στεφανόω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "2nd"
+          },
+          "transliteration": "estephanōsas",
+          "gloss": "you crowned",
+          "dictionary_entry_nl": "Bekransen, een krans opzetten ter eer of als beloning. Oorspronkelijk een kring vormen rondom, omgeven, omringen. In uitgebreide zin: omgeven, omringen. Overdrachtelijk: lauweren, prijzen, eren, belonen.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "αὐτόν",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "3rd"
+          },
+          "transliteration": "auton",
+          "gloss": "him",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "ἐστεφάνωσας"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connector",
+          "semantic_role": "conjunction",
+          "syntactic_head": "κατέστησας"
+        },
+        {
+          "token": "κατέστησας",
+          "lemma": "καθίστημι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "2nd"
+          },
+          "transliteration": "katestēsas",
+          "gloss": "you established",
+          "dictionary_entry_nl": "Neerzetten, terugzetten, terugbrengen. Aanstellen tot een functie of positie. Instellen van wetten of gebruiken. In militaire context: opstellen van troepen. In een bepaalde toestand brengen, in orde brengen, regelen. Tot stand brengen. Intransitief: zich vestigen, ergens komen, aantreden van een functie.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "αὐτὸν",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "3rd"
+          },
+          "transliteration": "auton",
+          "gloss": "him",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "κατέστησας"
+        },
+        {
+          "token": "ἐπὶ",
+          "lemma": "ἐπί",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "epi",
+          "gloss": "over",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "location",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "τὰ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ta",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "ἔργα",
+          "lemma": "ἔργον",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "erga",
+          "gloss": "works",
+          "dictionary_entry_nl": "Werk, arbeid, ook oorlog. Resultaat van werk zoals landerijen of handwerkproducten. Daad, bijzondere daad, heldendaden tegenover woorden. Praktijk, werkelijkheid, feit. Zaak, aangelegenheid, ding. In uitdrukkingen: het is de taak van iemand, er is behoefte aan iets, het is moeilijk om iets te doen.",
+          "clause_role": "prepositional_object",
+          "semantic_role": "theme",
+          "syntactic_head": "ἐπὶ"
+        },
+        {
+          "token": "τῶν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tōn",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "χειρῶν"
+        },
+        {
+          "token": "χειρῶν",
+          "lemma": "χείρ",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "cheirōn",
+          "gloss": "hands",
+          "dictionary_entry_nl": "Hand, handpalm, arm. Van dieren: poot. Van metaal: enterhaak. Uitgebreid: zijde, kant, handwerk, verrichting, handschrift. Overdrachtelijk: kracht, macht, strijdmacht, groep. In vele uitdrukkingen met preposities om nabijheid, macht, of onmiddellijkheid uit te drukken.",
+          "clause_role": "possessive",
+          "semantic_role": "possessor",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "σου",
+          "lemma": "σύ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "2nd"
+          },
+          "transliteration": "sou",
+          "gloss": "your",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive",
+          "semantic_role": "possessor",
+          "syntactic_head": "χειρῶν"
+        },
+        {
+          "token": "πάντα",
+          "lemma": "πᾶς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "panta",
+          "gloss": "all things",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "ὑπέταξας"
+        },
+        {
+          "token": "ὑπέταξας",
+          "lemma": "ὑποτάσσω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "2nd"
+          },
+          "transliteration": "hypetaxas",
+          "gloss": "you subjected",
+          "dictionary_entry_nl": "Onderwerpen, ondergeschikt maken. Het werkwoord wordt gebruikt om hiërarchische relaties aan te duiden waarbij iets of iemand onder het gezag of de controle van een ander wordt geplaatst.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "ὑποκάτω",
+          "lemma": "ὑποκάτω",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hypokatō",
+          "gloss": "under",
+          "dictionary_entry_nl": null,
+          "clause_role": "adverbial",
+          "semantic_role": "location",
+          "syntactic_head": "ποδῶν"
+        },
+        {
+          "token": "τῶν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tōn",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "ποδῶν"
+        },
+        {
+          "token": "ποδῶν",
+          "lemma": "πούς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "podōn",
+          "gloss": "feet",
+          "dictionary_entry_nl": "Voet, poot als lichaamsdeel. Van adelaars: klauw. Van octopus: tentakel. Uitgebreid: been. Gebruikt bij voortbeweging, ook bij hardlopen. Overdrachtelijk voor onderste deel: tafelpoot, voet van berg. Maritiem: schoot, zeil. Als lengtemaat: voet (29,57 cm). In metriek: voet, versvoet. Vele uitdrukkingen met preposities voor nabijheid, snelheid, of onmiddellijkheid.",
+          "clause_role": "prepositional_object",
+          "semantic_role": "location",
+          "syntactic_head": "ὑποκάτω"
+        },
+        {
+          "token": "αὐτοῦ",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "3rd"
+          },
+          "transliteration": "autou",
+          "gloss": "his",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive",
+          "semantic_role": "possessor",
+          "syntactic_head": "ποδῶν"
+        },
+        {
+          "token": "πρόβατα",
+          "lemma": "πρόβατον",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "probata",
+          "gloss": "sheep",
+          "dictionary_entry_nl": "Vee, kuddes. Vooral gebruikt in meervoud om schapen en andere kleinere huisdieren aan te duiden die vooruit gedreven worden bij het grazen.",
+          "clause_role": "apposition",
+          "semantic_role": "patient",
+          "syntactic_head": "πάντα"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connector",
+          "semantic_role": "conjunction",
+          "syntactic_head": "βόας"
+        },
+        {
+          "token": "βόας",
+          "lemma": "βοῦς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "boas",
+          "gloss": "cattle",
+          "dictionary_entry_nl": "Rund, os. Mannelijk: stier, vrouwelijk: koe. In meervoud: rundvee. Overdrachtelijk gebruikt in spreekwoorden. Ook als afbeelding op munten. Daarnaast: schild gemaakt van runderhuid.",
+          "clause_role": "apposition",
+          "semantic_role": "patient",
+          "syntactic_head": "πάντα"
+        },
+        {
+          "token": "πάσας",
+          "lemma": "πᾶς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pasas",
+          "gloss": "all",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "quantifier",
+          "syntactic_head": "βόας"
+        },
+        {
+          "token": "ἔτι",
+          "lemma": "ἔτι",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "eti",
+          "gloss": "yet",
+          "dictionary_entry_nl": null,
+          "clause_role": "adverbial",
+          "semantic_role": "addition",
+          "syntactic_head": "κτήνη"
+        },
+        {
+          "token": "δὲ",
+          "lemma": "δέ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connector",
+          "semantic_role": "continuation",
+          "syntactic_head": "κτήνη"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "also",
+          "dictionary_entry_nl": null,
+          "clause_role": "connector",
+          "semantic_role": "addition",
+          "syntactic_head": "κτήνη"
+        },
+        {
+          "token": "τὰ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ta",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "κτήνη"
+        },
+        {
+          "token": "κτήνη",
+          "lemma": "κτῆνος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ktēnē",
+          "gloss": "beasts",
+          "dictionary_entry_nl": "In meervoud: vee, veestapel. In enkelvoud: stuk vee, dier, beest. Algemene term voor huisdieren en wilde dieren die als bezit kunnen gelden.",
+          "clause_role": "apposition",
+          "semantic_role": "patient",
+          "syntactic_head": "πάντα"
+        },
+        {
+          "token": "τοῦ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tou",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "πεδίου"
+        },
+        {
+          "token": "πεδίου",
+          "lemma": "πεδίον",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pediou",
+          "gloss": "field",
+          "dictionary_entry_nl": "Vlakte. Ook in meervoud gebruikt. Betekent een groot, open terrein zonder veel bomen of heuvels, geschikt voor landbouw of als weidegrond.",
+          "clause_role": "modifier",
+          "semantic_role": "location",
+          "syntactic_head": "κτήνη"
+        },
+        {
+          "token": "τὰ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ta",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "πετεινὰ"
+        },
+        {
+          "token": "πετεινὰ",
+          "lemma": "πετεινός",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "peteina",
+          "gloss": "birds",
+          "dictionary_entry_nl": null,
+          "clause_role": "apposition",
+          "semantic_role": "patient",
+          "syntactic_head": "πάντα"
+        },
+        {
+          "token": "τοῦ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tou",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "οὐρανοῦ"
+        },
+        {
+          "token": "οὐρανοῦ",
+          "lemma": "οὐρανός",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ouranou",
+          "gloss": "heaven",
+          "dictionary_entry_nl": "Hemel, de woonplaats van de goden. Het hemelse gewelf boven de aarde waar de goddelijke wezens verblijven en vanwaar zij de aardse zaken besturen.",
+          "clause_role": "modifier",
+          "semantic_role": "location",
+          "syntactic_head": "πετεινὰ"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connector",
+          "semantic_role": "conjunction",
+          "syntactic_head": "ἰχθύας"
+        },
+        {
+          "token": "τοὺς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tous",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "ἰχθύας"
+        },
+        {
+          "token": "ἰχθύας",
+          "lemma": "ἰχθύς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ichthyas",
+          "gloss": "fish",
+          "dictionary_entry_nl": "Vis. Gebruikt in letterlijke zin voor alle soorten vissen, zowel zoetwatervis als zeevis. Ook voorkomend in spreekwoorden.",
+          "clause_role": "apposition",
+          "semantic_role": "patient",
+          "syntactic_head": "πάντα"
+        },
+        {
+          "token": "τῆς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tēs",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "θαλάσσης"
+        },
+        {
+          "token": "θαλάσσης",
+          "lemma": "θάλασσα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thalassēs",
+          "gloss": "sea",
+          "dictionary_entry_nl": "Zee in uitgebreide betekenis. Het water dat de landen omgeeft en alle grote wateroppervlakken zoals oceanen en zeeën omvat.",
+          "clause_role": "modifier",
+          "semantic_role": "location",
+          "syntactic_head": "ἰχθύας"
+        },
+        {
+          "token": "τὰ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ta",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "διαπορευόμενα"
+        },
+        {
+          "token": "διαπορευόμενα",
+          "lemma": "διαπορεύομαι",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "diaporeuomena",
+          "gloss": "traversing",
+          "dictionary_entry_nl": null,
+          "clause_role": "apposition",
+          "semantic_role": "patient",
+          "syntactic_head": "πάντα"
+        },
+        {
+          "token": "τρίβους",
+          "lemma": "τρίβος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tribous",
+          "gloss": "paths",
+          "dictionary_entry_nl": "Weg, pad. Een route die ontstaan is door frequent gebruik, vaak smaller dan een grote weg. Ook betekenissen zoals slijtage, frictie-holte, uitstel. In Latijn: tribus (stam in Rome).",
+          "clause_role": "direct_object",
+          "semantic_role": "path",
+          "syntactic_head": "διαπορευόμενα"
+        },
+        {
+          "token": "θαλασσῶν",
+          "lemma": "θάλασσα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thalassōn",
+          "gloss": "of seas",
+          "dictionary_entry_nl": "Zee in uitgebreide betekenis. Het water dat de landen omgeeft en alle grote wateroppervlakken zoals oceanen en zeeën omvat.",
+          "clause_role": "modifier",
+          "semantic_role": "location",
+          "syntactic_head": "τρίβους"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s2",
+      "sentence_text": "κύριε ὁ κύριος ἡμῶν, ὡς θαυμαστὸν τὸ ὄνομά σου ἐν πάσῃ τῇ γῇ.",
+      "translation_nl": "Heer onze heer, hoe wonderbaarlijk jouw naam in geheel de aarde.",
+      "translation_en": "Lord our lord, how wondrous your name in all the earth.",
+      "translation_fr": "Seigneur notre seigneur, comme merveilleux ton nom dans toute la terre.",
+      "analysis": [
+        {
+          "token": "κύριε",
+          "lemma": "κύριος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "vocative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kyrie",
+          "gloss": "Lord",
+          "dictionary_entry_nl": "Gezaghebbend, gemachtigd, bevoegd. Als substantief: heer, meester, eigenaar, vooral van wie aan het hoofd staat van een huis of familie. Juridisch: beschermheer, vertegenwoordiger voor de wet. Als aanspreekvorm: heer, meneer. Van zaken: gezaghebbend, belangrijk, bindend, geldig. Van tijd: vastgesteld, afgesproken. Van woorden: gangbaar, in gewone of precieze zin.",
+          "clause_role": "vocative",
+          "semantic_role": "addressee",
+          "syntactic_head": null
+        },
+        {
+          "token": "ὁ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ho",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "κύριος"
+        },
+        {
+          "token": "κύριος",
+          "lemma": "κύριος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kyrios",
+          "gloss": "lord",
+          "dictionary_entry_nl": "Gezaghebbend, gemachtigd, bevoegd. Als substantief: heer, meester, eigenaar, vooral van wie aan het hoofd staat van een huis of familie. Juridisch: beschermheer, vertegenwoordiger voor de wet. Als aanspreekvorm: heer, meneer. Van zaken: gezaghebbend, belangrijk, bindend, geldig. Van tijd: vastgesteld, afgesproken. Van woorden: gangbaar, in gewone of precieze zin.",
+          "clause_role": "apposition",
+          "semantic_role": "addressee",
+          "syntactic_head": "κύριε"
+        },
+        {
+          "token": "ἡμῶν",
+          "lemma": "ἡμεῖς",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": null,
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "1st"
+          },
+          "transliteration": "hēmōn",
+          "gloss": "our",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive",
+          "semantic_role": "possessor",
+          "syntactic_head": "κύριος"
+        },
+        {
+          "token": "ὡς",
+          "lemma": "ὡς",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hōs",
+          "gloss": "how",
+          "dictionary_entry_nl": null,
+          "clause_role": "exclamatory",
+          "semantic_role": "manner",
+          "syntactic_head": "θαυμαστὸν"
+        },
+        {
+          "token": "θαυμαστὸν",
+          "lemma": "θαυμαστός",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thaumaston",
+          "gloss": "wondrous",
+          "dictionary_entry_nl": "Verbazingwekkend, indrukwekkend. Kan zowel in gunstige als ongunstige zin gebruikt worden om iets aan te duiden dat grote verwondering of verbazing opwekt door zijn buitengewone karakter.",
+          "clause_role": "predicate",
+          "semantic_role": "attribute",
+          "syntactic_head": null
+        },
+        {
+          "token": "τὸ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "to",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "ὄνομά"
+        },
+        {
+          "token": "ὄνομά",
+          "lemma": "ὄνομα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "onoma",
+          "gloss": "name",
+          "dictionary_entry_nl": "Naam, benaming. Ook goede naam, faam of reputatie. Woord in algemene zin. Grammaticaal: naamwoord. In latere teksten ook: persoon in de zin van individu.",
+          "clause_role": "subject",
+          "semantic_role": "theme",
+          "syntactic_head": "θαυμαστὸν"
+        },
+        {
+          "token": "σου",
+          "lemma": "σύ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "2nd"
+          },
+          "transliteration": "sou",
+          "gloss": "your",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive",
+          "semantic_role": "possessor",
+          "syntactic_head": "ὄνομά"
+        },
+        {
+          "token": "ἐν",
+          "lemma": "ἐν",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "en",
+          "gloss": "in",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "location",
+          "syntactic_head": "γῇ"
+        },
+        {
+          "token": "πάσῃ",
+          "lemma": "πᾶς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pasē",
+          "gloss": "all",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "quantifier",
+          "syntactic_head": "γῇ"
+        },
+        {
+          "token": "τῇ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tē",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "γῇ"
+        },
+        {
+          "token": "γῇ",
+          "lemma": "γῆ",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "gē",
+          "gloss": "earth",
+          "dictionary_entry_nl": "Aarde, wereld. Ook gepersonifieerd voor de godin. Aardoppervlak in tegenstelling tot hemel. Land tegenover zee, grondgebied, bouwland, grond, vaderland. Aarde als materiaal en element, gebruikt voor verschillende praktische doeleinden zoals wassen.",
+          "clause_role": "prepositional_object",
+          "semantic_role": "location",
+          "syntactic_head": "ἐν"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "sentences": [
+    {
+      "sentence_id": "s1",
+      "sentence_text": "Ἰησοῦς δὲ πλήρης πνεύματος ἁγίου ὑπέστρεψεν ἀπὸ τοῦ Ἰορδάνου καὶ ἤγετο ἐν τῷ πνεύματι ἐν τῇ ἐρήμῳ ἡμέρας τεσσεράκοντα πειραζόμενος ὑπὸ τοῦ διαβόλου.",
+      "translation_nl": "Jezus dan vol van heilige geest keerde terug vanaf de Jordaan en werd geleid in de geest in de woestijn dagen veertig beproefd wordend door de duivel.",
+      "translation_en": "Jesus then full of holy spirit returned from the Jordan and was led in the spirit in the wilderness days forty being tempted by the devil.",
+      "translation_fr": "Jésus alors plein d'esprit saint revint du Jourdain et fut mené dans l'esprit dans le désert jours quarante étant tenté par le diable.",
+      "analysis": [
+        {
+          "token": "Ἰησοῦς",
+          "lemma": "Ἰησοῦς",
+          "part_of_speech": "proper noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "Iēsous",
+          "gloss": "Jesus",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "ὑπέστρεψεν"
+        },
+        {
+          "token": "δὲ",
+          "lemma": "δέ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "but, and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "connective",
+          "syntactic_head": "ὑπέστρεψεν"
+        },
+        {
+          "token": "πλήρης",
+          "lemma": "πλήρης",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "plērēs",
+          "gloss": "full",
+          "dictionary_entry_nl": "Vol, gevuld, verzadigd. Het woord πλήρης komt van πίμπλημι en betekent primair 'vol' of 'gevuld'. Het wordt gebruikt met de genitief om aan te geven waarvan iets vol is. In religieuze contexten beschrijft het vaak iemand die vol is van de Heilige Geest. Het kan ook 'verzadigd' betekenen in de zin van voldaan zijn, of 'compleet' en 'totaal' in de betekenis van volledig of geheel.",
+          "clause_role": "predicate adjective",
+          "semantic_role": "attribute",
+          "syntactic_head": "Ἰησοῦς"
+        },
+        {
+          "token": "πνεύματος",
+          "lemma": "πνεῦμα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pneumatos",
+          "gloss": "spirit",
+          "dictionary_entry_nl": "Wind, windvlaag, adem, ademhaling, geest. Het woord πνεῦμα komt van πνέω (ademen, blazen) en heeft verschillende betekenissen. Letterlijk betekent het 'wind' of 'windvlaag', ook gebruikt voor emotionele bewegingen. Het kan 'adem' of 'ademhaling' betekenen, en overdrachtelijk 'levenskracht' of 'leven'. In het Nieuwe Testament betekent het vaak 'geest', zowel menselijke geest als hemelse geest, inclusief de Heilige Geest. Het kan ook kwade geesten aanduiden.",
+          "clause_role": "complement",
+          "semantic_role": "content",
+          "syntactic_head": "πλήρης"
+        },
+        {
+          "token": "ἁγίου",
+          "lemma": "ἅγιος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hagiou",
+          "gloss": "holy",
+          "dictionary_entry_nl": "Heilig, gewijd. Het woord ἅγιος is verwant aan ἅζομαι en beschrijft iets dat heilig of gewijd is. Van zaken betekent het 'heilig', vaak gebruikt met de genitief om te tonen aan wie of wat iets gewijd is. Van personen betekent het 'heilig', zoals de heilige Geest. Het kan substantivisch gebruikt worden voor 'het heilige' (van offervlees of een heiligdom), 'de heilige' (van God of Jezus), of in het meervoud 'de heiligen' (van christenen of engelen).",
+          "clause_role": "attributive modifier",
+          "semantic_role": "attribute",
+          "syntactic_head": "πνεύματος"
+        },
+        {
+          "token": "ὑπέστρεψεν",
+          "lemma": "ὑποστρέφω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "hypestrephsen",
+          "gloss": "returned",
+          "dictionary_entry_nl": "Doen omkeren, wenden, omdraaien, vluchten, terugkeren. Het werkwoord ὑποστρέφω betekent causatief 'doen omkeren' of 'wenden', intransitief 'omdraaien', 'vluchten' of 'terugkeren'. Het kan gebruikt worden voor het keren van paarden, het terugkeren naar een plaats, of in medische context voor het terugkeren van koorts. Overdrachtelijk kan het 'bekeren' betekenen. In de medium-passief vorm betekent het 'omdraaien' of 'terugkeren'.",
+          "clause_role": "main verb",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "ἀπὸ",
+          "lemma": "ἀπό",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "apo",
+          "gloss": "from",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ὑπέστρεψεν"
+        },
+        {
+          "token": "τοῦ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tou",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "Ἰορδάνου"
+        },
+        {
+          "token": "Ἰορδάνου",
+          "lemma": "Ἰορδάνης",
+          "part_of_speech": "proper noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "Iordanou",
+          "gloss": "Jordan",
+          "dictionary_entry_nl": null,
+          "clause_role": "object of preposition",
+          "semantic_role": "location",
+          "syntactic_head": "ἀπὸ"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "connective",
+          "syntactic_head": "ὑπέστρεψεν"
+        },
+        {
+          "token": "ἤγετο",
+          "lemma": "ἄγω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "imperfect",
+            "voice": "passive",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "ēgeto",
+          "gloss": "was led",
+          "dictionary_entry_nl": "Voeren, leiden, brengen, wegvoeren, meenemen, vervoeren. Het werkwoord ἄγω heeft vele betekenissen. Primair betekent het 'voeren', 'leiden' of 'brengen', vaak met plaatsbepalingen. Het kan 'wegvoeren' of 'meenemen' betekenen, 'vervoeren' of 'aanvoeren' (van goederen of troepen). Overdrachtelijk kan het 'bezorgen' of 'brengen' betekenen van fysieke of mentale verschijnselen. Het kan ook gebruikt worden voor het 'vormen' of 'aanleggen' van structuren, het 'doorbrengen' van tijd, of het 'houden' van ceremonies. In militaire context betekent het 'aanvoeren' of 'leiden'.",
+          "clause_role": "main verb",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "ἐν",
+          "lemma": "ἐν",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "en",
+          "gloss": "in",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "locative",
+          "syntactic_head": "ἤγετο"
+        },
+        {
+          "token": "τῷ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tō",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "πνεύματι"
+        },
+        {
+          "token": "πνεύματι",
+          "lemma": "πνεῦμα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pneumati",
+          "gloss": "spirit",
+          "dictionary_entry_nl": "Wind, windvlaag, adem, ademhaling, geest. Het woord πνεῦμα komt van πνέω (ademen, blazen) en heeft verschillende betekenissen. Letterlijk betekent het 'wind' of 'windvlaag', ook gebruikt voor emotionele bewegingen. Het kan 'adem' of 'ademhaling' betekenen, en overdrachtelijk 'levenskracht' of 'leven'. In het Nieuwe Testament betekent het vaak 'geest', zowel menselijke geest als hemelse geest, inclusief de Heilige Geest. Het kan ook kwade geesten aanduiden.",
+          "clause_role": "object of preposition",
+          "semantic_role": "manner",
+          "syntactic_head": "ἐν"
+        },
+        {
+          "token": "ἐν",
+          "lemma": "ἐν",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "en",
+          "gloss": "in",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "locative",
+          "syntactic_head": "ἤγετο"
+        },
+        {
+          "token": "τῇ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tē",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "ἐρήμῳ"
+        },
+        {
+          "token": "ἐρήμῳ",
+          "lemma": "ἔρημος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "erēmō",
+          "gloss": "wilderness",
+          "dictionary_entry_nl": "Verlaten, leeg, eenzaam, onbewoond, woestijn. Het woord ἔρημος beschrijft van plaatsen 'verlaten', 'leeg', 'eenzaam' of 'onbewoond'. Substantivisch betekent het 'de verlaten plaatsen' of 'het onbewoonde gebied', inclusief woestijnen. Van mensen en dieren betekent het 'alleen' of 'verlaten'. Met de genitief betekent het 'verstoken van' of 'zonder'. In juridische context verwijst het naar processen bij verstek.",
+          "clause_role": "object of preposition",
+          "semantic_role": "location",
+          "syntactic_head": "ἐν"
+        },
+        {
+          "token": "ἡμέρας",
+          "lemma": "ἡμέρα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hēmeras",
+          "gloss": "days",
+          "dictionary_entry_nl": "Dag, tijd van leven. Het woord ἡμέρα komt van ἦμαρ en betekent primair 'dag' in contrast met nacht. Het kan ook gebruikt worden voor 'tijd van leven' of levensduur. In verschillende uitdrukkingen geeft het tijdsduur aan, zoals 'per dag', 'elke dag', 'binnen drie dagen'. Het wordt gebruikt met preposities om tijdsaanduidingen te maken zoals 'overdag', 'bij het aanbreken van de dag', 'van dag tot dag'.",
+          "clause_role": "temporal adverbial",
+          "semantic_role": "time",
+          "syntactic_head": "ἤγετο"
+        },
+        {
+          "token": "τεσσεράκοντα",
+          "lemma": "τεσσαράκοντα",
+          "part_of_speech": "numeral",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tesserakonta",
+          "gloss": "forty",
+          "dictionary_entry_nl": "Veertig. Het telwoord τεσσαράκοντα (Ionisch τεσσαράκοντα, ook τεσσεράκοντα) komt van τέτταρες en betekent 'veertig'.",
+          "clause_role": "numeral modifier",
+          "semantic_role": "quantity",
+          "syntactic_head": "ἡμέρας"
+        },
+        {
+          "token": "πειραζόμενος",
+          "lemma": "πειράζω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "passive",
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "peirazomenos",
+          "gloss": "being tempted",
+          "dictionary_entry_nl": "Op de proef stellen, testen, proberen, beproeven, in verzoeking brengen. Het werkwoord πειράζω komt van πεῖρα (proef, ervaring). In episch Grieks betekent het 'op de proef stellen' of 'testen'. In later Grieks betekent het 'proberen' met infinitief, of 'uitproberen' met accusatief van zaak. In christelijke context betekent het 'beproeven', 'in verzoeking brengen' of 'proberen te verleiden', vooral van de duivel. Het substantivierte participium ὁ πειράζων betekent 'de verleider' (de duivel).",
+          "clause_role": "circumstantial participle",
+          "semantic_role": "circumstance",
+          "syntactic_head": "ἤγετο"
+        },
+        {
+          "token": "ὑπὸ",
+          "lemma": "ὑπό",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hypo",
+          "gloss": "by",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "agent",
+          "syntactic_head": "πειραζόμενος"
+        },
+        {
+          "token": "τοῦ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tou",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "διαβόλου"
+        },
+        {
+          "token": "διαβόλου",
+          "lemma": "διάβολος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "diabolou",
+          "gloss": "devil",
+          "dictionary_entry_nl": "Lasterlijk, lasterend, duivel. Het woord διάβολος komt van διαβάλλω (door elkaar gooien, beschuldigen, belasteren). Als substantivum ὁ διάβολος betekent het in christelijke context 'de duivel' - de tegenstander van God die mensen verleidt en in verzoeking brengt.",
+          "clause_role": "object of preposition",
+          "semantic_role": "agent",
+          "syntactic_head": "ὑπὸ"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s2",
+      "sentence_text": "Καὶ οὐκ ἔφαγεν οὐδὲν ἐν ταῖς ἡμέραις ἐκείναις καὶ συντελεσθεισῶν αὐτῶν ἐπείνασεν.",
+      "translation_nl": "En niet at hij niets in de dagen die en voltooid zijnde zij hongerde hij.",
+      "translation_en": "And not ate he nothing in the days those and completed being they hungered he.",
+      "translation_fr": "Et ne mangea il rien dans les jours ceux et accomplis étant eux eut faim il.",
+      "analysis": [
+        {
+          "token": "Καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "connective",
+          "syntactic_head": "ἔφαγεν"
+        },
+        {
+          "token": "οὐκ",
+          "lemma": "οὐ",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ouk",
+          "gloss": "not",
+          "dictionary_entry_nl": null,
+          "clause_role": "negation",
+          "semantic_role": "negation",
+          "syntactic_head": "ἔφαγεν"
+        },
+        {
+          "token": "ἔφαγεν",
+          "lemma": "ἐσθίω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "ephagen",
+          "gloss": "ate",
+          "dictionary_entry_nl": "Eten, opeten, verslinden. Het werkwoord ἐσθίω (ook ἔδω en ἔσθω) betekent primair 'eten', 'opeten' of 'verslinden'. Het wordt vaak gebruikt met de partitieve genitief om aan te geven wat gegeten wordt.",
+          "clause_role": "main verb",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "οὐδὲν",
+          "lemma": "οὐδείς",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ouden",
+          "gloss": "nothing",
+          "dictionary_entry_nl": "Geen enkele, niemand, niets, niets waard. Het woord οὐδείς (ook geschreven als οὐδὲ εἷς) is een samenstelling van οὐδέ en εἷς. Als telwoord betekent het 'geen enkele', soms in het meervoud. Als onbepaald voornaamwoord betekent het 'niemand' of 'niets'. Met dubbele ontkenning (οὐδείς ὅστις οὐ) betekent het juist 'absoluut iedereen'. Het kan ook betekenen 'niets waard' of 'verloren'. Als neutrum adverbium (οὐδέν) betekent het 'in geen enkel opzicht' of 'helemaal niet'.",
+          "clause_role": "direct object",
+          "semantic_role": "patient",
+          "syntactic_head": "ἔφαγεν"
+        },
+        {
+          "token": "ἐν",
+          "lemma": "ἐν",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "en",
+          "gloss": "in",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "ἔφαγεν"
+        },
+        {
+          "token": "ταῖς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tais",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "ἡμέραις"
+        },
+        {
+          "token": "ἡμέραις",
+          "lemma": "ἡμέρα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hēmerais",
+          "gloss": "days",
+          "dictionary_entry_nl": "Dag, tijd van leven. Het woord ἡμέρα komt van ἦμαρ en betekent primair 'dag' in contrast met nacht. Het kan ook gebruikt worden voor 'tijd van leven' of levensduur. In verschillende uitdrukkingen geeft het tijdsduur aan, zoals 'per dag', 'elke dag', 'binnen drie dagen'. Het wordt gebruikt met preposities om tijdsaanduidingen te maken zoals 'overdag', 'bij het aanbreken van de dag', 'van dag tot dag'.",
+          "clause_role": "object of preposition",
+          "semantic_role": "time",
+          "syntactic_head": "ἐν"
+        },
+        {
+          "token": "ἐκείναις",
+          "lemma": "ἐκεῖνος",
+          "part_of_speech": "demonstrative pronoun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ekeinais",
+          "gloss": "those",
+          "dictionary_entry_nl": "Die, dat, die bekende, die beruchte. Het demonstratieve voornaamwoord ἐκεῖνος (episch, Ionisch en poëtisch κεῖνος, Aeolisch κῆνος) komt van ἐκεῖ. Het wijst naar iets dat ver weg is of eerder genoemd werd. In predicatieve positie met lidwoord betekent het 'die' of 'dat'. Het kan ook 'die bekende' of 'die beruchte' betekenen. In combinatie met andere voornaamwoorden benadrukt het identiteit. Het heeft ook adverbiale vormen zoals (ἐ)κείνως 'zo, op die manier'.",
+          "clause_role": "attributive modifier",
+          "semantic_role": "specifier",
+          "syntactic_head": "ἡμέραις"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "connective",
+          "syntactic_head": "ἔφαγεν"
+        },
+        {
+          "token": "συντελεσθεισῶν",
+          "lemma": "συντελέω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": "aorist",
+            "voice": "passive",
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "syntelestheisōn",
+          "gloss": "being completed",
+          "dictionary_entry_nl": "Voltooien, afmaken, tot stand brengen, belasting betalen. Het werkwoord συντελέω (Attisch ook ξυντελέω) betekent primair 'voltooien' of 'afmaken', zoals het afbouwen van een tempel of het beëindigen van een beproeving. Het kan ook 'tot stand brengen' betekenen, zoals een verbond. In Atheense context betekent het 'belasting betalen' of 'tot een belastingklasse behoren'. Overdrachtelijk kan het 'een bijdrage leveren' of 'helpen' betekenen.",
+          "clause_role": "circumstantial participle",
+          "semantic_role": "temporal",
+          "syntactic_head": "ἐπείνασεν"
+        },
+        {
+          "token": "αὐτῶν",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "autōn",
+          "gloss": "them",
+          "dictionary_entry_nl": "Hem, haar, het, hen; dezelfde, hetzelfde; zelf. Het woord αὐτός heeft verschillende functies. Als anaforisch persoonlijk voornaamwoord (alleen in verbogen naamvallen, niet nominatief) betekent het 'hem', 'haar', 'het', 'hen'. Als attributief bijvoeglijk naamwoord in attributieve positie betekent het 'dezelfde', 'hetzelfde'. Als predicatief bijvoeglijk naamwoord geeft het contrast en nadruk: 'zelf', 'ikzelf', 'uzelf', 'hijzelf'. Het kan ook reflexief gebruikt worden: 'mijzelf', 'jouzelf', enz. In filosofische context betekent het 'op zich'. Het heeft ook idiomatische gebruiken zoals 'uit zichzelf', 'eigenhandig', 'vanzelf', 'juist', 'precies'.",
+          "clause_role": "subject of participle",
+          "semantic_role": "patient",
+          "syntactic_head": "συντελεσθεισῶν"
+        },
+        {
+          "token": "ἐπείνασεν",
+          "lemma": "πεινάω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "epeinasen",
+          "gloss": "hungered",
+          "dictionary_entry_nl": "Honger hebben. Het werkwoord πεινάω (ook πεινέω) komt van πεῖνα (honger) en betekent 'honger hebben'. Het wordt gebruikt met de genitief om aan te geven waarnaar men honger heeft.",
+          "clause_role": "main verb",
+          "semantic_role": "action",
+          "syntactic_head": null
+        }
+      ]
+    }
+  ]
+}

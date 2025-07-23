@@ -1,0 +1,951 @@
+{
+  "sentences": [
+    {
+      "sentence_id": "s1",
+      "sentence_text": "Δι' ὧν σαφὲς οἶμαι καὶ πᾶσιν εὔδηλον, ὅτι οὐδεμία κηλὶς ἐναγῶν μύθων τοῖς ἔπεσιν ἐνεσπείρηται· καθαρὰν δὲ καὶ πάντως ἁγνεύουσαν λύμης ἰλιὰς πρώτη, καὶ μετὰ ταύτην ὀδύσσεια, σύμφωνον ἑκατέρα περὶ τῆς ἰδίας εὐσεβείας κέκραγε φωνήν·",
+      "translation_nl": "Door welke dingen duidelijk ik meen en voor allen evident, dat geen vlek van vloekwaardige verhalen in de verzen is ingezaaid; reine en geheel zuivere van schending Ilias eerste, en na deze Odyssee, eenstemmige beide betreffende de eigen vroomheid hebben geroepen stem;",
+      "translation_en": "Through which things clear I think and for all evident, that no stain of accursed stories in the verses has been sown; pure and entirely purifying from defilement Iliad first, and after this Odyssey, harmonious both concerning their own piety have cried voice;",
+      "translation_fr": "Par lesquelles choses clair je pense et pour tous évident, qu'aucune tâche de récits maudits dans les vers n'a été semée; pure et entièrement purifiante de souillure Iliade première, et après celle-ci Odyssée, harmonieuses toutes deux concernant leur propre piété ont crié voix;",
+      "analysis": [
+        {
+          "token": "Δι'",
+          "lemma": "διά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "di'",
+          "gloss": "through",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "instrumental",
+          "syntactic_head": "σαφὲς"
+        },
+        {
+          "token": "ὧν",
+          "lemma": "ὅς",
+          "part_of_speech": "relative pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hōn",
+          "gloss": "which",
+          "dictionary_entry_nl": null,
+          "clause_role": "object",
+          "semantic_role": "referential",
+          "syntactic_head": "Δι'"
+        },
+        {
+          "token": "σαφὲς",
+          "lemma": "σαφής",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "saphes",
+          "gloss": "clear",
+          "dictionary_entry_nl": "duidelijk, helder, onderscheiden - gebruikt voor zowel fysieke helderheid (zoals heldere klanken van vogels) als mentale duidelijkheid (zoals heldere taal). Ook betekent het betrouwbaar of zeker, vooral van personen of informatie. Als substantief betekent het 'de waarheid' of 'de precieze toedracht van gebeurtenissen'.",
+          "clause_role": "predicate",
+          "semantic_role": "attribute",
+          "syntactic_head": "οἶμαι"
+        },
+        {
+          "token": "οἶμαι",
+          "lemma": "οἶμαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "oimai",
+          "gloss": "I think",
+          "dictionary_entry_nl": "menen, denken, vermoeden, geloven - gebruikt om een mening of veronderstelling uit te drukken, vaak gevolgd door een infinitief of accusativus cum infinitivo. Kan ook betekenen 'van plan zijn' of 'verwachten'. Als uitroep betekent het 'denk ik zo' of 'geloof ik'.",
+          "clause_role": "main verb",
+          "semantic_role": "experiencer",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "additive",
+          "syntactic_head": "σαφὲς"
+        },
+        {
+          "token": "πᾶσιν",
+          "lemma": "πᾶς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pasin",
+          "gloss": "all",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "beneficiary",
+          "syntactic_head": "εὔδηλον"
+        },
+        {
+          "token": "εὔδηλον",
+          "lemma": "εὔδηλος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "eudēlon",
+          "gloss": "evident",
+          "dictionary_entry_nl": "zeer duidelijk, evident - een versterkte vorm van 'duidelijk' die benadrukt dat iets overduidelijk of onmiskenbaar is.",
+          "clause_role": "predicate",
+          "semantic_role": "attribute",
+          "syntactic_head": "οἶμαι"
+        },
+        {
+          "token": "ὅτι",
+          "lemma": "ὅτι",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hoti",
+          "gloss": "that",
+          "dictionary_entry_nl": null,
+          "clause_role": "subordinator",
+          "semantic_role": "complementizer",
+          "syntactic_head": "οἶμαι"
+        },
+        {
+          "token": "οὐδεμία",
+          "lemma": "οὐδείς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "oudemia",
+          "gloss": "no",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "quantifier",
+          "syntactic_head": "κηλὶς"
+        },
+        {
+          "token": "κηλὶς",
+          "lemma": "κηλίς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kēlis",
+          "gloss": "stain",
+          "dictionary_entry_nl": "vlek - een fysieke of figuurlijke vlek die iets bezoedelt of ontsierd.",
+          "clause_role": "subject",
+          "semantic_role": "theme",
+          "syntactic_head": "ἐνεσπείρηται"
+        },
+        {
+          "token": "ἐναγῶν",
+          "lemma": "ἐναγής",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "enagōn",
+          "gloss": "accursed",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "attribute",
+          "syntactic_head": "μύθων"
+        },
+        {
+          "token": "μύθων",
+          "lemma": "μῦθος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "mythōn",
+          "gloss": "stories",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "partitive",
+          "syntactic_head": "κηλὶς"
+        },
+        {
+          "token": "τοῖς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tois",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "ἔπεσιν"
+        },
+        {
+          "token": "ἔπεσιν",
+          "lemma": "ἔπος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "epesin",
+          "gloss": "verses",
+          "dictionary_entry_nl": null,
+          "clause_role": "location",
+          "semantic_role": "locative",
+          "syntactic_head": "ἐνεσπείρηται"
+        },
+        {
+          "token": "ἐνεσπείρηται",
+          "lemma": "ἐνσπείρω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "perfect",
+            "voice": "passive",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "enespeirtai",
+          "gloss": "has been sown",
+          "dictionary_entry_nl": "inzaaien, inplanten - letterlijk het zaaien van zaad in de grond, figuurlijk het inbrengen of implanteren van ideeën, verhalen of andere elementen in iets anders.",
+          "clause_role": "predicate",
+          "semantic_role": "process",
+          "syntactic_head": "ὅτι"
+        },
+        {
+          "token": "καθαρὰν",
+          "lemma": "καθαρός",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "katharan",
+          "gloss": "pure",
+          "dictionary_entry_nl": "schoon, zuiver, helder - heeft verschillende betekenissen: fysiek schoon (zonder vuil), helder (van water of spraak), vrij van belemmeringen, moreel rein (vrij van smet), en zuiver van topkwaliteit. Gebruikt zowel letterlijk als figuurlijk voor reinheid in alle vormen.",
+          "clause_role": "object complement",
+          "semantic_role": "attribute",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "δὲ",
+          "lemma": "δέ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "contrastive",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "additive",
+          "syntactic_head": "ἁγνεύουσαν"
+        },
+        {
+          "token": "πάντως",
+          "lemma": "πάντως",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pantōs",
+          "gloss": "entirely",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "ἁγνεύουσαν"
+        },
+        {
+          "token": "ἁγνεύουσαν",
+          "lemma": "ἁγνεύω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hagneuousan",
+          "gloss": "purifying",
+          "dictionary_entry_nl": "rein zijn, zuiveren - het proces van rituele of morele reiniging, het zuiver houden van iets.",
+          "clause_role": "object complement",
+          "semantic_role": "attribute",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "λύμης",
+          "lemma": "λύμη",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "lymēs",
+          "gloss": "defilement",
+          "dictionary_entry_nl": "mishandeling, schending, vernedering - fysieke of morele beschadiging, vernederende behandeling, of schade aan iets waardevols. Kan zowel concreet (fysieke mishandeling) als abstract (morele schending) gebruikt worden.",
+          "clause_role": "modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ἁγνεύουσαν"
+        },
+        {
+          "token": "ἰλιὰς",
+          "lemma": "Ἰλιάς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ilias",
+          "gloss": "Iliad",
+          "dictionary_entry_nl": "Ilias - het beroemde Homerische epos over de Trojaanse Oorlog, genoemd naar Ilion (Troje).",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "πρώτη",
+          "lemma": "πρῶτος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "prōtē",
+          "gloss": "first",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "ἰλιὰς"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "additive",
+          "syntactic_head": "ἰλιὰς"
+        },
+        {
+          "token": "μετὰ",
+          "lemma": "μετά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "meta",
+          "gloss": "after",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "ὀδύσσεια"
+        },
+        {
+          "token": "ταύτην",
+          "lemma": "οὗτος",
+          "part_of_speech": "demonstrative pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tautēn",
+          "gloss": "this",
+          "dictionary_entry_nl": null,
+          "clause_role": "object",
+          "semantic_role": "referential",
+          "syntactic_head": "μετὰ"
+        },
+        {
+          "token": "ὀδύσσεια",
+          "lemma": "Ὀδύσσεια",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "odysseia",
+          "gloss": "Odyssey",
+          "dictionary_entry_nl": "Odyssee - het Homerische epos over Odysseus' tien jaar durende reis naar huis na de Trojaanse Oorlog.",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "σύμφωνον",
+          "lemma": "σύμφωνος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "dual",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "symphōnon",
+          "gloss": "harmonious",
+          "dictionary_entry_nl": "klinkend of zingend samen met, harmonieus, overeenstemmend, eensgezind - letterlijk 'met dezelfde stem', gebruikt voor zowel muzikale harmonie als overeenstemming in mening of handeling. Ook betekent het 'meeklinkend' of 'weergalmend'.",
+          "clause_role": "object complement",
+          "semantic_role": "manner",
+          "syntactic_head": "φωνήν"
+        },
+        {
+          "token": "ἑκατέρα",
+          "lemma": "ἑκάτερος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "dual",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hekatera",
+          "gloss": "both",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "περὶ",
+          "lemma": "περί",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "peri",
+          "gloss": "concerning",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "topic",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "τῆς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tēs",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite",
+          "syntactic_head": "εὐσεβείας"
+        },
+        {
+          "token": "ἰδίας",
+          "lemma": "ἴδιος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "idias",
+          "gloss": "own",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "εὐσεβείας"
+        },
+        {
+          "token": "εὐσεβείας",
+          "lemma": "εὐσέβεια",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "eusebeias",
+          "gloss": "piety",
+          "dictionary_entry_nl": "vroomheid, eerbied, respect - de deugd van religieuze toewijding en respect voor de goden, ouders en sociale normen.",
+          "clause_role": "object",
+          "semantic_role": "theme",
+          "syntactic_head": "περὶ"
+        },
+        {
+          "token": "κέκραγε",
+          "lemma": "κράζω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "dual",
+            "tense": "perfect",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "kekrage",
+          "gloss": "have cried",
+          "dictionary_entry_nl": "krassen, kwaken (van dieren), schreeuwen, krijsen, roepen (van mensen) - het produceren van luide, vaak scherpe geluiden. Van dieren betekent het hun natuurlijke geluiden maken, van mensen betekent het luid roepen of schreeuwen.",
+          "clause_role": "main verb",
+          "semantic_role": "process",
+          "syntactic_head": "κέκραγε"
+        },
+        {
+          "token": "φωνήν",
+          "lemma": "φωνή",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "phōnēn",
+          "gloss": "voice",
+          "dictionary_entry_nl": "stem, stemgeluid (van personen), spraak, spreekwijze, taal, roep, geluid, klank (algemeen), geschreeuw - het geheel van vocale uitingen, van individuele stemmen tot algemene geluiden en taalmiddelen.",
+          "clause_role": "object",
+          "semantic_role": "result",
+          "syntactic_head": "κέκραγε"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s2",
+      "sentence_text": "Οὐκ ἂν ἔγωγε θεοῖσιν ἐπουρανίοισι μαχοίμην.",
+      "translation_nl": "Niet zou ikzelf tegen goden hemelse vechten.",
+      "translation_en": "Not would I myself against gods heavenly fight.",
+      "translation_fr": "Ne voudrais-je moi-même contre les dieux célestes me battre.",
+      "analysis": [
+        {
+          "token": "Οὐκ",
+          "lemma": "οὐ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ouk",
+          "gloss": "not",
+          "dictionary_entry_nl": null,
+          "clause_role": "negation",
+          "semantic_role": "negation",
+          "syntactic_head": "μαχοίμην"
+        },
+        {
+          "token": "ἂν",
+          "lemma": "ἄν",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "an",
+          "gloss": "would",
+          "dictionary_entry_nl": null,
+          "clause_role": "modal",
+          "semantic_role": "potential",
+          "syntactic_head": "μαχοίμην"
+        },
+        {
+          "token": "ἔγωγε",
+          "lemma": "ἐγώ",
+          "part_of_speech": "personal pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "first"
+          },
+          "transliteration": "egōge",
+          "gloss": "I myself",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "μαχοίμην"
+        },
+        {
+          "token": "θεοῖσιν",
+          "lemma": "θεός",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "theoisin",
+          "gloss": "gods",
+          "dictionary_entry_nl": "god (mannelijk), godin (vrouwelijk) - de goddelijke wezens in de Griekse mythologie en religie. Kan verwijzen naar specifieke goden zoals de twaalf Olympische goden, of algemeen naar goddelijke machten. Ook gebruikt voor mensen die als goddelijk worden beschouwd, of figuurlijk voor dingen van bijzondere waarde.",
+          "clause_role": "object",
+          "semantic_role": "patient",
+          "syntactic_head": "μαχοίμην"
+        },
+        {
+          "token": "ἐπουρανίοισι",
+          "lemma": "ἐπουράνιος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "epouranioisin",
+          "gloss": "heavenly",
+          "dictionary_entry_nl": "hemels - behorend tot de hemel of het goddelijke rijk, gebruikt als substantief voor 'hemelse wezens' of 'de hemellingen'.",
+          "clause_role": "modifier",
+          "semantic_role": "attribute",
+          "syntactic_head": "θεοῖσιν"
+        },
+        {
+          "token": "μαχοίμην",
+          "lemma": "μάχομαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "optative",
+            "person": "first"
+          },
+          "transliteration": "machoimēn",
+          "gloss": "fight",
+          "dictionary_entry_nl": "strijden, vechten - fysiek vechten tegen iemand, meestal met wapens of in een wedstrijd. Ook figuurlijk gebruikt voor woordenstrijd, redetwisten of het strijdig zijn met iets. Kan betekenen 'twisten' of 'ruzie maken'.",
+          "clause_role": "main verb",
+          "semantic_role": "process",
+          "syntactic_head": "μαχοίμην"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s3",
+      "sentence_text": "Νήπιοι, οἳ Ζηνὶ μενεαίνομεν ἰσοφαρίζειν.",
+      "translation_nl": "Dwazen, die tegen Zeus streven gelijk te stellen.",
+      "translation_en": "Fools, who against Zeus strive to be equal.",
+      "translation_fr": "Insensés, qui à Zeus aspirons à nous égaler.",
+      "analysis": [
+        {
+          "token": "Νήπιοι",
+          "lemma": "νήπιος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "nēpioi",
+          "gloss": "fools",
+          "dictionary_entry_nl": "onmondig, klein kind (letterlijk) - figuurlijk betekent het kinderachtig, dwaas, onnozel. Gebruikt om iemand aan te duiden die zich gedraagt als een kind of die dwaas handelt. Als substantief kan het 'dwaasheid' betekenen.",
+          "clause_role": "vocative",
+          "semantic_role": "addressee",
+          "syntactic_head": "μενεαίνομεν"
+        },
+        {
+          "token": "οἳ",
+          "lemma": "ὅς",
+          "part_of_speech": "relative pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hoi",
+          "gloss": "who",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "μενεαίνομεν"
+        },
+        {
+          "token": "Ζηνὶ",
+          "lemma": "Ζεύς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "Zēni",
+          "gloss": "Zeus",
+          "dictionary_entry_nl": null,
+          "clause_role": "object",
+          "semantic_role": "goal",
+          "syntactic_head": "ἰσοφαρίζειν"
+        },
+        {
+          "token": "μενεαίνομεν",
+          "lemma": "μεναίνω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "menainomen",
+          "gloss": "strive",
+          "dictionary_entry_nl": null,
+          "clause_role": "main verb",
+          "semantic_role": "process",
+          "syntactic_head": "μενεαίνομεν"
+        },
+        {
+          "token": "ἰσοφαρίζειν",
+          "lemma": "ἰσοφαρίζω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": "present",
+            "voice": "active",
+            "mood": "infinitive",
+            "person": null
+          },
+          "transliteration": "isopharizein",
+          "gloss": "be equal",
+          "dictionary_entry_nl": "zich meten met, het opnemen tegen - de poging om gelijk te zijn aan iemand of om iemand uit te dagen tot een wedstrijd of confrontatie.",
+          "clause_role": "complement",
+          "semantic_role": "goal",
+          "syntactic_head": "μενεαίνομεν"
+        }
+      ]
+    }
+  ]
+}
