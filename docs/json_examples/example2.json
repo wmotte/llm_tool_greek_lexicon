@@ -1,0 +1,1031 @@
+{
+  "sentences": [
+    {
+      "sentence_id": "s1",
+      "sentence_text": "Οἱ δὲ ἀντιτασσόμενοι τῇ κτίσει τοῦ θεοῦ διὰ τῆς εὐφήμου ἐγκρατείας κἀκεῖνα λέγουσι τὰ πρὸς Σαλώμην εἰρημένα, ὧν πρότερον ἐμνήσθημεν.",
+      "translation_nl": "Zij die echter in opstelling staan tegen de schepping van God door de welbewuste zelfbeheersing zeggen ook die dingen tegen Salome gesproken, waarvan wij eerder vermeldden.",
+      "translation_en": "Those however who array themselves against the creation of God through the reverent self-control say also those things spoken to Salome, which we mentioned before.",
+      "translation_fr": "Ceux cependant qui se rangent contre la création de Dieu par la continence pieuse disent aussi ces choses dites à Salome, que nous avons mentionnées auparavant.",
+      "analysis": [
+        {
+          "token": "Οἱ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hoi",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "ἀντιτασσόμενοι"
+        },
+        {
+          "token": "δὲ",
+          "lemma": "δέ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "and, but",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "adversative",
+          "syntactic_head": "λέγουσι"
+        },
+        {
+          "token": "ἀντιτασσόμενοι",
+          "lemma": "ἀντιτάσσω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "antitassomenoi",
+          "gloss": "arraying against",
+          "dictionary_entry_nl": "zich opstellen tegenover, weerstand bieden tegen, zich verzetten tegen. Het woord betekent letterlijk 'tegenopstellen' en heeft zowel een militaire betekenis (troepen opstellen tegen een vijand) als een overdrachtelijke betekenis van weerstand bieden of zich verzetten tegen iets of iemand. In de context kan het ook slaan op het innemen van een tegenstrijdige positie of het weigeren van gehoorzaamheid.",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "λέγουσι"
+        },
+        {
+          "token": "τῇ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tē",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "κτίσει"
+        },
+        {
+          "token": "κτίσει",
+          "lemma": "κτίσις",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ktisei",
+          "gloss": "creation",
+          "dictionary_entry_nl": "het stichten, stichting (van een stad), maar in christelijke context vooral: schepping. Het woord wordt gebruikt voor de scheppingshandeling van God, waarbij de hele kosmos tot stand komt, en kan ook verwijzen naar schepselen of instellingen. In de christelijke literatuur heeft het een theologische lading gekregen als aanduiding van Gods scheppende activiteit en het geschapene.",
+          "clause_role": "indirect_object",
+          "semantic_role": "target",
+          "syntactic_head": "ἀντιτασσόμενοι"
+        },
+        {
+          "token": "τοῦ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tou",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "θεοῦ"
+        },
+        {
+          "token": "θεοῦ",
+          "lemma": "θεός",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "theou",
+          "gloss": "God",
+          "dictionary_entry_nl": "god, godheid. In de context van de klassieke oudheid verwijst het naar een van de goden uit het pantheon, maar in de christelijke en joodse literatuur specifiek naar de ene God. Het woord kan ook gebruikt worden voor vergoddelijkte heersers of als metafoor voor iets dat als goddelijk wordt beschouwd (zoals rijkdom voor de wijzen).",
+          "clause_role": "possessive_genitive",
+          "semantic_role": "possessor",
+          "syntactic_head": "κτίσει"
+        },
+        {
+          "token": "διὰ",
+          "lemma": "διά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "dia",
+          "gloss": "through",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "instrumental",
+          "syntactic_head": "ἐγκρατείας"
+        },
+        {
+          "token": "τῆς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tēs",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "ἐγκρατείας"
+        },
+        {
+          "token": "εὐφήμου",
+          "lemma": "εὔφημος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "euphēmou",
+          "gloss": "reverent",
+          "dictionary_entry_nl": "gunstig klinkend, geluk voorspellend, maar vooral: zich onthoudend van ongunstige woorden, zwijgend uit eerbied. Het woord heeft een religieuze connotatie en duidt op een eerbiedige, respectvolle houding waarbij men zich onthoudt van negatieve of onheilspellende uitspraken. In bredere zin: heilig, vroom, eufemistisch.",
+          "clause_role": "attributive",
+          "semantic_role": "qualifier",
+          "syntactic_head": "ἐγκρατείας"
+        },
+        {
+          "token": "ἐγκρατείας",
+          "lemma": "ἐγκράτεια",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "enkrateias",
+          "gloss": "self-control",
+          "dictionary_entry_nl": "zelfbeheersing, matigheid. Het woord verwijst naar de deugd van zelfcontrole en het vermogen om de eigen impulsen, verlangens en passies te beheersen. In de filosofische en ethische literatuur is het een belangrijke deugd die wordt geassocieerd met wijsheid en morele volmaaktheid.",
+          "clause_role": "object_of_preposition",
+          "semantic_role": "instrument",
+          "syntactic_head": "διὰ"
+        },
+        {
+          "token": "κἀκεῖνα",
+          "lemma": "κἀκεῖνος",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kakeina",
+          "gloss": "and those things",
+          "dictionary_entry_nl": null,
+          "clause_role": "object",
+          "semantic_role": "theme",
+          "syntactic_head": "λέγουσι"
+        },
+        {
+          "token": "λέγουσι",
+          "lemma": "λέγω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "legousi",
+          "gloss": "they say",
+          "dictionary_entry_nl": "zeggen, spreken. Het is een van de meest fundamentele werkwoorden voor communicatie in het Grieks. Het kan betekenen: woorden spreken, mededelen, vertellen, beweren, noemen, bedoelen, bevelen. In de context van literatuur en filosofie wordt het vaak gebruikt voor het overbrengen van ideeën, leerstellingen of verhalen.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "τὰ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ta",
+          "gloss": "the things",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "εἰρημένα"
+        },
+        {
+          "token": "πρὸς",
+          "lemma": "πρός",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pros",
+          "gloss": "to, toward",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "directional",
+          "syntactic_head": "Σαλώμην"
+        },
+        {
+          "token": "Σαλώμην",
+          "lemma": "Σαλώμη",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "Salōmēn",
+          "gloss": "Salome",
+          "dictionary_entry_nl": "Salome, een vrouwennaam die in de vroegchristelijke literatuur voorkomt. Historisch bekend zijn verschillende vrouwen met deze naam, waaronder degene die in de apocriefe evangeliën wordt genoemd als iemand die gesprekken voerde met Jezus over theologische kwesties.",
+          "clause_role": "object_of_preposition",
+          "semantic_role": "recipient",
+          "syntactic_head": "πρὸς"
+        },
+        {
+          "token": "εἰρημένα",
+          "lemma": "εἰρημένος",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": "perfect",
+            "voice": "passive",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "eirēmena",
+          "gloss": "spoken, said",
+          "dictionary_entry_nl": "gesproken, gezegd. Dit is het voltooid deelwoord passief van het werkwoord λέγω/εἰπεῖν. Het verwijst naar woorden of uitspraken die in het verleden zijn gesproken en waarvan de inhoud of betekenis nog steeds relevant is in de huidige context.",
+          "clause_role": "attributive",
+          "semantic_role": "state",
+          "syntactic_head": "κἀκεῖνα"
+        },
+        {
+          "token": "ὧν",
+          "lemma": "ὅς",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hōn",
+          "gloss": "of which",
+          "dictionary_entry_nl": null,
+          "clause_role": "relative_pronoun",
+          "semantic_role": "reference",
+          "syntactic_head": "ἐμνήσθημεν"
+        },
+        {
+          "token": "πρότερον",
+          "lemma": "πρότερον",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "proteron",
+          "gloss": "before, earlier",
+          "dictionary_entry_nl": "eerder, vroeger. Het is de adverbiale vorm van πρότερος en duidt op tijd die voorafgaat aan het huidige moment of aan een ander tijdstip in het verhaal. Het wordt vaak gebruikt om te verwijzen naar iets dat eerder in een tekst is genoemd of naar gebeurtenissen uit het verleden.",
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "ἐμνήσθημεν"
+        },
+        {
+          "token": "ἐμνήσθημεν",
+          "lemma": "μνάομαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "aorist",
+            "voice": "passive",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "emnēsthēmen",
+          "gloss": "we mentioned",
+          "dictionary_entry_nl": "denken aan, gedenken, maar ook naar de hand van een vrouw dingen, begeren. In deze context betekent het 'vermelden' of 'ter sprake brengen'. Het werkwoord heeft te maken met het geheugen en het bewust oproepen van iets uit het verleden om het in de huidige discussie te betrekken.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        }
+      ]
+    },
+    {
+      "sentence_id": "s2",
+      "sentence_text": "φέρεται δέ, οἶμαι, ἐν τῷ κατ' Αἰγυπτίους εὐαγγελίῳ.",
+      "translation_nl": "Het wordt overgeleverd echter, denk ik, in het naar Egyptenaren evangelie.",
+      "translation_en": "It is transmitted however, I think, in the according-to-Egyptians gospel.",
+      "translation_fr": "Il est transmis cependant, je pense, dans l'évangile selon les Égyptiens.",
+      "analysis": [
+        {
+          "token": "φέρεται",
+          "lemma": "φέρω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "passive",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "pheretai",
+          "gloss": "it is carried",
+          "dictionary_entry_nl": "dragen, vervoeren, brengen, maar in deze passieve vorm: gedragen worden, overgeleverd worden, verspreid worden. In de context van teksten en tradities betekent het dat iets wordt doorgegeven van generatie op generatie of van bron tot bron. Het duidt op de transmissie van informatie of leerstellingen.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "δέ",
+          "lemma": "δέ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "and, but",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "adversative",
+          "syntactic_head": "φέρεται"
+        },
+        {
+          "token": "οἶμαι",
+          "lemma": "οἴομαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "oimai",
+          "gloss": "I think",
+          "dictionary_entry_nl": "menen, denken, vermoeden, geloven. Het is een werkwoord dat een mening of veronderstelling uitdrukt, vaak met enige mate van onzekerheid. Het wordt gebruikt als parenthetische uitdrukking om aan te geven dat de spreker zijn eigen mening geeft of niet helemaal zeker is van zijn bewering.",
+          "clause_role": "parenthetical",
+          "semantic_role": "epistemic_modality",
+          "syntactic_head": "φέρεται"
+        },
+        {
+          "token": "ἐν",
+          "lemma": "ἐν",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "en",
+          "gloss": "in",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "locative",
+          "syntactic_head": "εὐαγγελίῳ"
+        },
+        {
+          "token": "τῷ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tō",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "εὐαγγελίῳ"
+        },
+        {
+          "token": "κατ'",
+          "lemma": "κατά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kat'",
+          "gloss": "according to",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "standard",
+          "syntactic_head": "Αἰγυπτίους"
+        },
+        {
+          "token": "Αἰγυπτίους",
+          "lemma": "Αἰγύπτιος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "Aigyptious",
+          "gloss": "Egyptians",
+          "dictionary_entry_nl": "Egyptisch, van of behorend tot Egypte. Als substantief: Egyptenaren. In de vroegchristelijke literatuur wordt vaak verwezen naar teksten 'volgens de Egyptenaren', wat duidt op tradities of geschriften die in Egypte zijn ontstaan of daar populair waren onder de christelijke gemeenschappen.",
+          "clause_role": "object_of_preposition",
+          "semantic_role": "source",
+          "syntactic_head": "κατ'"
+        },
+        {
+          "token": "εὐαγγελίῳ",
+          "lemma": "εὐαγγέλιον",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "euangeliō",
+          "gloss": "gospel",
+          "dictionary_entry_nl": "beloning voor goed nieuws, maar in de christelijke context: evangelie. Het woord betekent letterlijk 'goed bericht' en werd in de vroegchristelijke periode gebruikt voor de verhalen over Jezus' leven, dood en opstanding. Verschillende evangeliën werden naar verschillende groepen of tradities genoemd.",
+          "clause_role": "object_of_preposition",
+          "semantic_role": "location",
+          "syntactic_head": "ἐν"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s3",
+      "sentence_text": "Φασὶ γάρ, ὅτι αὐτὸς εἶπεν ὁ σωτήρ· « Ἦλθον καταλῦσαι τὰ ἔργα τῆς θηλείας », θηλείας μὲν τῆς ἐπιθυμίας, ἔργα δὲ γένεσιν καὶ φθοράν.",
+      "translation_nl": "Zij beweren namelijk, dat hijzelf zeide de redder: « Ik kwam vernietigen de werken van het vrouwelijke », van het vrouwelijke namelijk van de begeerte, werken echter geboorte en verderf.",
+      "translation_en": "For they assert, that himself said the savior: « I came to destroy the works of the female », of the female indeed of desire, but works birth and destruction.",
+      "translation_fr": "Car ils affirment, que lui-même dit le sauveur: « Je suis venu détruire les œuvres du féminin », du féminin certes du désir, mais œuvres naissance et destruction.",
+      "analysis": [
+        {
+          "token": "Φασὶ",
+          "lemma": "φημί",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "phasi",
+          "gloss": "they say",
+          "dictionary_entry_nl": "zeggen, spreken, beweren. Het is een deftige variant van λέγω en wordt vaak gebruikt voor het uitspreken van belangrijke verklaringen, het bevestigen van stellingen, of het citeren van autoriteiten. In filosofische en theologische teksten duidt het vaak op het verkondigen van leerstellingen.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "γάρ",
+          "lemma": "γάρ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "gar",
+          "gloss": "for",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "causal",
+          "syntactic_head": "Φασὶ"
+        },
+        {
+          "token": "ὅτι",
+          "lemma": "ὅτι",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hoti",
+          "gloss": "that",
+          "dictionary_entry_nl": null,
+          "clause_role": "complementizer",
+          "semantic_role": "proposition_marker",
+          "syntactic_head": "εἶπεν"
+        },
+        {
+          "token": "αὐτὸς",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "autos",
+          "gloss": "he himself",
+          "dictionary_entry_nl": "hij(zelf), zij(zelf), het(zelf). Als persoonlijk voornaamwoord in de derde persoon, maar ook gebruikt voor nadruk (hijzelf, in eigen persoon). In filosofische en theologische contexten benadrukt het de directheid en autoriteit van de spreker. Het kan ook identiteit aangeven (dezelfde) of worden gebruikt als reflexief pronomen.",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "εἶπεν"
+        },
+        {
+          "token": "εἶπεν",
+          "lemma": "εἰπεῖν",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "eipen",
+          "gloss": "he said",
+          "dictionary_entry_nl": "zeggen, spreken. Dit is de aoristische vorm van λέγω en wordt gebruikt voor voltooide spraakhandelingen in het verleden. Het wordt vaak gebruikt voor het citeren van belangrijke uitspraken of het weergeven van woorden die op een specifiek moment zijn gesproken.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": "Φασὶ"
+        },
+        {
+          "token": "ὁ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ho",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "σωτήρ"
+        },
+        {
+          "token": "σωτήρ",
+          "lemma": "σωτήρ",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "sōtēr",
+          "gloss": "savior",
+          "dictionary_entry_nl": "redder, behoeder, beschermer. In de christelijke context verwijst het specifiek naar Jezus als de verlosser van de mensheid. Het woord komt van het werkwoord σῴζω (redden, behouden) en duidt op iemand die anderen uit gevaar, zonde of vernietiging bevrijdt.",
+          "clause_role": "subject_apposition",
+          "semantic_role": "agent",
+          "syntactic_head": "αὐτὸς"
+        },
+        {
+          "token": "Ἦλθον",
+          "lemma": "ἔρχομαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "ēlthon",
+          "gloss": "I came",
+          "dictionary_entry_nl": "gaan, komen. In deze context duidt het op een doelgerichte komst of missie. Het werkwoord wordt vaak gebruikt in theologische teksten om de incarnatie of zending van Jezus aan te duiden - zijn komst naar de wereld met een specifiek doel.",
+          "clause_role": "predicate",
+          "semantic_role": "action",
+          "syntactic_head": null
+        },
+        {
+          "token": "καταλῦσαι",
+          "lemma": "καταλύω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "infinitive",
+            "person": null
+          },
+          "transliteration": "katalysai",
+          "gloss": "to destroy",
+          "dictionary_entry_nl": "losmaken, uitspannen, maar ook verwoesten, ontbinden, afschaffen, be-eindigen. In deze theologische context betekent het het vernietigen of tenietdoen van iets dat als negatief of schadelijk wordt beschouwd. Het kan zowel fysieke vernietiging als het opheffen van morele of spirituele toestanden betekenen.",
+          "clause_role": "purpose_infinitive",
+          "semantic_role": "purpose",
+          "syntactic_head": "Ἦλθον"
+        },
+        {
+          "token": "τὰ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ta",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "ἔργα",
+          "lemma": "ἔργον",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "erga",
+          "gloss": "works",
+          "dictionary_entry_nl": "werk, arbeid, maar ook daad, resultaat van werk. In filosofische en theologische contexten verwijst het naar handelingen, activiteiten of de uitkomsten daarvan. Het kan zowel positieve als negatieve connotaties hebben, afhankelijk van de context. Hier staat het tegenover woorden en betreft het de praktische gevolgen of manifestaties van een bepaalde kracht of principe.",
+          "clause_role": "direct_object",
+          "semantic_role": "theme",
+          "syntactic_head": "καταλῦσαι"
+        },
+        {
+          "token": "τῆς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tēs",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "θηλείας"
+        },
+        {
+          "token": "θηλείας",
+          "lemma": "θῆλυς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thēleias",
+          "gloss": "female",
+          "dictionary_entry_nl": "vrouwelijk, van het vrouwelijk geslacht, maar ook overdrachtelijk: teer, zwak, gevoelig. In filosofische contexten wordt het soms gebruikt als symbool voor bepaalde aspecten van de menselijke natuur die als minder rationeel of meer emotioneel worden beschouwd. In de gnostische literatuur kan het verwijzen naar het materiële of lichamelijke aspect van het bestaan.",
+          "clause_role": "genitive_attribute",
+          "semantic_role": "possessor",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "θηλείας",
+          "lemma": "θῆλυς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thēleias",
+          "gloss": "female",
+          "dictionary_entry_nl": "vrouwelijk, van het vrouwelijk geslacht, maar ook overdrachtelijk: teer, zwak, gevoelig. In filosofische contexten wordt het soms gebruikt als symbool voor bepaalde aspecten van de menselijke natuur die als minder rationeel of meer emotioneel worden beschouwd. In de gnostische literatuur kan het verwijzen naar het materiële of lichamelijke aspect van het bestaan.",
+          "clause_role": "appositive",
+          "semantic_role": "elaboration",
+          "syntactic_head": "ἐπιθυμίας"
+        },
+        {
+          "token": "μὲν",
+          "lemma": "μέν",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "men",
+          "gloss": "indeed",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "contrastive",
+          "syntactic_head": "θηλείας"
+        },
+        {
+          "token": "τῆς",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tēs",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definite_article",
+          "syntactic_head": "ἐπιθυμίας"
+        },
+        {
+          "token": "ἐπιθυμίας",
+          "lemma": "ἐπιθυμία",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "epithymias",
+          "gloss": "desire",
+          "dictionary_entry_nl": "begeerte, verlangen. Het woord duidt op een sterk verlangen naar iets, vaak met een negatieve connotatie in morele of filosofische contexten. In de christelijke en filosofische literatuur wordt het vaak gebruikt voor aardse of zondige verlangens die de mens afleiden van het hogere of goddelijke.",
+          "clause_role": "genitive_attribute",
+          "semantic_role": "specification",
+          "syntactic_head": "θηλείας"
+        },
+        {
+          "token": "ἔργα",
+          "lemma": "ἔργον",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "erga",
+          "gloss": "works",
+          "dictionary_entry_nl": "werk, arbeid, maar ook daad, resultaat van werk. In filosofische en theologische contexten verwijst het naar handelingen, activiteiten of de uitkomsten daarvan. Het kan zowel positieve als negatieve connotaties hebben, afhankelijk van de context. Hier staat het tegenover woorden en betreft het de praktische gevolgen of manifestaties van een bepaalde kracht of principe.",
+          "clause_role": "object_in_apposition",
+          "semantic_role": "theme",
+          "syntactic_head": "γένεσιν"
+        },
+        {
+          "token": "δὲ",
+          "lemma": "δέ",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "and, but",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "contrastive",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "γένεσιν",
+          "lemma": "γένεσις",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "genesin",
+          "gloss": "birth, generation",
+          "dictionary_entry_nl": "oorsprong, begin, maar vooral geboorte en wording, ontstaan. In filosofische contexten verwijst het naar het proces van ontstaan en ontwikkeling. Het staat vaak tegenover φθορά (vernietiging) als de twee fundamentele processen in de natuur. In theologische teksten kan het verwijzen naar de materiële wereld van worden en vergaan.",
+          "clause_role": "appositive_object",
+          "semantic_role": "theme",
+          "syntactic_head": "ἔργα"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "additive",
+          "syntactic_head": "φθοράν"
+        },
+        {
+          "token": "φθοράν",
+          "lemma": "φθορά",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "phthoran",
+          "gloss": "destruction",
+          "dictionary_entry_nl": "vernietiging, verwoesting, ondergang, dood. In filosofische contexten verwijst het naar het proces van verval en vernietiging dat tegengesteld is aan γένεσις (wording). Samen vormen deze twee begrippen de cyclus van ontstaan en vergaan die kenmerkend is voor de materiële wereld. In morele contexten kan het verwijzen naar morele of spirituele corruptie.",
+          "clause_role": "coordinate_object",
+          "semantic_role": "theme",
+          "syntactic_head": "γένεσιν"
+        }
+      ]
+    }
+  ]
+}

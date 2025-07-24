@@ -1,0 +1,513 @@
+{
+  "sentences": [
+    {
+      "sentence_id": "s1",
+      "sentence_text": "τὸν δὲ βραχύ τι παρ' ἀγγέλους ἠλαττωμένον βλέπομεν Ἰησοῦν διὰ τὸ πάθημα τοῦ θανάτου δόξῃ καὶ τιμῇ ἐστεφανωμένον, ὅπως χωρὶς θεοῦ ὑπὲρ παντὸς γεύσηται θανάτου.",
+      "translation_nl": "Den maar kort iets bij engelen verminderde zien wij Jezus door het lijden des doods met glorie en eer gekroond, opdat zonder God voor alles hij zou smaken dood.",
+      "translation_en": "The one but short something beside angels made-lower we-see Jesus through the suffering of-the death with-glory and honor crowned, so-that apart-from God for everything he-might-taste death.",
+      "translation_fr": "Celui qui mais peu quelque chose auprès des anges abaissé nous voyons Jésus à travers la souffrance de la mort de gloire et d'honneur couronné, afin que sans Dieu pour tout il goûte la mort.",
+      "analysis": [
+        {
+          "token": "τὸν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ton",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "ἠλαττωμένον"
+        },
+        {
+          "token": "δὲ",
+          "lemma": "δέ",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "de",
+          "gloss": "but",
+          "dictionary_entry_nl": null,
+          "clause_role": "conjunction",
+          "semantic_role": "contrast",
+          "syntactic_head": "βλέπομεν"
+        },
+        {
+          "token": "βραχύ",
+          "lemma": "βραχύς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "brachy",
+          "gloss": "short",
+          "dictionary_entry_nl": "Van ruimte, tijd, afstand, lengte of omvang betekent dit woord 'kort' of 'klein'. Het wordt gebruikt voor korte afstanden, korte tijd, kleine hoeveelheden. Ook van kwaliteit of belang: klein, gering, onbeduidend. Het kan zowel letterlijk als figuurlijk gebruikt worden, bijvoorbeeld voor korte klinkers in de spraakkunst of voor geringe zaken van weinig belang.",
+          "clause_role": "adverbial modifier",
+          "semantic_role": "extent",
+          "syntactic_head": "ἠλαττωμένον"
+        },
+        {
+          "token": "τι",
+          "lemma": "τις",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ti",
+          "gloss": "something",
+          "dictionary_entry_nl": null,
+          "clause_role": "modifier",
+          "semantic_role": "indefiniteness",
+          "syntactic_head": "βραχύ"
+        },
+        {
+          "token": "παρ'",
+          "lemma": "παρά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "par'",
+          "gloss": "beside",
+          "dictionary_entry_nl": null,
+          "clause_role": "preposition",
+          "semantic_role": "comparison",
+          "syntactic_head": "ἀγγέλους"
+        },
+        {
+          "token": "ἀγγέλους",
+          "lemma": "ἄγγελος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "angelous",
+          "gloss": "angels",
+          "dictionary_entry_nl": "Een bode of boodschapper. Oorspronkelijk iemand die een bericht overbrengt tussen personen of van de goden naar mensen. In het Nieuwe Testament krijgt het woord de specifieke betekenis van 'engel' - een hemelse boodschapper of dienaar van God. Het woord kan zowel mannelijk als vrouwelijk zijn en wordt gebruikt voor zowel goddelijke boden als menselijke boodschappers.",
+          "clause_role": "object of preposition",
+          "semantic_role": "standard of comparison",
+          "syntactic_head": "παρ'"
+        },
+        {
+          "token": "ἠλαττωμένον",
+          "lemma": "ἐλαττόω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "perfect",
+            "voice": "passive",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "ēlattōmenon",
+          "gloss": "made lower",
+          "dictionary_entry_nl": "Actief: verkleinen, verminderen, zwakker maken. Passief: verloren gaan, onderdoen voor iemand, het onderspit delven. Het woord kan zowel letterlijk als figuurlijk gebruikt worden - letterlijk voor het verkleinen van steden of het verminderen van bezittingen, figuurlijk voor het onderdoen in prestige, kracht of positie ten opzichte van anderen.",
+          "clause_role": "participial modifier",
+          "semantic_role": "patient",
+          "syntactic_head": "Ἰησοῦν"
+        },
+        {
+          "token": "βλέπομεν",
+          "lemma": "βλέπω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "blepomen",
+          "gloss": "we see",
+          "dictionary_entry_nl": "Zien, gezichtsvermogen hebben, aanschouwen. Het woord kan zowel letterlijk als figuurlijk gebruikt worden. Letterlijk: het fysieke zien met de ogen, het licht zien (in leven zijn). Figuurlijk: opmerken, begrijpen, uitkijken voor, oppassen voor. In het Nieuwe Testament ook: letten op, vertrouwen op. Het woord kan verschillende betekenisnuances hebben afhankelijk van de context en constructie.",
+          "clause_role": "main verb",
+          "semantic_role": "experiencer",
+          "syntactic_head": null
+        },
+        {
+          "token": "Ἰησοῦν",
+          "lemma": "Ἰησοῦς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "Iēsoun",
+          "gloss": "Jesus",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct object",
+          "semantic_role": "patient",
+          "syntactic_head": "βλέπομεν"
+        },
+        {
+          "token": "διὰ",
+          "lemma": "διά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "dia",
+          "gloss": "through",
+          "dictionary_entry_nl": null,
+          "clause_role": "preposition",
+          "semantic_role": "cause",
+          "syntactic_head": "πάθημα"
+        },
+        {
+          "token": "τὸ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "to",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "πάθημα"
+        },
+        {
+          "token": "πάθημα",
+          "lemma": "πάθημα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pathēma",
+          "gloss": "suffering",
+          "dictionary_entry_nl": "Alles wat iemand overkomt, vaak ongunstig: lijden, ongeluk. Meestal gebruikt in het meervoud. Kan ook verwijzen naar lichamelijke toestand, geestelijke toestand, gemoedstoestand, gevoelen of emotie. Algemeen gebruikt voor voorvallen of gebeurtenissen. In christelijke context specifiek voor het lijden van Christus. Het woord omvat zowel fysieke als psychische ervaringen van lijden.",
+          "clause_role": "object of preposition",
+          "semantic_role": "cause",
+          "syntactic_head": "διὰ"
+        },
+        {
+          "token": "τοῦ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tou",
+          "gloss": "of the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "definiteness",
+          "syntactic_head": "θανάτου"
+        },
+        {
+          "token": "θανάτου",
+          "lemma": "θάνατος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thanatou",
+          "gloss": "death",
+          "dictionary_entry_nl": "De dood als natuurlijk fenomeen of als straf. Kan ook gebruikt worden in het meervoud voor verschillende soorten van dood. Soms elliptisch voor 'doodstraf'. Het woord kan uitgebreid gebruikt worden voor complete ondergang of vernietiging. Ook gepersonifieerd als 'de Dood'. Daarnaast verwijst het naar de manier van sterven - verschillende manieren om dood te gaan.",
+          "clause_role": "genitive modifier",
+          "semantic_role": "specification",
+          "syntactic_head": "πάθημα"
+        },
+        {
+          "token": "δόξῃ",
+          "lemma": "δόξα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "doxē",
+          "gloss": "glory",
+          "dictionary_entry_nl": "Mening, vaste overtuiging, vage indruk of idee, verwachting. Ook roep, roem, reputatie, naam, aanzien. Met een genitief: reputatie van iets hebben. In christelijke context: heerlijkheid, glorie, eer - vooral van goddelijke oorsprong. Het woord ontwikkelt zich van gewone menselijke opinies naar goddelijke heerlijkheid en wordt een belangrijk theologisch begrip.",
+          "clause_role": "instrumental",
+          "semantic_role": "instrument",
+          "syntactic_head": "ἐστεφανωμένον"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "conjunction",
+          "semantic_role": "addition",
+          "syntactic_head": "δόξῃ"
+        },
+        {
+          "token": "τιμῇ",
+          "lemma": "τιμή",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "timē",
+          "gloss": "honor",
+          "dictionary_entry_nl": "Eer, eerbewijs, privilege, beloning. Eervolle positie, ambt, functie - soms concreet gebruikt voor machthebber. Ook schatting, taxatie, prijs, waarde. Daarnaast genoegdoening, boete. Het woord omvat zowel sociale erkenning als materiële waardering en kan gebruikt worden voor zowel abstrakte eer als concrete privileges en posities.",
+          "clause_role": "instrumental",
+          "semantic_role": "instrument",
+          "syntactic_head": "ἐστεφανωμένον"
+        },
+        {
+          "token": "ἐστεφανωμένον",
+          "lemma": "στεφανόω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "perfect",
+            "voice": "passive",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "estefanōmenon",
+          "gloss": "crowned",
+          "dictionary_entry_nl": "Een kring vormen rondom, omgeven, omringen. Bekransen - iemand een krans opzetten als eer of beloning, meestal voor overwinning. Passief: bekranst worden. Ook gebruikt voor het omgeven of omringen in algemene zin. Figuurlijk: lauweren, prijzen, eren, belonen. Het woord wordt gebruikt zowel voor letterlijke kransen als voor figuurlijke eer en erkenning.",
+          "clause_role": "participial modifier",
+          "semantic_role": "patient",
+          "syntactic_head": "Ἰησοῦν"
+        },
+        {
+          "token": "ὅπως",
+          "lemma": "ὅπως",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hopōs",
+          "gloss": "so that",
+          "dictionary_entry_nl": null,
+          "clause_role": "subordinate conjunction",
+          "semantic_role": "purpose",
+          "syntactic_head": "γεύσηται"
+        },
+        {
+          "token": "χωρὶς",
+          "lemma": "χωρίς",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "chōris",
+          "gloss": "apart from",
+          "dictionary_entry_nl": "Adverbiaal: afzonderlijk, apart, gescheiden. Als voorzetsel met genitief: gescheiden van, verschillend van. Ook: afgezien van, behalve, zonder. Kan soms achtergesteld worden. Het woord drukt scheiding, afwezigheid of uitsluiting uit - zowel in fysieke als abstracte zin.",
+          "clause_role": "preposition",
+          "semantic_role": "exception",
+          "syntactic_head": "θεοῦ"
+        },
+        {
+          "token": "θεοῦ",
+          "lemma": "θεός",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "theou",
+          "gloss": "God",
+          "dictionary_entry_nl": "God, godheid - zowel mannelijk als vrouwelijk. Kan verwijzen naar specifieke goden of algemeen naar het goddelijke. Wordt gebruikt als veroorzaker van natuurverschijnselen. Soms figuurlijk gebruikt voor iets wat als goddelijk wordt beschouwd. In christelijke context meestal voor de ene God. Het woord kan ook adjectivisch gebruikt worden in de betekenis 'voor de goden bestemd'.",
+          "clause_role": "object of preposition",
+          "semantic_role": "exception",
+          "syntactic_head": "χωρὶς"
+        },
+        {
+          "token": "ὑπὲρ",
+          "lemma": "ὑπέρ",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hyper",
+          "gloss": "for",
+          "dictionary_entry_nl": null,
+          "clause_role": "preposition",
+          "semantic_role": "beneficiary",
+          "syntactic_head": "παντὸς"
+        },
+        {
+          "token": "παντὸς",
+          "lemma": "πᾶς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pantos",
+          "gloss": "everything",
+          "dictionary_entry_nl": "Heel, louter, helemaal, compleet, volledig, totaal - gebruikt voor een enkele persoon of zaak. Ieder, elk, alle(n) - gebruikt voor groepen. Kan zowel enkelvoud als meervoud zijn. Als substantief: alles, al het mogelijke, het geheel, het universum. Adverbiaal: op elke manier, in elk opzicht, volstrekt, helemaal, absoluut. Een zeer veelzijdig woord dat totaliteit, volledigheid of universaliteit uitdrukt.",
+          "clause_role": "object of preposition",
+          "semantic_role": "beneficiary",
+          "syntactic_head": "ὑπὲρ"
+        },
+        {
+          "token": "γεύσηται",
+          "lemma": "γεύομαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "middle",
+            "mood": "subjunctive",
+            "person": "third"
+          },
+          "transliteration": "geusētai",
+          "gloss": "might taste",
+          "dictionary_entry_nl": null,
+          "clause_role": "purpose verb",
+          "semantic_role": "experiencer",
+          "syntactic_head": "ὅπως"
+        },
+        {
+          "token": "θανάτου",
+          "lemma": "θάνατος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thanatou",
+          "gloss": "death",
+          "dictionary_entry_nl": "De dood als natuurlijk fenomeen of als straf. Kan ook gebruikt worden in het meervoud voor verschillende soorten van dood. Soms elliptisch voor 'doodstraf'. Het woord kan uitgebreid gebruikt worden voor complete ondergang of vernietiging. Ook gepersonifieerd als 'de Dood'. Daarnaast verwijst het naar de manier van sterven - verschillende manieren om dood te gaan.",
+          "clause_role": "genitive object",
+          "semantic_role": "patient",
+          "syntactic_head": "γεύσηται"
+        }
+      ]
+    }
+  ]
+}
