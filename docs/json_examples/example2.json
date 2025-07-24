@@ -2,30 +2,30 @@
   "sentences": [
     {
       "sentence_id": "s1",
-      "sentence_text": "Οἱ δὲ ἀντιτασσόμενοι τῇ κτίσει τοῦ θεοῦ διὰ τῆς εὐφήμου ἐγκρατείας κἀκεῖνα λέγουσι τὰ πρὸς Σαλώμην εἰρημένα, ὧν πρότερον ἐμνήσθημεν.",
-      "translation_nl": "Zij die echter in opstelling staan tegen de schepping van God door de welbewuste zelfbeheersing zeggen ook die dingen tegen Salome gesproken, waarvan wij eerder vermeldden.",
-      "translation_en": "Those however who array themselves against the creation of God through the reverent self-control say also those things spoken to Salome, which we mentioned before.",
-      "translation_fr": "Ceux cependant qui se rangent contre la création de Dieu par la continence pieuse disent aussi ces choses dites à Salome, que nous avons mentionnées auparavant.",
+      "sentence_text": "Χρόνου δὲ πολλοῦ προβεβηκότος εἶπεν αὐτῷ ἡ γυνὴ αὐτοῦ Μέχρι τίνος καρτερήσεις λέγων Ἰδοὺ ἀναμένω χρόνον ἔτι μικρὸν προσδεχόμενος τὴν ἐλπίδα τῆς σωτηρίας μου;",
+      "translation_nl": "Nadat veel tijd voorbijgegaan was, zei zijn vrouw tot hem: Tot hoe lang zul je volharden zeggende: Zie, ik wacht nog een korte tijd, verwachtende de hoop van mijn redding?",
+      "translation_en": "After much time had passed, his wife said to him: Until how long will you endure saying: Behold, I await yet a short time, expecting the hope of my salvation?",
+      "translation_fr": "Après qu'un long temps eut passé, sa femme lui dit: Jusqu'à quand persisteras-tu disant: Voici, j'attends encore un court temps, attendant l'espoir de mon salut?",
       "analysis": [
         {
-          "token": "Οἱ",
-          "lemma": "ὁ",
-          "part_of_speech": "article",
+          "token": "Χρόνου",
+          "lemma": "χρόνος",
+          "part_of_speech": "noun",
           "parsing_details": {
-            "case": "nominative",
+            "case": "genitive",
             "gender": "masculine",
-            "number": "plural",
+            "number": "singular",
             "tense": null,
             "voice": null,
             "mood": null,
             "person": null
           },
-          "transliteration": "hoi",
-          "gloss": "the",
-          "dictionary_entry_nl": null,
-          "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "ἀντιτασσόμενοι"
+          "transliteration": "chronou",
+          "gloss": "time",
+          "dictionary_entry_nl": "tijd, tijdsduur, periode of seizoen. Het woord duidt zowel tijd in het algemeen aan (als vader van alles) als specifieke tijdsperioden, leeftijd, uitstel, en wordt gebruikt in vele uitdrukkingen met voorzetsels. Kan ook temporele duur aangeven of een specifiek moment in de tijd.",
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "προβεβηκότος"
         },
         {
           "token": "δὲ",
@@ -41,38 +41,98 @@
             "person": null
           },
           "transliteration": "de",
-          "gloss": "and, but",
+          "gloss": "but",
           "dictionary_entry_nl": null,
           "clause_role": "connective",
-          "semantic_role": "adversative",
-          "syntactic_head": "λέγουσι"
+          "semantic_role": "conjunction",
+          "syntactic_head": "εἶπεν"
         },
         {
-          "token": "ἀντιτασσόμενοι",
-          "lemma": "ἀντιτάσσω",
+          "token": "πολλοῦ",
+          "lemma": "πολύς",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pollou",
+          "gloss": "much",
+          "dictionary_entry_nl": "veel, talrijk (van aantal), veelvuldig of vaak (van frequentie), groot of hevig (van omvang, intensiteit). Kan gebruikt worden van personen (machtig, belangrijk), van plaats (uitgestrekt), van tijd (lang durend). Als substantief betekent het 'het merendeel' of 'de meerderheid'. Adverbiaal gebruikt betekent het 'zeer' of 'veel' met comparatieven en superlatieven.",
+          "clause_role": "attributive_modifier",
+          "semantic_role": "quantifier",
+          "syntactic_head": "Χρόνου"
+        },
+        {
+          "token": "προβεβηκότος",
+          "lemma": "προβαίνω",
           "part_of_speech": "participle",
           "parsing_details": {
-            "case": "nominative",
+            "case": "genitive",
             "gender": "masculine",
-            "number": "plural",
-            "tense": "present",
-            "voice": "middle",
+            "number": "singular",
+            "tense": "perfect",
+            "voice": "active",
             "mood": "participle",
             "person": null
           },
-          "transliteration": "antitassomenoi",
-          "gloss": "arraying against",
-          "dictionary_entry_nl": "zich opstellen tegenover, weerstand bieden tegen, zich verzetten tegen. Het woord betekent letterlijk 'tegenopstellen' en heeft zowel een militaire betekenis (troepen opstellen tegen een vijand) als een overdrachtelijke betekenis van weerstand bieden of zich verzetten tegen iets of iemand. In de context kan het ook slaan op het innemen van een tegenstrijdige positie of het weigeren van gehoorzaamheid.",
-          "clause_role": "subject",
-          "semantic_role": "agent",
-          "syntactic_head": "λέγουσι"
+          "transliteration": "probebekoros",
+          "gloss": "having advanced",
+          "dictionary_entry_nl": "voortgaan, vooruit lopen of vooruitkomen. Van tijd: voortgaan, voorbijgaan, vorderen. Van personen: vorderen in leeftijd. Figuurlijk: verdergaan, vervolgen, voortgang maken. Kan ook betekenen voor iemand uitlopen of iemand overtreffen.",
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "εἶπεν"
         },
         {
-          "token": "τῇ",
+          "token": "εἶπεν",
+          "lemma": "λέγω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "eipen",
+          "gloss": "said",
+          "dictionary_entry_nl": "zeggen, spreken (in alle betekenissen). Kan ook betekenen: noemen (met dubbele accusativus), bedoelen of aanduiden, opdracht geven of bevelen, voordragen of voorlezen. In passief: 'er wordt gezegd' of 'men zegt'. Pregnante betekenis: iets van belang zeggen, gelijk hebben.",
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "root"
+        },
+        {
+          "token": "αὐτῷ",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "third"
+          },
+          "transliteration": "auto",
+          "gloss": "to him",
+          "dictionary_entry_nl": null,
+          "clause_role": "indirect_object",
+          "semantic_role": "recipient",
+          "syntactic_head": "εἶπεν"
+        },
+        {
+          "token": "ἡ",
           "lemma": "ὁ",
           "part_of_speech": "article",
           "parsing_details": {
-            "case": "dative",
+            "case": "nominative",
             "gender": "feminine",
             "number": "singular",
             "tense": null,
@@ -80,19 +140,19 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "tē",
+          "transliteration": "he",
           "gloss": "the",
           "dictionary_entry_nl": null,
           "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "κτίσει"
+          "semantic_role": "determiner",
+          "syntactic_head": "γυνὴ"
         },
         {
-          "token": "κτίσει",
-          "lemma": "κτίσις",
+          "token": "γυνὴ",
+          "lemma": "γυνή",
           "part_of_speech": "noun",
           "parsing_details": {
-            "case": "dative",
+            "case": "nominative",
             "gender": "feminine",
             "number": "singular",
             "tense": null,
@@ -100,17 +160,17 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "ktisei",
-          "gloss": "creation",
-          "dictionary_entry_nl": "het stichten, stichting (van een stad), maar in christelijke context vooral: schepping. Het woord wordt gebruikt voor de scheppingshandeling van God, waarbij de hele kosmos tot stand komt, en kan ook verwijzen naar schepselen of instellingen. In de christelijke literatuur heeft het een theologische lading gekregen als aanduiding van Gods scheppende activiteit en het geschapene.",
-          "clause_role": "indirect_object",
-          "semantic_role": "target",
-          "syntactic_head": "ἀντιτασσόμενοι"
+          "transliteration": "gyne",
+          "gloss": "woman",
+          "dictionary_entry_nl": "vrouw, in verschillende contexten: als tegenstelling tot man, als echtgenote, of als godin. Van mensen: vrouw tegenover man of echtgenoot. Van dieren: wijfje.",
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "εἶπεν"
         },
         {
-          "token": "τοῦ",
-          "lemma": "ὁ",
-          "part_of_speech": "article",
+          "token": "αὐτοῦ",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
           "parsing_details": {
             "case": "genitive",
             "gender": "masculine",
@@ -118,38 +178,18 @@
             "tense": null,
             "voice": null,
             "mood": null,
-            "person": null
+            "person": "third"
           },
-          "transliteration": "tou",
-          "gloss": "of the",
+          "transliteration": "autou",
+          "gloss": "his",
           "dictionary_entry_nl": null,
-          "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "θεοῦ"
+          "clause_role": "possessive_modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "γυνὴ"
         },
         {
-          "token": "θεοῦ",
-          "lemma": "θεός",
-          "part_of_speech": "noun",
-          "parsing_details": {
-            "case": "genitive",
-            "gender": "masculine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "theou",
-          "gloss": "God",
-          "dictionary_entry_nl": "god, godheid. In de context van de klassieke oudheid verwijst het naar een van de goden uit het pantheon, maar in de christelijke en joodse literatuur specifiek naar de ene God. Het woord kan ook gebruikt worden voor vergoddelijkte heersers of als metafoor voor iets dat als goddelijk wordt beschouwd (zoals rijkdom voor de wijzen).",
-          "clause_role": "possessive_genitive",
-          "semantic_role": "possessor",
-          "syntactic_head": "κτίσει"
-        },
-        {
-          "token": "διὰ",
-          "lemma": "διά",
+          "token": "Μέχρι",
+          "lemma": "μέχρι",
           "part_of_speech": "preposition",
           "parsing_details": {
             "case": null,
@@ -160,12 +200,232 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "dia",
-          "gloss": "through",
+          "transliteration": "mechri",
+          "gloss": "until",
+          "dictionary_entry_nl": "tot, tot aan (als adverbium en prepositie met genitief). Van tijd: tot, hoe lang. Van plaats: tot aan. Als voegwoord: totdat, zolang als. Gebruikt met verschillende voorzetsels en in temporele uitdrukkingen.",
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "καρτερήσεις"
+        },
+        {
+          "token": "τίνος",
+          "lemma": "τίς",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "tinos",
+          "gloss": "what",
+          "dictionary_entry_nl": "wie, wat (interrogatief pronomen). Als zelfstandig: wie, wat. Als bijvoeglijk: welke, welk. Predicatief: wie, wat. Soms generaliserend: wie ook maar. Modaal: wat voor. Specifiek gebruik van τί: wat, waarom. Met voorzetsels en voegwoorden in verschillende betekenissen.",
+          "clause_role": "complement",
+          "semantic_role": "interrogative",
+          "syntactic_head": "Μέχρι"
+        },
+        {
+          "token": "καρτερήσεις",
+          "lemma": "καρτερέω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "future",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "second"
+          },
+          "transliteration": "kartereseis",
+          "gloss": "endure",
+          "dictionary_entry_nl": "sterk zijn, volharden, standvastig zijn in omstandigheden. Verdragen, uithouden (met accusativus). Kan gebruikt worden van niet-menselijke subjecten in de betekenis 'voortduren'. Met voorzetselbepalingen: standvastig zijn in bepaalde situaties of tegen bepaalde moeilijkheden.",
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "εἶπεν"
+        },
+        {
+          "token": "λέγων",
+          "lemma": "λέγω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "legon",
+          "gloss": "saying",
+          "dictionary_entry_nl": "zeggen, spreken (in alle betekenissen). Kan ook betekenen: noemen (met dubbele accusativus), bedoelen of aanduiden, opdracht geven of bevelen, voordragen of voorlezen. In passief: 'er wordt gezegd' of 'men zegt'. Pregnante betekenis: iets van belang zeggen, gelijk hebben.",
+          "clause_role": "manner_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "καρτερήσεις"
+        },
+        {
+          "token": "Ἰδοὺ",
+          "lemma": "ἰδού",
+          "part_of_speech": "interjection",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "idou",
+          "gloss": "behold",
+          "dictionary_entry_nl": "kijk, hé, hè - uitroep om aandacht te trekken, soms ironisch gebruikt.",
+          "clause_role": "interjection",
+          "semantic_role": "attention_marker",
+          "syntactic_head": "ἀναμένω"
+        },
+        {
+          "token": "ἀναμένω",
+          "lemma": "ἀναμένω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "anameno",
+          "gloss": "await",
+          "dictionary_entry_nl": "wachten op, opwachten, afwachten. Meestal gebruikt met ἕως of ἕστε (totdat) om de duur van het wachten aan te geven.",
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "λέγων"
+        },
+        {
+          "token": "χρόνον",
+          "lemma": "χρόνος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "chronon",
+          "gloss": "time",
+          "dictionary_entry_nl": "tijd, tijdsduur, periode of seizoen. Het woord duidt zowel tijd in het algemeen aan (als vader van alles) als specifieke tijdsperioden, leeftijd, uitstel, en wordt gebruikt in vele uitdrukkingen met voorzetsels. Kan ook temporele duur aangeven of een specifiek moment in de tijd.",
+          "clause_role": "temporal_object",
+          "semantic_role": "temporal_extent",
+          "syntactic_head": "ἀναμένω"
+        },
+        {
+          "token": "ἔτι",
+          "lemma": "ἔτι",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "eti",
+          "gloss": "still",
           "dictionary_entry_nl": null,
-          "clause_role": "modifier",
-          "semantic_role": "instrumental",
-          "syntactic_head": "ἐγκρατείας"
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal_aspectual",
+          "syntactic_head": "χρόνον"
+        },
+        {
+          "token": "μικρὸν",
+          "lemma": "μικρός",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "mikron",
+          "gloss": "short",
+          "dictionary_entry_nl": null,
+          "clause_role": "attributive_modifier",
+          "semantic_role": "quantifier",
+          "syntactic_head": "χρόνον"
+        },
+        {
+          "token": "προσδεχόμενος",
+          "lemma": "προσδέχομαι",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "prosdechomenos",
+          "gloss": "expecting",
+          "dictionary_entry_nl": null,
+          "clause_role": "circumstantial_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "ἀναμένω"
+        },
+        {
+          "token": "τὴν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ten",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "ἐλπίδα"
+        },
+        {
+          "token": "ἐλπίδα",
+          "lemma": "ἐλπίς",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "elpida",
+          "gloss": "hope",
+          "dictionary_entry_nl": "verwachting, hoop in positieve zin, maar ook voorgevoel (dat negatief kan zijn). Van personen: iemand die de hoop van een groep vormt. In het Nieuwe Testament: hoop, vertrouwen in religieuze context, vaak verbonden met het eeuwige leven en het evangelie.",
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "προσδεχόμενος"
         },
         {
           "token": "τῆς",
@@ -180,36 +440,16 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "tēs",
+          "transliteration": "tes",
           "gloss": "of the",
           "dictionary_entry_nl": null,
           "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "ἐγκρατείας"
+          "semantic_role": "determiner",
+          "syntactic_head": "σωτηρίας"
         },
         {
-          "token": "εὐφήμου",
-          "lemma": "εὔφημος",
-          "part_of_speech": "adjective",
-          "parsing_details": {
-            "case": "genitive",
-            "gender": "feminine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "euphēmou",
-          "gloss": "reverent",
-          "dictionary_entry_nl": "gunstig klinkend, geluk voorspellend, maar vooral: zich onthoudend van ongunstige woorden, zwijgend uit eerbied. Het woord heeft een religieuze connotatie en duidt op een eerbiedige, respectvolle houding waarbij men zich onthoudt van negatieve of onheilspellende uitspraken. In bredere zin: heilig, vroom, eufemistisch.",
-          "clause_role": "attributive",
-          "semantic_role": "qualifier",
-          "syntactic_head": "ἐγκρατείας"
-        },
-        {
-          "token": "ἐγκρατείας",
-          "lemma": "ἐγκράτεια",
+          "token": "σωτηρίας",
+          "lemma": "σωτηρία",
           "part_of_speech": "noun",
           "parsing_details": {
             "case": "genitive",
@@ -220,226 +460,46 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "enkrateias",
-          "gloss": "self-control",
-          "dictionary_entry_nl": "zelfbeheersing, matigheid. Het woord verwijst naar de deugd van zelfcontrole en het vermogen om de eigen impulsen, verlangens en passies te beheersen. In de filosofische en ethische literatuur is het een belangrijke deugd die wordt geassocieerd met wijsheid en morele volmaaktheid.",
-          "clause_role": "object_of_preposition",
-          "semantic_role": "instrument",
-          "syntactic_head": "διὰ"
+          "transliteration": "soterias",
+          "gloss": "salvation",
+          "dictionary_entry_nl": "lijfsbehoud, redding uit gevaarlijke situaties. Kan ook betekenen: reddingswijze, reddingsmiddel, manier om te ontkomen, veilige terugkeer. In christelijke context: verlossing. Zowel van personen als van zaken (zoals wetten) kan redding of behoud bedoeld worden.",
+          "clause_role": "possessive_modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "ἐλπίδα"
         },
         {
-          "token": "κἀκεῖνα",
-          "lemma": "κἀκεῖνος",
+          "token": "μου",
+          "lemma": "ἐγώ",
           "part_of_speech": "pronoun",
           "parsing_details": {
-            "case": "accusative",
-            "gender": "neuter",
-            "number": "plural",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "kakeina",
-          "gloss": "and those things",
-          "dictionary_entry_nl": null,
-          "clause_role": "object",
-          "semantic_role": "theme",
-          "syntactic_head": "λέγουσι"
-        },
-        {
-          "token": "λέγουσι",
-          "lemma": "λέγω",
-          "part_of_speech": "verb",
-          "parsing_details": {
-            "case": null,
+            "case": "genitive",
             "gender": null,
-            "number": "plural",
-            "tense": "present",
-            "voice": "active",
-            "mood": "indicative",
-            "person": "third"
-          },
-          "transliteration": "legousi",
-          "gloss": "they say",
-          "dictionary_entry_nl": "zeggen, spreken. Het is een van de meest fundamentele werkwoorden voor communicatie in het Grieks. Het kan betekenen: woorden spreken, mededelen, vertellen, beweren, noemen, bedoelen, bevelen. In de context van literatuur en filosofie wordt het vaak gebruikt voor het overbrengen van ideeën, leerstellingen of verhalen.",
-          "clause_role": "predicate",
-          "semantic_role": "action",
-          "syntactic_head": null
-        },
-        {
-          "token": "τὰ",
-          "lemma": "ὁ",
-          "part_of_speech": "article",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "neuter",
-            "number": "plural",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "ta",
-          "gloss": "the things",
-          "dictionary_entry_nl": null,
-          "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "εἰρημένα"
-        },
-        {
-          "token": "πρὸς",
-          "lemma": "πρός",
-          "part_of_speech": "preposition",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "pros",
-          "gloss": "to, toward",
-          "dictionary_entry_nl": null,
-          "clause_role": "modifier",
-          "semantic_role": "directional",
-          "syntactic_head": "Σαλώμην"
-        },
-        {
-          "token": "Σαλώμην",
-          "lemma": "Σαλώμη",
-          "part_of_speech": "noun",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "feminine",
             "number": "singular",
             "tense": null,
             "voice": null,
             "mood": null,
-            "person": null
-          },
-          "transliteration": "Salōmēn",
-          "gloss": "Salome",
-          "dictionary_entry_nl": "Salome, een vrouwennaam die in de vroegchristelijke literatuur voorkomt. Historisch bekend zijn verschillende vrouwen met deze naam, waaronder degene die in de apocriefe evangeliën wordt genoemd als iemand die gesprekken voerde met Jezus over theologische kwesties.",
-          "clause_role": "object_of_preposition",
-          "semantic_role": "recipient",
-          "syntactic_head": "πρὸς"
-        },
-        {
-          "token": "εἰρημένα",
-          "lemma": "εἰρημένος",
-          "part_of_speech": "participle",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "neuter",
-            "number": "plural",
-            "tense": "perfect",
-            "voice": "passive",
-            "mood": "participle",
-            "person": null
-          },
-          "transliteration": "eirēmena",
-          "gloss": "spoken, said",
-          "dictionary_entry_nl": "gesproken, gezegd. Dit is het voltooid deelwoord passief van het werkwoord λέγω/εἰπεῖν. Het verwijst naar woorden of uitspraken die in het verleden zijn gesproken en waarvan de inhoud of betekenis nog steeds relevant is in de huidige context.",
-          "clause_role": "attributive",
-          "semantic_role": "state",
-          "syntactic_head": "κἀκεῖνα"
-        },
-        {
-          "token": "ὧν",
-          "lemma": "ὅς",
-          "part_of_speech": "pronoun",
-          "parsing_details": {
-            "case": "genitive",
-            "gender": "neuter",
-            "number": "plural",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "hōn",
-          "gloss": "of which",
-          "dictionary_entry_nl": null,
-          "clause_role": "relative_pronoun",
-          "semantic_role": "reference",
-          "syntactic_head": "ἐμνήσθημεν"
-        },
-        {
-          "token": "πρότερον",
-          "lemma": "πρότερον",
-          "part_of_speech": "adverb",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "proteron",
-          "gloss": "before, earlier",
-          "dictionary_entry_nl": "eerder, vroeger. Het is de adverbiale vorm van πρότερος en duidt op tijd die voorafgaat aan het huidige moment of aan een ander tijdstip in het verhaal. Het wordt vaak gebruikt om te verwijzen naar iets dat eerder in een tekst is genoemd of naar gebeurtenissen uit het verleden.",
-          "clause_role": "temporal_modifier",
-          "semantic_role": "temporal",
-          "syntactic_head": "ἐμνήσθημεν"
-        },
-        {
-          "token": "ἐμνήσθημεν",
-          "lemma": "μνάομαι",
-          "part_of_speech": "verb",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": "plural",
-            "tense": "aorist",
-            "voice": "passive",
-            "mood": "indicative",
             "person": "first"
           },
-          "transliteration": "emnēsthēmen",
-          "gloss": "we mentioned",
-          "dictionary_entry_nl": "denken aan, gedenken, maar ook naar de hand van een vrouw dingen, begeren. In deze context betekent het 'vermelden' of 'ter sprake brengen'. Het werkwoord heeft te maken met het geheugen en het bewust oproepen van iets uit het verleden om het in de huidige discussie te betrekken.",
-          "clause_role": "predicate",
-          "semantic_role": "action",
-          "syntactic_head": null
+          "transliteration": "mou",
+          "gloss": "my",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive_modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "σωτηρίας"
         }
       ]
     },
     {
       "sentence_id": "s2",
-      "sentence_text": "φέρεται δέ, οἶμαι, ἐν τῷ κατ' Αἰγυπτίους εὐαγγελίῳ.",
-      "translation_nl": "Het wordt overgeleverd echter, denk ik, in het naar Egyptenaren evangelie.",
-      "translation_en": "It is transmitted however, I think, in the according-to-Egyptians gospel.",
-      "translation_fr": "Il est transmis cependant, je pense, dans l'évangile selon les Égyptiens.",
+      "sentence_text": "ἰδοὺ γὰρ ἠφάνισταί σου τὸ μνημόσυνον ἀπὸ τῆς γῆς, υἱοὶ καὶ θυγατέρες, ἐμῆς κοιλίας ὠδῖνες καὶ πόνοι, οὓς εἰς τὸ κενὸν ἐκοπίασα μετὰ μόχθων.",
+      "translation_nl": "Zie want weggenomen is jouw gedachtenis van de aarde, zonen en dochters, van mijn buik barensweeën en pijnen, die ik in het ijdele heb gewerkt met inspanningen.",
+      "translation_en": "For behold, your remembrance has vanished from the earth, sons and daughters, birth pangs and pains of my womb, which I labored in vain with toils.",
+      "translation_fr": "Car voici, ton souvenir a disparu de la terre, fils et filles, douleurs d'enfantement et peines de mon ventre, que j'ai travaillées en vain avec des labeurs.",
       "analysis": [
         {
-          "token": "φέρεται",
-          "lemma": "φέρω",
-          "part_of_speech": "verb",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": "singular",
-            "tense": "present",
-            "voice": "passive",
-            "mood": "indicative",
-            "person": "third"
-          },
-          "transliteration": "pheretai",
-          "gloss": "it is carried",
-          "dictionary_entry_nl": "dragen, vervoeren, brengen, maar in deze passieve vorm: gedragen worden, overgeleverd worden, verspreid worden. In de context van teksten en tradities betekent het dat iets wordt doorgegeven van generatie op generatie of van bron tot bron. Het duidt op de transmissie van informatie of leerstellingen.",
-          "clause_role": "predicate",
-          "semantic_role": "action",
-          "syntactic_head": null
-        },
-        {
-          "token": "δέ",
-          "lemma": "δέ",
-          "part_of_speech": "particle",
+          "token": "ἰδοὺ",
+          "lemma": "ἰδού",
+          "part_of_speech": "interjection",
           "parsing_details": {
             "case": null,
             "gender": null,
@@ -449,164 +509,15 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "de",
-          "gloss": "and, but",
-          "dictionary_entry_nl": null,
-          "clause_role": "connective",
-          "semantic_role": "adversative",
-          "syntactic_head": "φέρεται"
+          "transliteration": "idou",
+          "gloss": "behold",
+          "dictionary_entry_nl": "kijk, hé, hè - uitroep om aandacht te trekken, soms ironisch gebruikt.",
+          "clause_role": "interjection",
+          "semantic_role": "attention_marker",
+          "syntactic_head": "ἠφάνισται"
         },
         {
-          "token": "οἶμαι",
-          "lemma": "οἴομαι",
-          "part_of_speech": "verb",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": "singular",
-            "tense": "present",
-            "voice": "middle",
-            "mood": "indicative",
-            "person": "first"
-          },
-          "transliteration": "oimai",
-          "gloss": "I think",
-          "dictionary_entry_nl": "menen, denken, vermoeden, geloven. Het is een werkwoord dat een mening of veronderstelling uitdrukt, vaak met enige mate van onzekerheid. Het wordt gebruikt als parenthetische uitdrukking om aan te geven dat de spreker zijn eigen mening geeft of niet helemaal zeker is van zijn bewering.",
-          "clause_role": "parenthetical",
-          "semantic_role": "epistemic_modality",
-          "syntactic_head": "φέρεται"
-        },
-        {
-          "token": "ἐν",
-          "lemma": "ἐν",
-          "part_of_speech": "preposition",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "en",
-          "gloss": "in",
-          "dictionary_entry_nl": null,
-          "clause_role": "modifier",
-          "semantic_role": "locative",
-          "syntactic_head": "εὐαγγελίῳ"
-        },
-        {
-          "token": "τῷ",
-          "lemma": "ὁ",
-          "part_of_speech": "article",
-          "parsing_details": {
-            "case": "dative",
-            "gender": "neuter",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "tō",
-          "gloss": "the",
-          "dictionary_entry_nl": null,
-          "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "εὐαγγελίῳ"
-        },
-        {
-          "token": "κατ'",
-          "lemma": "κατά",
-          "part_of_speech": "preposition",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "kat'",
-          "gloss": "according to",
-          "dictionary_entry_nl": null,
-          "clause_role": "modifier",
-          "semantic_role": "standard",
-          "syntactic_head": "Αἰγυπτίους"
-        },
-        {
-          "token": "Αἰγυπτίους",
-          "lemma": "Αἰγύπτιος",
-          "part_of_speech": "adjective",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "masculine",
-            "number": "plural",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "Aigyptious",
-          "gloss": "Egyptians",
-          "dictionary_entry_nl": "Egyptisch, van of behorend tot Egypte. Als substantief: Egyptenaren. In de vroegchristelijke literatuur wordt vaak verwezen naar teksten 'volgens de Egyptenaren', wat duidt op tradities of geschriften die in Egypte zijn ontstaan of daar populair waren onder de christelijke gemeenschappen.",
-          "clause_role": "object_of_preposition",
-          "semantic_role": "source",
-          "syntactic_head": "κατ'"
-        },
-        {
-          "token": "εὐαγγελίῳ",
-          "lemma": "εὐαγγέλιον",
-          "part_of_speech": "noun",
-          "parsing_details": {
-            "case": "dative",
-            "gender": "neuter",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "euangeliō",
-          "gloss": "gospel",
-          "dictionary_entry_nl": "beloning voor goed nieuws, maar in de christelijke context: evangelie. Het woord betekent letterlijk 'goed bericht' en werd in de vroegchristelijke periode gebruikt voor de verhalen over Jezus' leven, dood en opstanding. Verschillende evangeliën werden naar verschillende groepen of tradities genoemd.",
-          "clause_role": "object_of_preposition",
-          "semantic_role": "location",
-          "syntactic_head": "ἐν"
-        }
-      ]
-    },
-    {
-      "sentence_id": "s3",
-      "sentence_text": "Φασὶ γάρ, ὅτι αὐτὸς εἶπεν ὁ σωτήρ· « Ἦλθον καταλῦσαι τὰ ἔργα τῆς θηλείας », θηλείας μὲν τῆς ἐπιθυμίας, ἔργα δὲ γένεσιν καὶ φθοράν.",
-      "translation_nl": "Zij beweren namelijk, dat hijzelf zeide de redder: « Ik kwam vernietigen de werken van het vrouwelijke », van het vrouwelijke namelijk van de begeerte, werken echter geboorte en verderf.",
-      "translation_en": "For they assert, that himself said the savior: « I came to destroy the works of the female », of the female indeed of desire, but works birth and destruction.",
-      "translation_fr": "Car ils affirment, que lui-même dit le sauveur: « Je suis venu détruire les œuvres du féminin », du féminin certes du désir, mais œuvres naissance et destruction.",
-      "analysis": [
-        {
-          "token": "Φασὶ",
-          "lemma": "φημί",
-          "part_of_speech": "verb",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": "plural",
-            "tense": "present",
-            "voice": "active",
-            "mood": "indicative",
-            "person": "third"
-          },
-          "transliteration": "phasi",
-          "gloss": "they say",
-          "dictionary_entry_nl": "zeggen, spreken, beweren. Het is een deftige variant van λέγω en wordt vaak gebruikt voor het uitspreken van belangrijke verklaringen, het bevestigen van stellingen, of het citeren van autoriteiten. In filosofische en theologische teksten duidt het vaak op het verkondigen van leerstellingen.",
-          "clause_role": "predicate",
-          "semantic_role": "action",
-          "syntactic_head": null
-        },
-        {
-          "token": "γάρ",
+          "token": "γὰρ",
           "lemma": "γάρ",
           "part_of_speech": "particle",
           "parsing_details": {
@@ -622,188 +533,108 @@
           "gloss": "for",
           "dictionary_entry_nl": null,
           "clause_role": "connective",
-          "semantic_role": "causal",
-          "syntactic_head": "Φασὶ"
+          "semantic_role": "explanation",
+          "syntactic_head": "ἠφάνισται"
         },
         {
-          "token": "ὅτι",
-          "lemma": "ὅτι",
-          "part_of_speech": "conjunction",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "hoti",
-          "gloss": "that",
-          "dictionary_entry_nl": null,
-          "clause_role": "complementizer",
-          "semantic_role": "proposition_marker",
-          "syntactic_head": "εἶπεν"
-        },
-        {
-          "token": "αὐτὸς",
-          "lemma": "αὐτός",
-          "part_of_speech": "pronoun",
-          "parsing_details": {
-            "case": "nominative",
-            "gender": "masculine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "autos",
-          "gloss": "he himself",
-          "dictionary_entry_nl": "hij(zelf), zij(zelf), het(zelf). Als persoonlijk voornaamwoord in de derde persoon, maar ook gebruikt voor nadruk (hijzelf, in eigen persoon). In filosofische en theologische contexten benadrukt het de directheid en autoriteit van de spreker. Het kan ook identiteit aangeven (dezelfde) of worden gebruikt als reflexief pronomen.",
-          "clause_role": "subject",
-          "semantic_role": "agent",
-          "syntactic_head": "εἶπεν"
-        },
-        {
-          "token": "εἶπεν",
-          "lemma": "εἰπεῖν",
+          "token": "ἠφάνισται",
+          "lemma": "ἀφανίζω",
           "part_of_speech": "verb",
           "parsing_details": {
             "case": null,
             "gender": null,
             "number": "singular",
-            "tense": "aorist",
-            "voice": "active",
+            "tense": "perfect",
+            "voice": "passive",
             "mood": "indicative",
             "person": "third"
           },
-          "transliteration": "eipen",
-          "gloss": "he said",
-          "dictionary_entry_nl": "zeggen, spreken. Dit is de aoristische vorm van λέγω en wordt gebruikt voor voltooide spraakhandelingen in het verleden. Het wordt vaak gebruikt voor het citeren van belangrijke uitspraken of het weergeven van woorden die op een specifiek moment zijn gesproken.",
+          "transliteration": "ephanistai",
+          "gloss": "has vanished",
+          "dictionary_entry_nl": null,
           "clause_role": "predicate",
-          "semantic_role": "action",
-          "syntactic_head": "Φασὶ"
+          "semantic_role": "verbal_action",
+          "syntactic_head": "root"
         },
         {
-          "token": "ὁ",
+          "token": "σου",
+          "lemma": "σύ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "second"
+          },
+          "transliteration": "sou",
+          "gloss": "your",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive_modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "μνημόσυνον"
+        },
+        {
+          "token": "τὸ",
           "lemma": "ὁ",
           "part_of_speech": "article",
           "parsing_details": {
             "case": "nominative",
-            "gender": "masculine",
+            "gender": "neuter",
             "number": "singular",
             "tense": null,
             "voice": null,
             "mood": null,
             "person": null
           },
-          "transliteration": "ho",
+          "transliteration": "to",
           "gloss": "the",
           "dictionary_entry_nl": null,
           "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "σωτήρ"
+          "semantic_role": "determiner",
+          "syntactic_head": "μνημόσυνον"
         },
         {
-          "token": "σωτήρ",
-          "lemma": "σωτήρ",
+          "token": "μνημόσυνον",
+          "lemma": "μνημόσυνον",
           "part_of_speech": "noun",
           "parsing_details": {
             "case": "nominative",
-            "gender": "masculine",
+            "gender": "neuter",
             "number": "singular",
             "tense": null,
             "voice": null,
             "mood": null,
             "person": null
           },
-          "transliteration": "sōtēr",
-          "gloss": "savior",
-          "dictionary_entry_nl": "redder, behoeder, beschermer. In de christelijke context verwijst het specifiek naar Jezus als de verlosser van de mensheid. Het woord komt van het werkwoord σῴζω (redden, behouden) en duidt op iemand die anderen uit gevaar, zonde of vernietiging bevrijdt.",
-          "clause_role": "subject_apposition",
-          "semantic_role": "agent",
-          "syntactic_head": "αὐτὸς"
+          "transliteration": "mnemosynon",
+          "gloss": "remembrance",
+          "dictionary_entry_nl": "herinnering, aandenken - wat in de herinnering bewaard blijft ter nagedachtenis aan iemand of iets.",
+          "clause_role": "subject",
+          "semantic_role": "patient",
+          "syntactic_head": "ἠφάνισται"
         },
         {
-          "token": "Ἦλθον",
-          "lemma": "ἔρχομαι",
-          "part_of_speech": "verb",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": "singular",
-            "tense": "aorist",
-            "voice": "active",
-            "mood": "indicative",
-            "person": "first"
-          },
-          "transliteration": "ēlthon",
-          "gloss": "I came",
-          "dictionary_entry_nl": "gaan, komen. In deze context duidt het op een doelgerichte komst of missie. Het werkwoord wordt vaak gebruikt in theologische teksten om de incarnatie of zending van Jezus aan te duiden - zijn komst naar de wereld met een specifiek doel.",
-          "clause_role": "predicate",
-          "semantic_role": "action",
-          "syntactic_head": null
-        },
-        {
-          "token": "καταλῦσαι",
-          "lemma": "καταλύω",
-          "part_of_speech": "verb",
+          "token": "ἀπὸ",
+          "lemma": "ἀπό",
+          "part_of_speech": "preposition",
           "parsing_details": {
             "case": null,
             "gender": null,
             "number": null,
-            "tense": "aorist",
-            "voice": "active",
-            "mood": "infinitive",
-            "person": null
-          },
-          "transliteration": "katalysai",
-          "gloss": "to destroy",
-          "dictionary_entry_nl": "losmaken, uitspannen, maar ook verwoesten, ontbinden, afschaffen, be-eindigen. In deze theologische context betekent het het vernietigen of tenietdoen van iets dat als negatief of schadelijk wordt beschouwd. Het kan zowel fysieke vernietiging als het opheffen van morele of spirituele toestanden betekenen.",
-          "clause_role": "purpose_infinitive",
-          "semantic_role": "purpose",
-          "syntactic_head": "Ἦλθον"
-        },
-        {
-          "token": "τὰ",
-          "lemma": "ὁ",
-          "part_of_speech": "article",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "neuter",
-            "number": "plural",
             "tense": null,
             "voice": null,
             "mood": null,
             "person": null
           },
-          "transliteration": "ta",
-          "gloss": "the",
+          "transliteration": "apo",
+          "gloss": "from",
           "dictionary_entry_nl": null,
-          "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "ἔργα"
-        },
-        {
-          "token": "ἔργα",
-          "lemma": "ἔργον",
-          "part_of_speech": "noun",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "neuter",
-            "number": "plural",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "erga",
-          "gloss": "works",
-          "dictionary_entry_nl": "werk, arbeid, maar ook daad, resultaat van werk. In filosofische en theologische contexten verwijst het naar handelingen, activiteiten of de uitkomsten daarvan. Het kan zowel positieve als negatieve connotaties hebben, afhankelijk van de context. Hier staat het tegenover woorden en betreft het de praktische gevolgen of manifestaties van een bepaalde kracht of principe.",
-          "clause_role": "direct_object",
-          "semantic_role": "theme",
-          "syntactic_head": "καταλῦσαι"
+          "clause_role": "locative_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ἠφάνισται"
         },
         {
           "token": "τῆς",
@@ -818,96 +649,16 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "tēs",
-          "gloss": "of the",
+          "transliteration": "tes",
+          "gloss": "the",
           "dictionary_entry_nl": null,
           "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "θηλείας"
+          "semantic_role": "determiner",
+          "syntactic_head": "γῆς"
         },
         {
-          "token": "θηλείας",
-          "lemma": "θῆλυς",
-          "part_of_speech": "adjective",
-          "parsing_details": {
-            "case": "genitive",
-            "gender": "feminine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "thēleias",
-          "gloss": "female",
-          "dictionary_entry_nl": "vrouwelijk, van het vrouwelijk geslacht, maar ook overdrachtelijk: teer, zwak, gevoelig. In filosofische contexten wordt het soms gebruikt als symbool voor bepaalde aspecten van de menselijke natuur die als minder rationeel of meer emotioneel worden beschouwd. In de gnostische literatuur kan het verwijzen naar het materiële of lichamelijke aspect van het bestaan.",
-          "clause_role": "genitive_attribute",
-          "semantic_role": "possessor",
-          "syntactic_head": "ἔργα"
-        },
-        {
-          "token": "θηλείας",
-          "lemma": "θῆλυς",
-          "part_of_speech": "adjective",
-          "parsing_details": {
-            "case": "genitive",
-            "gender": "feminine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "thēleias",
-          "gloss": "female",
-          "dictionary_entry_nl": "vrouwelijk, van het vrouwelijk geslacht, maar ook overdrachtelijk: teer, zwak, gevoelig. In filosofische contexten wordt het soms gebruikt als symbool voor bepaalde aspecten van de menselijke natuur die als minder rationeel of meer emotioneel worden beschouwd. In de gnostische literatuur kan het verwijzen naar het materiële of lichamelijke aspect van het bestaan.",
-          "clause_role": "appositive",
-          "semantic_role": "elaboration",
-          "syntactic_head": "ἐπιθυμίας"
-        },
-        {
-          "token": "μὲν",
-          "lemma": "μέν",
-          "part_of_speech": "particle",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "men",
-          "gloss": "indeed",
-          "dictionary_entry_nl": null,
-          "clause_role": "connective",
-          "semantic_role": "contrastive",
-          "syntactic_head": "θηλείας"
-        },
-        {
-          "token": "τῆς",
-          "lemma": "ὁ",
-          "part_of_speech": "article",
-          "parsing_details": {
-            "case": "genitive",
-            "gender": "feminine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "tēs",
-          "gloss": "of the",
-          "dictionary_entry_nl": null,
-          "clause_role": "determiner",
-          "semantic_role": "definite_article",
-          "syntactic_head": "ἐπιθυμίας"
-        },
-        {
-          "token": "ἐπιθυμίας",
-          "lemma": "ἐπιθυμία",
+          "token": "γῆς",
+          "lemma": "γῆ",
           "part_of_speech": "noun",
           "parsing_details": {
             "case": "genitive",
@@ -918,72 +669,32 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "epithymias",
-          "gloss": "desire",
-          "dictionary_entry_nl": "begeerte, verlangen. Het woord duidt op een sterk verlangen naar iets, vaak met een negatieve connotatie in morele of filosofische contexten. In de christelijke en filosofische literatuur wordt het vaak gebruikt voor aardse of zondige verlangens die de mens afleiden van het hogere of goddelijke.",
-          "clause_role": "genitive_attribute",
-          "semantic_role": "specification",
-          "syntactic_head": "θηλείας"
+          "transliteration": "ges",
+          "gloss": "earth",
+          "dictionary_entry_nl": "aarde, wereld - zowel de aarde als geheel als het aardoppervlak. Kan ook land tegenover zee betekenen, of grondgebied, bouwland, grond. Soms gebruikt voor vaderland. Ook als materiaal en element. Vaak gepersonifieerd als de godin Aarde.",
+          "clause_role": "locative_modifier",
+          "semantic_role": "location",
+          "syntactic_head": "ἀπὸ"
         },
         {
-          "token": "ἔργα",
-          "lemma": "ἔργον",
+          "token": "υἱοὶ",
+          "lemma": "υἱός",
           "part_of_speech": "noun",
           "parsing_details": {
-            "case": "accusative",
-            "gender": "neuter",
+            "case": "nominative",
+            "gender": "masculine",
             "number": "plural",
             "tense": null,
             "voice": null,
             "mood": null,
             "person": null
           },
-          "transliteration": "erga",
-          "gloss": "works",
-          "dictionary_entry_nl": "werk, arbeid, maar ook daad, resultaat van werk. In filosofische en theologische contexten verwijst het naar handelingen, activiteiten of de uitkomsten daarvan. Het kan zowel positieve als negatieve connotaties hebben, afhankelijk van de context. Hier staat het tegenover woorden en betreft het de praktische gevolgen of manifestaties van een bepaalde kracht of principe.",
-          "clause_role": "object_in_apposition",
-          "semantic_role": "theme",
-          "syntactic_head": "γένεσιν"
-        },
-        {
-          "token": "δὲ",
-          "lemma": "δέ",
-          "part_of_speech": "particle",
-          "parsing_details": {
-            "case": null,
-            "gender": null,
-            "number": null,
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "de",
-          "gloss": "and, but",
-          "dictionary_entry_nl": null,
-          "clause_role": "connective",
-          "semantic_role": "contrastive",
-          "syntactic_head": "ἔργα"
-        },
-        {
-          "token": "γένεσιν",
-          "lemma": "γένεσις",
-          "part_of_speech": "noun",
-          "parsing_details": {
-            "case": "accusative",
-            "gender": "feminine",
-            "number": "singular",
-            "tense": null,
-            "voice": null,
-            "mood": null,
-            "person": null
-          },
-          "transliteration": "genesin",
-          "gloss": "birth, generation",
-          "dictionary_entry_nl": "oorsprong, begin, maar vooral geboorte en wording, ontstaan. In filosofische contexten verwijst het naar het proces van ontstaan en ontwikkeling. Het staat vaak tegenover φθορά (vernietiging) als de twee fundamentele processen in de natuur. In theologische teksten kan het verwijzen naar de materiële wereld van worden en vergaan.",
-          "clause_role": "appositive_object",
-          "semantic_role": "theme",
-          "syntactic_head": "ἔργα"
+          "transliteration": "huioi",
+          "gloss": "sons",
+          "dictionary_entry_nl": "zoon - mannelijk kind van ouders, ook in overdrachelijke zin gebruikt.",
+          "clause_role": "apposition",
+          "semantic_role": "apposition",
+          "syntactic_head": "μνημόσυνον"
         },
         {
           "token": "καὶ",
@@ -1002,12 +713,641 @@
           "gloss": "and",
           "dictionary_entry_nl": null,
           "clause_role": "coordinator",
-          "semantic_role": "additive",
-          "syntactic_head": "φθοράν"
+          "semantic_role": "conjunction",
+          "syntactic_head": "υἱοὶ"
         },
         {
-          "token": "φθοράν",
-          "lemma": "φθορά",
+          "token": "θυγατέρες",
+          "lemma": "θυγάτηρ",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "plural",  
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "thygateres",
+          "gloss": "daughters",
+          "dictionary_entry_nl": "dochter - vrouwelijk kind van ouders.",
+          "clause_role": "apposition",
+          "semantic_role": "apposition",
+          "syntactic_head": "υἱοὶ"
+        },
+        {
+          "token": "ἐμῆς",
+          "lemma": "ἐγώ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "first"
+          },
+          "transliteration": "emes",
+          "gloss": "my",
+          "dictionary_entry_nl": null,
+          "clause_role": "possessive_modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "κοιλίας"
+        },
+        {
+          "token": "κοιλίας",
+          "lemma": "κοιλία",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "koilias",
+          "gloss": "womb",
+          "dictionary_entry_nl": "buikholte, buik - anatomisch de buikstreek. Kan ook ingewanden betekenen, of van dieren de pens. Figuurlijk: vanaf de geboorte (uit moeders buik), of de moederschoot. Ook uitbreiding naar stoelgang, ontlasting.",
+          "clause_role": "possessive_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ὠδῖνες"
+        },
+        {
+          "token": "ὠδῖνες",
+          "lemma": "ὠδίν",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "odines",
+          "gloss": "birth-pangs",
+          "dictionary_entry_nl": "barensweeën (meestal meervoud). Figuurlijk: angst, zorg. In enkelvoud ook: geborene, kind.",
+          "clause_role": "apposition",
+          "semantic_role": "apposition",
+          "syntactic_head": "υἱοὶ"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "conjunction",
+          "syntactic_head": "ὠδῖνες"
+        },
+        {
+          "token": "πόνοι",
+          "lemma": "πόνος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ponoi",
+          "gloss": "pains",
+          "dictionary_entry_nl": "zware taak, moeite, inspanning. Militair: inspanningen en strijd. Ook: werk als vrucht van inspanning. Kan ellende betekenen, of medisch: fysieke pijn. Gepersonifieerd als zoon van Eris (Tweedracht).",
+          "clause_role": "apposition",
+          "semantic_role": "apposition",
+          "syntactic_head": "ὠδῖνες"
+        },
+        {
+          "token": "οὓς",
+          "lemma": "ὅς",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hous",
+          "gloss": "which",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "ἐκοπίασα"
+        },
+        {
+          "token": "εἰς",
+          "lemma": "εἰς",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "eis",
+          "gloss": "into",
+          "dictionary_entry_nl": null,
+          "clause_role": "goal_modifier",
+          "semantic_role": "goal",
+          "syntactic_head": "ἐκοπίασα"
+        },
+        {
+          "token": "τὸ",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "to",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "κενὸν"
+        },
+        {
+          "token": "κενὸν",
+          "lemma": "κενός",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kenon",
+          "gloss": "vain",
+          "dictionary_entry_nl": "leeg, zonder inhoud. Verstoken van iets (met genitief). Figuurlijk: leeg, ijdel, zinloos, nutteloos. Met lege handen. Als substantief: lege ruimte. Medisch: holte bij het oor.",
+          "clause_role": "goal_modifier",
+          "semantic_role": "goal",
+          "syntactic_head": "εἰς"
+        },
+        {
+          "token": "ἐκοπίασα",
+          "lemma": "κοπιάω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "first"
+          },
+          "transliteration": "ekopiasa",
+          "gloss": "labored",
+          "dictionary_entry_nl": "moe zijn, moe worden van iets. Zich inspannen, zich vermoeien voor een doel. Figuurlijk: iets moe zijn, er genoeg van hebben. Kan ook gebruikt worden met predicatief participium.",
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "υἱοὶ"
+        },
+        {
+          "token": "μετὰ",
+          "lemma": "μετά",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "meta",
+          "gloss": "with",
+          "dictionary_entry_nl": null,
+          "clause_role": "manner_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "ἐκοπίασα"
+        },
+        {
+          "token": "μόχθων",
+          "lemma": "μόχθος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "mochthon",
+          "gloss": "toils",
+          "dictionary_entry_nl": "inspanning, moeite, zware arbeid. Specifiek gebruikt voor de werken van Heracles. Benadrukt de zwaarte en moeizaamheid van de uitgevoerde taak.",
+          "clause_role": "manner_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "μετὰ"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s3", 
+      "sentence_text": "σύ τε αὐτὸς ἐν σαπρίᾳ σκωλήκων κάθησαι διανυκτερεύων αἴθριος· κἀγὼ πλανῆτις καὶ λάτρις τόπον ἐκ τόπου περιερχομένη καὶ οἰκίαν ἐξ οἰκίας προσδεχομένη τὸν ἥλιον πότε δύσεται, ἵνα ἀναπαύσωμαι τῶν μόχθων καὶ τῶν ὀδυνῶν, αἵ με νῦν συνέχουσιν.",
+      "translation_nl": "En jij zelf zit in de verrotting van wormen de nacht doorbrengende onder de blote hemel; en ik zwervende en dienende ga van plaats tot plaats en van huis tot huis de zon verwachtende wanneer zij zal ondergaan, opdat ik rust neme van de inspanningen en van de pijnen, die mij nu omvatten.",
+      "translation_en": "And you yourself sit in the putrefaction of worms passing the night under the open sky; and I wandering and serving go from place to place and from house to house awaiting the sun when it will set, that I may rest from the toils and from the pains which now encompass me.",
+      "translation_fr": "Et toi-même tu t'assieds dans la putréfaction des vers passant la nuit à ciel ouvert; et moi errante et servante je vais de lieu en lieu et de maison en maison attendant le soleil quand il se couchera, afin que je me repose des labeurs et des douleurs qui maintenant m'entourent.",
+      "analysis": [
+        {
+          "token": "σύ",
+          "lemma": "σύ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "second"
+          },
+          "transliteration": "sy",
+          "gloss": "you",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "κάθησαι"
+        },
+        {
+          "token": "τε",
+          "lemma": "τε",
+          "part_of_speech": "particle",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "te",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "connective",
+          "semantic_role": "conjunction",
+          "syntactic_head": "σύ"
+        },
+        {
+          "token": "αὐτὸς",
+          "lemma": "αὐτός",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "third"
+          },
+          "transliteration": "autos",
+          "gloss": "self",
+          "dictionary_entry_nl": null,
+          "clause_role": "intensifier",
+          "semantic_role": "emphasis",
+          "syntactic_head": "σύ"
+        },
+        {
+          "token": "ἐν",
+          "lemma": "ἐν",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "en",
+          "gloss": "in",
+          "dictionary_entry_nl": null,
+          "clause_role": "locative_modifier",
+          "semantic_role": "location",
+          "syntactic_head": "κάθησαι"
+        },
+        {
+          "token": "σαπρίᾳ",
+          "lemma": "σαπρία",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "dative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "sapria",
+          "gloss": "putrefaction",
+          "dictionary_entry_nl": null,
+          "clause_role": "locative_modifier",
+          "semantic_role": "location",
+          "syntactic_head": "ἐν"
+        },
+        {
+          "token": "σκωλήκων",
+          "lemma": "σκώληξ",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "skolekon",
+          "gloss": "worms",
+          "dictionary_entry_nl": "(regen)worm - kleine wormachtige dieren, meestal in meervoud gebruikt.",
+          "clause_role": "possessive_modifier",
+          "semantic_role": "possessive",
+          "syntactic_head": "σαπρίᾳ"
+        },
+        {
+          "token": "κάθησαι",
+          "lemma": "κάθημαι",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "indicative",
+            "person": "second"
+          },
+          "transliteration": "kathesai",
+          "gloss": "sit",
+          "dictionary_entry_nl": "zitten, meestal met voorzetselbepaling. Ook: gaan zitten. Van rechters en raden: zitting houden. Een zittend bestaan leiden, stil zitten, nietsen. Van aangesteld werk: aangesteld zijn voor. Zich bevinden, wonen, verblijven. Militair: gelegerd zijn.",
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "root"
+        },
+        {
+          "token": "διανυκτερεύων",
+          "lemma": "διανυκτερεύω",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "dianykthereuon",
+          "gloss": "spending_the_night",
+          "dictionary_entry_nl": null,
+          "clause_role": "circumstantial_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "κάθησαι"
+        },
+        {
+          "token": "αἴθριος",
+          "lemma": "αἴθριος",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "aithrios",
+          "gloss": "in_open_air",
+          "dictionary_entry_nl": null,
+          "clause_role": "circumstantial_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "διανυκτερεύων"
+        },
+        {
+          "token": "κἀγὼ",
+          "lemma": "κἀγώ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "first"
+          },
+          "transliteration": "kago",
+          "gloss": "and_I",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "περιερχομένη"
+        },
+        {
+          "token": "πλανῆτις",
+          "lemma": "πλανήτης",
+          "part_of_speech": "adjective",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "planetes",
+          "gloss": "wandering",
+          "dictionary_entry_nl": null,
+          "clause_role": "predicate_adjective",
+          "semantic_role": "description",
+          "syntactic_head": "κἀγὼ"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "conjunction",
+          "syntactic_head": "πλανῆτις"
+        },
+        {
+          "token": "λάτρις",
+          "lemma": "λάτρις",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "latris",
+          "gloss": "servant",
+          "dictionary_entry_nl": null,
+          "clause_role": "predicate_noun",
+          "semantic_role": "description",
+          "syntactic_head": "πλανῆτις"
+        },
+        {
+          "token": "τόπον",
+          "lemma": "τόπος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "topon",  
+          "gloss": "place",
+          "dictionary_entry_nl": null,
+          "clause_role": "locative_modifier",
+          "semantic_role": "location",
+          "syntactic_head": "περιερχομένη"
+        },
+        {
+          "token": "ἐκ",
+          "lemma": "ἐκ",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ek",
+          "gloss": "from",
+          "dictionary_entry_nl": null,
+          "clause_role": "source_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "τόπον"
+        },
+        {
+          "token": "τόπου",
+          "lemma": "τόπος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "topou",
+          "gloss": "place",
+          "dictionary_entry_nl": null,
+          "clause_role": "source_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ἐκ"
+        },
+        {
+          "token": "περιερχομένη",
+          "lemma": "περιέρχομαι",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "perierchomene",
+          "gloss": "going_around",
+          "dictionary_entry_nl": null,
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "κἀγὼ"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "conjunction",
+          "syntactic_head": "περιερχομένη"
+        },
+        {
+          "token": "οἰκίαν",
+          "lemma": "οἰκία",
           "part_of_speech": "noun",
           "parsing_details": {
             "case": "accusative",
@@ -1018,12 +1358,541 @@
             "mood": null,
             "person": null
           },
-          "transliteration": "phthoran",
-          "gloss": "destruction",
-          "dictionary_entry_nl": "vernietiging, verwoesting, ondergang, dood. In filosofische contexten verwijst het naar het proces van verval en vernietiging dat tegengesteld is aan γένεσις (wording). Samen vormen deze twee begrippen de cyclus van ontstaan en vergaan die kenmerkend is voor de materiële wereld. In morele contexten kan het verwijzen naar morele of spirituele corruptie.",
-          "clause_role": "coordinate_object",
-          "semantic_role": "theme",
-          "syntactic_head": "γένεσιν"
+          "transliteration": "oikian",
+          "gloss": "house",
+          "dictionary_entry_nl": null,
+          "clause_role": "locative_modifier",
+          "semantic_role": "location",
+          "syntactic_head": "περιερχομένη"
+        },
+        {
+          "token": "ἐξ",
+          "lemma": "ἐκ",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ex",
+          "gloss": "from",
+          "dictionary_entry_nl": null,
+          "clause_role": "source_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "οἰκίαν"
+        },
+        {
+          "token": "οἰκίας",
+          "lemma": "οἰκία",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "oikias",
+          "gloss": "house",
+          "dictionary_entry_nl": null,
+          "clause_role": "source_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ἐξ"
+        },
+        {
+          "token": "προσδεχομένη",
+          "lemma": "προσδέχομαι",
+          "part_of_speech": "participle",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "singular",
+            "tense": "present",
+            "voice": "middle",
+            "mood": "participle",
+            "person": null
+          },
+          "transliteration": "prosdechomene",
+          "gloss": "awaiting",
+          "dictionary_entry_nl": null,
+          "clause_role": "circumstantial_modifier",
+          "semantic_role": "manner",
+          "syntactic_head": "περιερχομένη"
+        },
+        {
+          "token": "τὸν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ton",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "ἥλιον"
+        },
+        {
+          "token": "ἥλιον",
+          "lemma": "ἥλιος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "helion",
+          "gloss": "sun",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "προσδεχομένη"
+        },
+        {
+          "token": "πότε",
+          "lemma": "πότε",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "pote",
+          "gloss": "when",
+          "dictionary_entry_nl": null,
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "δύσεται"
+        },
+        {
+          "token": "δύσεται",
+          "lemma": "δύω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "future",
+            "voice": "middle",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "dysetai",
+          "gloss": "will_set",
+          "dictionary_entry_nl": null,
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "προσδεχομένη"
+        },
+        {
+          "token": "ἵνα",
+          "lemma": "ἵνα",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hina",
+          "gloss": "so_that",
+          "dictionary_entry_nl": null,
+          "clause_role": "purpose_modifier",
+          "semantic_role": "purpose",
+          "syntactic_head": "προσδεχομένη"
+        },
+        {
+          "token": "ἀναπαύσωμαι",
+          "lemma": "ἀναπαύω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "middle",
+            "mood": "subjunctive",
+            "person": "first"
+          },
+          "transliteration": "anapausomai",
+          "gloss": "may_rest",
+          "dictionary_entry_nl": null,
+          "clause_role": "purpose_clause",
+          "semantic_role": "purpose",
+          "syntactic_head": "ἵνα"
+        },
+        {
+          "token": "τῶν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ton",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "μόχθων"
+        },
+        {
+          "token": "μόχθων",
+          "lemma": "μόχθος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "masculine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "mochthon",
+          "gloss": "toils",
+          "dictionary_entry_nl": "inspanning, moeite, zware arbeid. Specifiek gebruikt voor de werken van Heracles. Benadrukt de zwaarte en moeizaamheid van de uitgevoerde taak.",
+          "clause_role": "source_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "ἀναπαύσωμαι"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "conjunction",
+          "syntactic_head": "μόχθων"
+        },
+        {
+          "token": "τῶν",
+          "lemma": "ὁ",
+          "part_of_speech": "article",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ton",
+          "gloss": "the",
+          "dictionary_entry_nl": null,
+          "clause_role": "determiner",
+          "semantic_role": "determiner",
+          "syntactic_head": "ὀδυνῶν"
+        },
+        {
+          "token": "ὀδυνῶν",
+          "lemma": "ὀδύνη",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "genitive",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "odynon",
+          "gloss": "pains",
+          "dictionary_entry_nl": null,
+          "clause_role": "source_modifier",
+          "semantic_role": "source",
+          "syntactic_head": "μόχθων"
+        },
+        {
+          "token": "αἵ",
+          "lemma": "ὅς",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "nominative",
+            "gender": "feminine",
+            "number": "plural",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "hai",
+          "gloss": "which",
+          "dictionary_entry_nl": null,
+          "clause_role": "subject",
+          "semantic_role": "agent",
+          "syntactic_head": "συνέχουσιν"
+        },
+        {
+          "token": "με",
+          "lemma": "ἐγώ",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": null,
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": "first"
+          },
+          "transliteration": "me",
+          "gloss": "me",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "συνέχουσιν"
+        },
+        {
+          "token": "νῦν",
+          "lemma": "νῦν",
+          "part_of_speech": "adverb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "nyn",
+          "gloss": "now",
+          "dictionary_entry_nl": null,
+          "clause_role": "temporal_modifier",
+          "semantic_role": "temporal",
+          "syntactic_head": "συνέχουσιν"
+        },
+        {
+          "token": "συνέχουσιν",
+          "lemma": "συνέχω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "plural",
+            "tense": "present",
+            "voice": "active",
+            "mood": "indicative",
+            "person": "third"
+          },
+          "transliteration": "synechousin",
+          "gloss": "encompass",
+          "dictionary_entry_nl": null,
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "ὀδυνῶν"
+        }
+      ]
+    },
+    {
+      "sentence_id": "s4",
+      "sentence_text": "ἀλλὰ εἰπόν τι ῥῆμα εἰς κύριον καὶ τελεύτα.",
+      "translation_nl": "Maar spreek een woord tot de Heer en sterf.",
+      "translation_en": "But speak some word to the Lord and die.",
+      "translation_fr": "Mais dis quelque parole au Seigneur et meurs.",
+      "analysis": [
+        {
+          "token": "ἀλλὰ",
+          "lemma": "ἀλλά",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "alla",
+          "gloss": "but",
+          "dictionary_entry_nl": null,
+          "clause_role": "adversative_conjunction",  
+          "semantic_role": "contrast",
+          "syntactic_head": "εἰπόν"
+        },
+        {
+          "token": "εἰπόν",
+          "lemma": "λέγω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "aorist",
+            "voice": "active",
+            "mood": "imperative",
+            "person": "second"
+          },
+          "transliteration": "eipon",
+          "gloss": "speak",
+          "dictionary_entry_nl": "zeggen, spreken (in alle betekenissen). Kan ook betekenen: noemen (met dubbele accusativus), bedoelen of aanduiden, opdracht geven of bevelen, voordragen of voorlezen. In passief: 'er wordt gezegd' of 'men zegt'. Pregnante betekenis: iets van belang zeggen, gelijk hebben.",
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "root"
+        },
+        {
+          "token": "τι",
+          "lemma": "τις",
+          "part_of_speech": "pronoun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "ti",
+          "gloss": "something",
+          "dictionary_entry_nl": "iemand, iets (indefiniet). Sommigen, enigen (meervoud). Men, menigeen, iedereen. Bepaald persoon. Iemand van belang. Specifiek gebruik van τι: een beetje (adverbiaal). Met ontkenning: in geen enkel opzicht. Iets van belang. Als bijvoeglijk: een zekere, een of ander. Ongeveer (afzwakkend).",
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "εἰπόν"
+        },
+        {
+          "token": "ῥῆμα",
+          "lemma": "ῥῆμα",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "neuter",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "rhema",
+          "gloss": "word",
+          "dictionary_entry_nl": null,
+          "clause_role": "direct_object",
+          "semantic_role": "patient",
+          "syntactic_head": "εἰπόν"
+        },
+        {
+          "token": "εἰς",
+          "lemma": "εἰς",
+          "part_of_speech": "preposition",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "eis",
+          "gloss": "to",
+          "dictionary_entry_nl": null,
+          "clause_role": "goal_modifier",
+          "semantic_role": "goal",
+          "syntactic_head": "εἰπόν"
+        },
+        {
+          "token": "κύριον",
+          "lemma": "κύριος",
+          "part_of_speech": "noun",
+          "parsing_details": {
+            "case": "accusative",
+            "gender": "masculine",
+            "number": "singular",
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kyrion",
+          "gloss": "Lord",
+          "dictionary_entry_nl": null,
+          "clause_role": "goal_modifier",
+          "semantic_role": "recipient",
+          "syntactic_head": "εἰς"
+        },
+        {
+          "token": "καὶ",
+          "lemma": "καί",
+          "part_of_speech": "conjunction",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": null,
+            "tense": null,
+            "voice": null,
+            "mood": null,
+            "person": null
+          },
+          "transliteration": "kai",
+          "gloss": "and",
+          "dictionary_entry_nl": null,
+          "clause_role": "coordinator",
+          "semantic_role": "sequence",
+          "syntactic_head": "εἰπόν"
+        },
+        {
+          "token": "τελεύτα",
+          "lemma": "τελευτάω",
+          "part_of_speech": "verb",
+          "parsing_details": {
+            "case": null,
+            "gender": null,
+            "number": "singular",
+            "tense": "present",
+            "voice": "active",
+            "mood": "imperative",
+            "person": "second"
+          },
+          "transliteration": "teleuta",
+          "gloss": "die",
+          "dictionary_entry_nl": null,
+          "clause_role": "predicate",
+          "semantic_role": "verbal_action",
+          "syntactic_head": "καὶ"
         }
       ]
     }
