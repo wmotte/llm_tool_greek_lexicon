@@ -850,6 +850,7 @@
                 } catch (error) {
                     alert(`Error loading example:\n${error.message}`);
                     document.getElementById('example-select').value = "";
+                    this.resetUI();
                 }
             }
 
@@ -862,6 +863,7 @@
                     this.processData(jsonData, displayName);
                 } catch (error) {
                     alert('Error loading file: ' + error.message);
+                    this.resetUI();
                 }
             }
 
@@ -875,6 +877,12 @@
             }
 
             processData(jsonData, filename) {
+                if (!jsonData || !jsonData.sentences || !Array.isArray(jsonData.sentences)) {
+                    alert('Invalid JSON file. It must contain a "sentences" array.');
+                    this.resetUI();
+                    return;
+                }
+                
                 this.data = jsonData;
                 this.currentSentenceIndex = 0;
                 this.updateFileInfo(filename);
@@ -882,6 +890,18 @@
                 document.getElementById('emptyState').style.display = 'none';
                 document.getElementById('analysisContent').style.display = 'block';
                 document.getElementById('sentenceNav').style.display = 'flex';
+            }
+            
+            resetUI() {
+                this.data = null;
+                this.currentSentenceIndex = 0;
+                document.getElementById('fileInfo').textContent = 'No file selected';
+                document.getElementById('example-select').value = '';
+                document.getElementById('emptyState').style.display = 'block';
+                document.getElementById('analysisContent').style.display = 'none';
+                document.getElementById('sentenceNav').style.display = 'none';
+                document.getElementById('lfgGroups').innerHTML = '';
+                document.getElementById('sflGroups').innerHTML = '';
             }
 
             updateFileInfo(filename) {
