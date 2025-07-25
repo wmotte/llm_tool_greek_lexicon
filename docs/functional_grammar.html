@@ -1009,11 +1009,17 @@
                 // Update framework class on text display container
                 textDisplayEl.className = `text-display ${this.currentView}`;
                 
-                // Create a map of tokens to their analysis
-                const tokenMap = new Map();
+                // Create a map of tokens grouped by their text, maintaining order
+                const tokenGroups = new Map();
                 sentence.analysis.forEach(token => {
-                    tokenMap.set(token.token, token);
+                    if (!tokenGroups.has(token.token)) {
+                        tokenGroups.set(token.token, []);
+                    }
+                    tokenGroups.get(token.token).push(token);
                 });
+                
+                // Track which instance of each word we're processing
+                const wordCounts = new Map();
 
                 const words = sentence.sentence_text.split(/(\s+)/);
 
@@ -1023,15 +1029,23 @@
                         html += word;
                     } else {
                         // Remove trailing punctuation (but NOT apostrophes)
+                        //const baseWord = word.replace(/[.,;;·—''"""!?…]+$/u, '');
                         const baseWord = word.replace(/[.,;;·—‘’“”"!?…]+$/u, '');
-                        const token = tokenMap.get(baseWord);
+                        
+                        // Get the current count for this word
+                        const currentCount = wordCounts.get(baseWord) || 0;
+                        wordCounts.set(baseWord, currentCount + 1);
+                        
+                        // Get the tokens for this word and pick the right instance
+                        const tokensForWord = tokenGroups.get(baseWord);
+                        const token = tokensForWord && tokensForWord[currentCount] ? tokensForWord[currentCount] : null;
 
                         if (token) {
                             const dataAttr = this.currentView === 'lfg'
                                 ? `data-role="${token.clause_role || 'other'}"`
                                 : `data-process="${(token.process_type || 'other').toLowerCase()}" data-textual="${(token.textual_role || 'other').toLowerCase()}"`;
 
-                            html += `<span class="greek-word" ${dataAttr} data-token-index="${token.token}">${word}</span>`;
+                            html += `<span class="greek-word" ${dataAttr} data-token-index="${token.token}-${currentCount}">${word}</span>`;
                         } else {
                             html += `<span class="greek-word">${word}</span>`;
                         }
@@ -1043,7 +1057,8 @@
                 // Add click listeners to Greek words
                 greekTextEl.querySelectorAll('.greek-word[data-token-index]').forEach(wordEl => {
                     wordEl.addEventListener('click', (e) => {
-                        this.showTokenDetails(e.currentTarget.dataset.tokenIndex);
+                        const [tokenText, instanceIndex] = e.currentTarget.dataset.tokenIndex.split('-');
+                        this.showTokenDetails(tokenText, parseInt(instanceIndex));
                     });
                 });
             }
