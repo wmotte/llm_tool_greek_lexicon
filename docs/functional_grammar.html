@@ -87,6 +87,40 @@
         font-style: italic;
     }
 
+    .example-label {
+        font-weight: 600;
+        color: #495057;
+        font-size: 0.85rem;
+    }
+
+    .divider {
+        height: 30px;
+        width: 1px;
+        background: #dee2e6;
+        margin: 0 10px;
+    }
+
+    .example-dropdown {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        border-radius: 6px;
+        border: 1px solid #ced4da;
+        min-width: 140px;
+        background: white;
+        cursor: pointer;
+        transition: border-color 0.3s;
+    }
+
+    .example-dropdown:hover {
+        border-color: #007bff;
+    }
+
+    .example-dropdown:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    }
+
     .view-controls {
         display: flex;
         align-items: center;
@@ -641,6 +675,13 @@
 
         .file-section, .view-controls {
             justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .divider {
+            height: 1px;
+            width: 100%;
+            margin: 8px 0;
         }
 
         .main-layout {
@@ -732,6 +773,16 @@
                 </label>
                 <input type="file" id="fileInput" accept=".json" style="display: none;">
                 <span class="file-info" id="fileInfo">No file selected</span>
+                
+                <div class="divider"></div>
+                
+                <span class="example-label">📚 Examples:</span>
+                <select id="example-select" class="example-dropdown">
+                    <option value="">Select...</option>
+                    <option value="example1.json">Excerpts 92.2</option>
+                    <option value="example2.json">Job 2:9</option>
+                    <option value="example3.json">Hebrews 2:9</option>
+                </select>
             </div>
 
             <div class="view-controls">
@@ -815,6 +866,11 @@
                     this.loadFile(e.target.files[0]);
                 });
 
+                // Example loading
+                document.getElementById('example-select').addEventListener('change', (e) => {
+                    this.loadSelectedExample(e.target.value);
+                });
+
                 // Framework toggle
                 document.querySelectorAll('.framework-btn').forEach(btn => {
                     btn.addEventListener('click', (e) => {
@@ -858,8 +914,39 @@
                     this.displayCurrentSentence();
                     this.updateNavigation();
                     
+                    // Reset example selector
+                    document.getElementById('example-select').value = "";
+                    
                 } catch (error) {
                     alert('Error loading file: ' + error.message);
+                }
+            }
+
+            async loadSelectedExample(filename) {
+                if (!filename) return;
+
+                try {
+                    const response = await fetch(`json_examples/${filename}`);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filename}: ${response.status} ${response.statusText}`);
+                    }
+                    
+                    const jsonData = await response.json();
+                    
+                    this.data = jsonData;
+                    this.currentSentence = 0;
+                    
+                    document.getElementById('fileInfo').textContent = 
+                        `${filename} (${this.data.sentences.length} sentence${this.data.sentences.length > 1 ? 's' : ''})`;
+                    
+                    this.showAnalysis();
+                    this.displayCurrentSentence();
+                    this.updateNavigation();
+                    
+                } catch (error) {
+                    alert(`Error loading example:\n${error.message}`);
+                    // Reset the dropdown
+                    document.getElementById('example-select').value = "";
                 }
             }
 
@@ -928,28 +1015,28 @@
                     tokenMap.set(token.token, token);
                 });
 
-const words = sentence.sentence_text.split(/(\s+)/);
+                const words = sentence.sentence_text.split(/(\s+)/);
 
-let html = '';
-words.forEach(word => {
-    if (word.trim() === '') {
-        html += word;
-    } else {
-        // Remove trailing punctuation (but NOT apostrophes)
-        const baseWord = word.replace(/[.,;;·—‘’“”"!?…]+$/u, '');
-        const token = tokenMap.get(baseWord);
+                let html = '';
+                words.forEach(word => {
+                    if (word.trim() === '') {
+                        html += word;
+                    } else {
+                        // Remove trailing punctuation (but NOT apostrophes)
+                        const baseWord = word.replace(/[.,;;·—‘’“”"!?…]+$/u, '');
+                        const token = tokenMap.get(baseWord);
 
-        if (token) {
-            const dataAttr = this.currentView === 'lfg'
-                ? `data-role="${token.clause_role || 'other'}"`
-                : `data-process="${(token.process_type || 'other').toLowerCase()}" data-textual="${(token.textual_role || 'other').toLowerCase()}"`;
+                        if (token) {
+                            const dataAttr = this.currentView === 'lfg'
+                                ? `data-role="${token.clause_role || 'other'}"`
+                                : `data-process="${(token.process_type || 'other').toLowerCase()}" data-textual="${(token.textual_role || 'other').toLowerCase()}"`;
 
-            html += `<span class="greek-word" ${dataAttr} data-token-index="${token.token}">${word}</span>`;
-        } else {
-            html += `<span class="greek-word">${word}</span>`;
-        }
-    }
-});
+                            html += `<span class="greek-word" ${dataAttr} data-token-index="${token.token}">${word}</span>`;
+                        } else {
+                            html += `<span class="greek-word">${word}</span>`;
+                        }
+                    }
+                });
 
                 greekTextEl.innerHTML = html;
                 
@@ -983,7 +1070,7 @@ words.forEach(word => {
                 }
                 
                 html += '</div>';
-                html += this.renderLFGLegend();
+                html += this.renderLFGLegend(sentence.analysis);
                 
                 container.innerHTML = html;
                 this.attachTokenListeners(containerId);
@@ -1011,13 +1098,13 @@ words.forEach(word => {
                     
                     // Add Process Types legend right after the 'Processes' group
                     if (groupName === 'Processes') {
-                        html += this.renderSFLProcessLegend();
+                        html += this.renderSFLProcessLegend(sentence.analysis);
                     }
                 }
                 
                 html += '</div>';
                 // Add only the Textual Roles legend at the bottom
-                html += this.renderSFLTextualLegend();
+                html += this.renderSFLTextualLegend(sentence.analysis);
                 
                 container.innerHTML = html;
                 this.attachTokenListeners(containerId);
@@ -1090,8 +1177,9 @@ words.forEach(word => {
                 `;
             }
 
-            renderLFGLegend() {
-                const legend = {
+            // Modified to accept sentence analysis and filter based on what's present
+            renderLFGLegend(sentenceAnalysis) {
+                const allLegend = {
                     'subject': '#2196f3',
                     'object': '#9c27b0', 
                     'predicate': '#f44336',
@@ -1101,11 +1189,31 @@ words.forEach(word => {
                     'conjunction': '#009688'
                 };
 
-                return this.createLegend('LFG Clause Roles', legend);
+                // Get only the roles that are present in the current sentence
+                const presentRoles = new Set();
+                sentenceAnalysis.forEach(token => {
+                    if (token.clause_role && allLegend[token.clause_role]) {
+                        presentRoles.add(token.clause_role);
+                    }
+                });
+
+                // Filter legend to only show present roles
+                const filteredLegend = {};
+                presentRoles.forEach(role => {
+                    filteredLegend[role] = allLegend[role];
+                });
+
+                // Only show legend if there are items to display
+                if (Object.keys(filteredLegend).length === 0) {
+                    return '';
+                }
+
+                return this.createLegend('LFG Clause Roles', filteredLegend);
             }
 
-            renderSFLProcessLegend() {
-                const processLegend = {
+            // Modified to accept sentence analysis and filter based on what's present
+            renderSFLProcessLegend(sentenceAnalysis) {
+                const allProcessLegend = {
                     'verbal': '#ffc107',
                     'mental': '#3f51b5',
                     'relational': '#03a9f4',
@@ -1113,20 +1221,61 @@ words.forEach(word => {
                     'existential': '#673ab7'
                 };
 
-                return this.createLegend('SFL Process Types', processLegend);
+                // Get only the process types that are present in the current sentence
+                const presentProcesses = new Set();
+                sentenceAnalysis.forEach(token => {
+                    if (token.process_type) {
+                        const processType = token.process_type.toLowerCase();
+                        if (allProcessLegend[processType]) {
+                            presentProcesses.add(processType);
+                        }
+                    }
+                });
+
+                // Filter legend to only show present process types
+                const filteredLegend = {};
+                presentProcesses.forEach(process => {
+                    filteredLegend[process] = allProcessLegend[process];
+                });
+
+                // Only show legend if there are items to display
+                if (Object.keys(filteredLegend).length === 0) {
+                    return '';
+                }
+
+                return this.createLegend('SFL Process Types', filteredLegend);
             }
 
-            renderSFLTextualLegend() {
-                const textualLegend = {
+            // Modified to accept sentence analysis and filter based on what's present
+            renderSFLTextualLegend(sentenceAnalysis) {
+                const allTextualLegend = {
                     'theme': '#4caf50',
                     'rheme': '#f44336'
                 };
 
-                return this.createLegend('SFL Textual Roles', textualLegend);
-            }
+                // Get only the textual roles that are present in the current sentence
+                const presentTextual = new Set();
+                sentenceAnalysis.forEach(token => {
+                    if (token.textual_role) {
+                        const textualRole = token.textual_role.toLowerCase();
+                        if (allTextualLegend[textualRole]) {
+                            presentTextual.add(textualRole);
+                        }
+                    }
+                });
 
-            renderSFLLegend() {
-                return this.renderSFLProcessLegend() + this.renderSFLTextualLegend();
+                // Filter legend to only show present textual roles
+                const filteredLegend = {};
+                presentTextual.forEach(textual => {
+                    filteredLegend[textual] = allTextualLegend[textual];
+                });
+
+                // Only show legend if there are items to display
+                if (Object.keys(filteredLegend).length === 0) {
+                    return '';
+                }
+
+                return this.createLegend('SFL Textual Roles', filteredLegend);
             }
 
             createLegend(title, items) {
