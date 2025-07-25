@@ -162,6 +162,67 @@
             margin-left: 20px;
         }
 
+        .info-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .info-icon:hover {
+            background: #e9ecef;
+            border-color: #adb5bd;
+            transform: scale(1.1);
+        }
+
+        .info-popup {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c3e50;
+            color: white;
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            white-space: nowrap;
+            max-width: 280px;
+            white-space: normal;
+            line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .info-popup.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .info-popup::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #2c3e50;
+        }
+
         .toggle-btn {
             padding: 8px 16px;
             border: 2px solid #ffc107;
@@ -478,7 +539,7 @@
     <div class="container">
         <div class="header">
             <h1>🏛️ Ancient/Koine Greek Inspector</h1>
-            <p>Interactive display of parsed texts with morphosyntactic information and translations</p>
+            <p>Interactive display of parsed texts with morphosyntactic and functional grammar information</p>
         </div>
 
         <div class="controls">
@@ -512,16 +573,23 @@
                 
                 <div class="language-selector">
                     <span>Literal translation:</span>
-                    <button class="lang-btn active" data-lang="en">English</button>
                     <button class="lang-btn" data-lang="nl">Nederlands</button>
+                    <button class="lang-btn active" data-lang="en">English</button>
                     <button class="lang-btn" data-lang="fr">Français</button>
                 </div>
 
                 <div class="analysis-toggle">
-                    <span>Analysis style:</span>
+                    <span>Grammar:</span>
                     <button class="toggle-btn active" data-analysis="lfg">LFG</button>
                     <button class="toggle-btn" data-analysis="sfl">SFL</button>
+                    <div class="info-icon" id="grammarInfoIcon">
+                        ℹ️
+                        <div class="info-popup" id="grammarInfoPopup">
+                            LFG stands for 'lexical functional grammar' and SFL stands for 'systemic functional linguistics', two functional grammar frameworks.
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
 
@@ -547,7 +615,7 @@
                 <div id="analysisContent">
                     <div class="empty-state">
                         <h3>Analysis Panel</h3>
-                        <p>Click on any Greek word on the left to see its detailed linguistic analysis, including morphology, syntax, and semantic roles.<br>
+                        <p>Click on any Greek word on the left to see its detailed linguistic analysis, including morphology, syntax, and functional grammar roles.<br>
                         <small style="color: #999;">💡 Use arrow keys (← → ↑ ↓) to navigate between tokens</small></p>
                     </div>
                 </div>
@@ -596,6 +664,18 @@
                     btn.addEventListener('click', (e) => {
                         this.setAnalysisStyle(e.target.dataset.analysis);
                     });
+                });
+
+                // Grammar info icon
+                document.getElementById('grammarInfoIcon').addEventListener('click', (e) => {
+                    this.toggleInfoPopup(e);
+                });
+
+                // Close info popup when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('#grammarInfoIcon')) {
+                        this.hideInfoPopup();
+                    }
                 });
 
                 // Navigation buttons
@@ -713,6 +793,17 @@
                     const sentence = this.data.sentences[this.currentSentence];
                     this.displayTokenAnalysis(this.selectedToken, sentence.analysis);
                 }
+            }
+
+            toggleInfoPopup(e) {
+                e.stopPropagation(); // Prevent the document click handler from immediately closing
+                const popup = document.getElementById('grammarInfoPopup');
+                popup.classList.toggle('show');
+            }
+
+            hideInfoPopup() {
+                const popup = document.getElementById('grammarInfoPopup');
+                popup.classList.remove('show');
             }
 
             displayCurrentSentence() {
@@ -919,7 +1010,7 @@
 
                 return `
                     <div class="analysis-section lfg">
-                        <h4>LFG-style Analysis:</h4>
+                        <h4>LFG-style Grammar:</h4>
                         <div class="detail-grid">
                             ${lfgDetails.map(detail => `
                                 <div class="detail-item">
@@ -937,7 +1028,7 @@
                 if (!token.experiential_role && !token.interpersonal_role && !token.textual_role && !token.process_type) {
                     return `
                         <div class="analysis-section sfl">
-                            <h4>SFL-style Analysis:</h4>
+                            <h4>SFL-style Grammar:</h4>
                             <p style="color: #6c757d; font-style: italic;">SFL analysis not available for this dataset.</p>
                         </div>
                     `;
@@ -948,7 +1039,8 @@
                     { key: 'interpersonal_role', label: 'Interpersonal Role', value: token.interpersonal_role },
                     { key: 'textual_role', label: 'Textual Role', value: token.textual_role },
                     { key: 'process_type', label: 'Process Type', value: token.process_type }
-                ];
+                ].filter(detail => detail.value && detail.value.trim() !== '');
+
 
                 return `
                     <div class="analysis-section sfl">
@@ -1023,7 +1115,7 @@
                 document.getElementById('analysisContent').innerHTML = `
                     <div class="empty-state">
                         <h3>Analysis Panel</h3>
-                        <p>Click on any Greek word to see its detailed linguistic analysis.<br>
+                        <p>Click on any Greek word on the left to see its detailed linguistic analysis.<br>
                         <small style="color: #999;">💡 Use arrow keys (← → ↑ ↓) to navigate between tokens</small></p>
                     </div>
                 `;
@@ -1059,8 +1151,8 @@
 
             getLanguageName(code) {
                 const names = {
-                    'en': 'English',
                     'nl': 'Nederlands', 
+                    'en': 'English',
                     'fr': 'Français'
                 };
                 return names[code] || code;

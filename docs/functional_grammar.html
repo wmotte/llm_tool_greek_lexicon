@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Grammar Analyzer</title>
+ 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .header {
+        background: linear-gradient(45deg, #2c3e50, #34495e);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+        font-weight: 300;
+    }
+
+    .header p {
+        opacity: 0.9;
+        font-size: 1rem;
+    }
+
+    .controls {
+        padding: 20px 30px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .file-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .file-input {
+        padding: 12px 24px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s;
+    }
+
+    .file-input:hover {
+        background: #0056b3;
+    }
+
+    .file-info {
+        color: #6c757d;
+        font-style: italic;
+    }
+    
+    /* New styles for the menu */
+    .example-label {
+        font-weight: 600;
+        color: #495057;
+        font-size: 1rem;
+    }
+    .divider {
+        height: 30px;
+        width: 1px;
+        background: #dee2e6;
+        margin: 0 5px;
+    }
+
+    .view-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .framework-toggle {
+        display: flex;
+        gap: 5px;
+        background: #e9ecef;
+        border-radius: 8px;
+        padding: 4px;
+    }
+
+    .framework-btn {
+        padding: 8px 16px;
+        border: none;
+        background: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+
+    .framework-btn.active {
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .framework-btn[data-framework="lfg"] {
+        color: #1976d2;
+    }
+
+    .framework-btn[data-framework="sfl"] {
+        color: #388e3c;
+    }
+
+    .framework-btn[data-framework="lfg"].active {
+        background: #1976d2;
+        color: white;
+    }
+
+    .framework-btn[data-framework="sfl"].active {
+        background: #388e3c;
+        color: white;
+    }
+
+    .sentence-nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        padding: 8px 12px;
+        background: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+        background: #5a6268;
+    }
+
+    .nav-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .sentence-counter {
+        padding: 8px 12px;
+        background: #e9ecef;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .content {
+        padding: 0;
+        min-height: 70vh;
+    }
+
+    .main-layout {
+        display: flex;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .text-display {
+        flex: 1;
+        max-width: 23.333%;
+        padding: 30px;
+        background: #fafbfc;
+        border-right: 2px solid #e9ecef;
+        display: flex;
+        align-items: flex-start;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .sentence-header {
+        width: 100%;
+    }
+
+    .sentence-id {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .greek-text {
+        font-family: 'Times New Roman', serif;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: left;
+        direction: ltr;
+        word-wrap: break-word;
+    }
+
+    .greek-word {
+        display: inline;
+        padding: 2px 4px;
+        border-radius: 4px;
+        margin: 0 1px;
+        cursor: pointer;
+        transition: all 0.3s;
+        border-bottom: 2px solid transparent;
+    }
+
+    .greek-word:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* LFG highlighting for Greek text */
+    .lfg .greek-word[data-role="subject"] { 
+        background: rgba(33, 150, 243, 0.15); 
+        border-bottom-color: #2196f3; 
+    }
+    .lfg .greek-word[data-role="object"] { 
+        background: rgba(156, 39, 176, 0.15); 
+        border-bottom-color: #9c27b0; 
+    }
+    .lfg .greek-word[data-role="predicate"] { 
+        background: rgba(244, 67, 54, 0.15); 
+        border-bottom-color: #f44336; 
+    }
+    .lfg .greek-word[data-role="adjunct"] { 
+        background: rgba(76, 175, 80, 0.15); 
+        border-bottom-color: #4caf50; 
+    }
+    .lfg .greek-word[data-role="complement"] { 
+        background: rgba(255, 152, 0, 0.15); 
+        border-bottom-color: #ff9800; 
+    }
+    .lfg .greek-word[data-role="determiner"] { 
+        background: rgba(139, 195, 74, 0.15); 
+        border-bottom-color: #8bc34a; 
+    }
+    .lfg .greek-word[data-role="conjunction"] { 
+        background: rgba(0, 150, 136, 0.15); 
+        border-bottom-color: #009688; 
+    }
+
+    /* SFL highlighting for Greek text */
+    .sfl .greek-word[data-process="verbal"] { 
+        background: rgba(255, 193, 7, 0.15); 
+        border-bottom-color: #ffc107; 
+    }
+    .sfl .greek-word[data-process="mental"] { 
+        background: rgba(63, 81, 181, 0.15); 
+        border-bottom-color: #3f51b5; 
+    }
+    .sfl .greek-word[data-process="relational"] { 
+        background: rgba(3, 169, 244, 0.15); 
+        border-bottom-color: #03a9f4; 
+    }
+    .sfl .greek-word[data-process="material"] { 
+        background: rgba(233, 30, 99, 0.15); 
+        border-bottom-color: #e91e63; 
+    }
+    .sfl .greek-word[data-process="existential"] { 
+        background: rgba(103, 58, 183, 0.15); 
+        border-bottom-color: #673ab7; 
+    }
+
+    .sfl .greek-word[data-process="other"][data-textual="theme"],
+    .sfl .greek-word[data-process="null"][data-textual="theme"],
+    .sfl .greek-word:not([data-process])[data-textual="theme"] {
+        background: rgba(76, 175, 80, 0.15);
+        border-bottom-color: #4caf50;
+    }
+
+    .sfl .greek-word[data-process="other"][data-textual="rheme"],
+    .sfl .greek-word[data-process="null"][data-textual="rheme"],
+    .sfl .greek-word:not([data-process])[data-textual="rheme"] {
+        background: rgba(244, 67, 54, 0.15);
+        border-bottom-color: #f44336;
+    }
+
+    .translation {
+        font-size: 1rem;
+        color: #495057;
+        text-align: left;
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    .analysis-container {
+        flex: 2;
+        max-width: 76.667%;
+        padding: 30px;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .framework-view {
+        display: none;
+    }
+
+    .framework-view.active {
+        display: block;
+    }
+
+    .framework-panel {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 25px;
+        min-height: 500px;
+    }
+
+    .framework-panel.lfg {
+        border-left: 5px solid #1976d2;
+    }
+
+    .framework-panel.sfl {
+        border-left: 5px solid #388e3c;
+    }
+
+    .framework-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .framework-title.lfg {
+        color: #1976d2;
+    }
+
+    .framework-title.sfl {
+        color: #388e3c;
+    }
+
+    .functional-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .functional-group {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .group-header {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    .group-header.lfg {
+        color: #1976d2;
+        border-bottom-color: #1976d2;
+    }
+
+    .group-header.sfl {
+        color: #388e3c;
+        border-bottom-color: #388e3c;
+    }
+
+    .tokens-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .token-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+        min-width: 80px;
+    }
+
+    .token-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .token-item.selected {
+        border-color: #007bff;
+        box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+    }
+
+    .token-greek {
+        font-family: 'Times New Roman', serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 4px;
+    }
+
+    .token-gloss {
+        font-size: 0.85rem;
+        color: #6c757d;
+        text-align: center;
+    }
+
+    .token-role {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-top: 4px;
+        text-align: center;
+        padding: 2px 6px;
+        border-radius: 10px;
+    }
+
+    .lfg .token-item[data-role="subject"] { background: #e3f2fd; border-left: 3px solid #2196f3; }
+    .lfg .token-item[data-role="object"] { background: #f3e5f5; border-left: 3px solid #9c27b0; }
+    .lfg .token-item[data-role="predicate"] { background: #ffebee; border-left: 3px solid #f44336; }
+    .lfg .token-item[data-role="adjunct"] { background: #e8f5e8; border-left: 3px solid #4caf50; }
+    .lfg .token-item[data-role="complement"] { background: #fff3e0; border-left: 3px solid #ff9800; }
+    .lfg .token-item[data-role="determiner"] { background: #f1f8e9; border-left: 3px solid #8bc34a; }
+    .lfg .token-item[data-role="conjunction"] { background: #e0f2f1; border-left: 3px solid #009688; }
+
+    .sfl .token-item[data-process="verbal"] { background: #fff8e1; border-left: 3px solid #ffc107; }
+    .sfl .token-item[data-process="mental"] { background: #e8eaf6; border-left: 3px solid #3f51b5; }
+    .sfl .token-item[data-process="relational"] { background: #e1f5fe; border-left: 3px solid #03a9f4; }
+    .sfl .token-item[data-process="material"] { background: #fce4ec; border-left: 3px solid #e91e63; }
+    .sfl .token-item[data-process="existential"] { background: #f3e5f5; border-left: 3px solid #673ab7; }
+
+    .sfl .token-item[data-process="other"][data-textual="theme"],
+    .sfl .token-item[data-process="null"][data-textual="theme"],
+    .sfl .token-item:not([data-process])[data-textual="theme"] {
+        background: #e8f5e8;
+        border-left: 3px solid #4caf50;
+    }
+
+    .sfl .token-item[data-process="other"][data-textual="rheme"],
+    .sfl .token-item[data-process="null"][data-textual="rheme"],
+    .sfl .token-item:not([data-process])[data-textual="rheme"] {
+        background: #ffebee;
+        border-left: 3px solid #f44336;
+    }
+
+    .legend {
+        margin-top: 5px;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .legend-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #2c3e50;
+    }
+
+    .legend-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .legend-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    .legend-label {
+        font-size: 0.9rem;
+        color: #495057;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: #6c757d;
+    }
+
+    .empty-state h3 {
+        margin-bottom: 10px;
+        color: #495057;
+    }
+
+    /* Modal/Popup Styles */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .token-details {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        z-index: 1001;
+        max-width: 500px;
+        width: 90%;
+        max-height: 80vh;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .token-details.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .details-header {
+        padding: 20px 20px 15px;
+        border-bottom: 2px solid #e9ecef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f8f9fa;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .details-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #2c3e50;
+        font-family: 'Times New Roman', serif;
+    }
+
+    .close-btn {
+        width: 32px;
+        height: 32px;
+        border: none;
+        background: #dc3545;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+    }
+
+    .close-btn:hover {
+        background: #c82333;
+    }
+
+    .details-content {
+        padding: 20px;
+    }
+
+    .detail-section {
+        margin-bottom: 25px;
+    }
+
+    .detail-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .detail-section h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .detail-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 8px 0;
+        border-bottom: 1px solid #f8f9fa;
+    }
+
+    .detail-item:last-child {
+        border-bottom: none;
+    }
+
+    .detail-label {
+        font-weight: 600;
+        color: #495057;
+        min-width: 140px;
+        flex-shrink: 0;
+    }
+
+    .detail-value {
+        color: #2c3e50;
+        text-align: right;
+        flex-grow: 1;
+        margin-left: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .controls {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 15px;
+        }
+
+        .file-section, .view-controls {
+            justify-content: center;
+        }
+
+        .main-layout {
+            flex-direction: column;
+        }
+
+        .text-display {
+            flex: none;
+            position: static;
+            max-height: none;
+            border-right: none;
+            border-bottom: 2px solid #e9ecef;
+            padding: 20px;
+            overflow-y: visible;
+        }
+
+        .analysis-container {
+            padding: 20px;
+            min-height: auto;
+            overflow-y: visible;
+        }
+
+        .greek-text {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .greek-word {
+            margin: 1px 2px;
+        }
+
+        .translation {
+            text-align: center;
+        }
+
+        .sentence-header {
+            text-align: center;
+        }
+
+        .token-details {
+            width: 95%;
+            max-height: 90vh;
+        }
+
+        .details-header {
+            padding: 15px 15px 10px;
+        }
+
+        .details-title {
+            font-size: 1.1rem;
+        }
+
+        .details-content {
+            padding: 15px;
+        }
+
+        .detail-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        .detail-label {
+            min-width: auto;
+        }
+
+        .detail-value {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏛️ Functional Grammar Analyzer</h1>
+            <p>Interactive visualization of LFG and SFL analysis for Ancient/Koine Greek texts</p>
+        </div>
+        <div class="controls">
+            <div class="file-section">
+                <label for="fileInput" class="file-input">
+                    📁 Load JSON File
+                </label>
+                <input type="file" id="fileInput" accept=".json" style="display: none;">
+                <span class="file-info" id="fileInfo">No file selected</span>
+                
+                <div class="divider"></div>
+                
+                <span class="example-label">📚 Examples:</span>
+                <select id="example-select" style="padding: 6px 8px; font-size: 0.85rem; border-radius: 4px; border: 1px solid #ced4da; min-width: 120px;">
+                    <option value="">Select...</option>
+                    <option value="example1.json">Excerpts 92.2</option>
+                    <option value="example2.json">Job 2:9</option>
+                    <option value="example3.json">Hebrews 2:9</option>
+                </select>
+            </div>
+            <div class="view-controls">
+                <div class="framework-toggle">
+                    <button class="framework-btn active" data-framework="lfg">LFG</button>
+                    <button class="framework-btn" data-framework="sfl">SFL</button>
+                </div>
+                <div class="sentence-nav" id="sentenceNav" style="display: none;">
+                    <button class="nav-btn" id="prevBtn">← Previous</button>
+                    <div class="sentence-counter" id="sentenceCounter">Sentence 1 of 1</div>
+                    <button class="nav-btn" id="nextBtn">Next →</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="emptyState" class="empty-state">
+                <h3>Welcome to the Functional Grammar Analyzer</h3>
+                <p>Load a JSON file containing LFG and SFL analysis to explore the functional structure of Ancient Greek texts.</p>
+                <br>
+                <p><strong>Features:</strong></p>
+                <p>• Compare LFG and SFL frameworks side by side</p>
+                <p>• Interactive token exploration with detailed analysis</p>
+                <p>• Color-coded functional roles and processes</p>
+                <p>• Navigation between multiple sentences</p>
+            </div>
+            <div id="analysisContent" style="display: none;">
+                <div class="main-layout">
+                    <div class="text-display">
+                        <div class="sentence-header">
+                            <div class="sentence-id" id="sentenceId">Sentence s1</div>
+                            <div class="greek-text" id="greekText"></div>
+                            <div class="translation" id="translation"></div>
+                        </div>
+                    </div>
+                    <div class="analysis-container">
+                        <div class="framework-view active" data-framework="lfg" id="lfgView">
+                            <div class="framework-panel lfg">
+                                <h4 class="framework-title lfg">LFG Analysis</h4>
+                                <div class="functional-groups" id="lfgGroups"></div>
+                            </div>
+                        </div>
+                        <div class="framework-view" data-framework="sfl" id="sflView">
+                            <div class="framework-panel sfl">
+                                <h4 class="framework-title sfl">SFL Analysis</h4>
+                                <div class="functional-groups" id="sflGroups"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="token-details" id="tokenDetails">
+        <div class="details-header">
+            <div class="details-title" id="detailsTitle">Token Details</div>
+            <button class="close-btn" id="closeDetailsBtn">&times;</button>
+        </div>
+        <div class="details-content" id="detailsContent"></div>
+    </div>
+    
+    <script>
+        class FunctionalGrammarAnalyzer {
+            constructor() {
+                this.data = null;
+                this.currentSentenceIndex = 0;
+                this.currentFramework = 'lfg';
+                this.selectedToken = null;
+                this.initializeEventListeners();
+            }
+
+            initializeEventListeners() {
+                document.getElementById('fileInput').addEventListener('change', (e) => this.loadFile(e.target.files[0]));
+                
+                document.getElementById('example-select').addEventListener('change', (e) => {
+                    this.loadSelectedExample(e.target.value);
+                });
+
+                document.querySelectorAll('.framework-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => this.setFramework(e.target.dataset.framework));
+                });
+                document.getElementById('prevBtn').addEventListener('click', () => this.previousSentence());
+                document.getElementById('nextBtn').addEventListener('click', () => this.nextSentence());
+                document.getElementById('closeDetailsBtn').addEventListener('click', () => this.hideTokenDetails());
+                document.getElementById('overlay').addEventListener('click', () => this.hideTokenDetails());
+            }
+
+            async loadSelectedExample(filename) {
+                if (!filename) return;
+                try {
+                    const response = await fetch(`json_examples/${filename}`);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filename}: ${response.status} ${response.statusText}`);
+                    }
+                    const jsonData = await response.json();
+                    const displayName = filename;
+                    this.processData(jsonData, displayName);
+                } catch (error) {
+                    alert(`Error loading example:\n${error.message}`);
+                    document.getElementById('example-select').value = "";
+                }
+            }
+
+            async loadFile(file) {
+                if (!file) return;
+                try {
+                    const text = await this.readFileAsText(file);
+                    const jsonData = JSON.parse(text);
+                    const displayName = file.name;
+                    this.processData(jsonData, displayName);
+                } catch (error) {
+                    alert('Error loading file: ' + error.message);
+                }
+            }
+
+            async readFileAsText(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => resolve(e.target.result);
+                    reader.onerror = (e) => reject(e);
+                    reader.readAsText(file);
+                });
+            }
+
+            processData(jsonData, filename) {
+                this.data = jsonData;
+                this.currentSentenceIndex = 0;
+                this.updateFileInfo(filename);
+                this.renderSentence();
+                document.getElementById('emptyState').style.display = 'none';
+                document.getElementById('analysisContent').style.display = 'block';
+                document.getElementById('sentenceNav').style.display = 'flex';
+            }
+
+            updateFileInfo(filename) {
+                document.getElementById('fileInfo').textContent = filename;
+            }
+
+            renderSentence() {
+                const sentence = this.data.sentences[this.currentSentenceIndex];
+                if (!sentence) return;
+
+                document.getElementById('sentenceId').textContent = `Sentence ${this.currentSentenceIndex + 1} of ${this.data.sentences.length}`;
+                document.getElementById('greekText').textContent = '';
+                document.getElementById('translation').textContent = sentence.translation;
+
+                const greekTextDiv = document.getElementById('greekText');
+                sentence.tokens.forEach((token, index) => {
+                    const wordSpan = document.createElement('span');
+                    wordSpan.className = 'greek-word';
+                    wordSpan.textContent = token.text + ' ';
+                    wordSpan.dataset.index = index;
+
+                    // Add LFG and SFL specific data for highlighting
+                    if (token.lfg && token.lfg.role) {
+                        wordSpan.dataset.role = token.lfg.role.toLowerCase().replace(/\s/g, '_');
+                    }
+                    if (token.sfl && token.sfl.process) {
+                        wordSpan.dataset.process = token.sfl.process.toLowerCase();
+                    }
+                    if (token.sfl && token.sfl.textual) {
+                        wordSpan.dataset.textual = token.sfl.textual.toLowerCase();
+                    }
+                    
+                    wordSpan.addEventListener('click', () => this.selectToken(index));
+                    greekTextDiv.appendChild(wordSpan);
+                });
+
+                this.renderFunctionalGroups(sentence.tokens);
+                this.updateNavigationButtons();
+            }
+
+            renderFunctionalGroups(tokens) {
+                const lfgGroupsDiv = document.getElementById('lfgGroups');
+                const sflGroupsDiv = document.getElementById('sflGroups');
+                lfgGroupsDiv.innerHTML = '';
+                sflGroupsDiv.innerHTML = '';
+                
+                const lfgRoles = {};
+                const sflRoles = {};
+
+                tokens.forEach(token => {
+                    if (token.lfg && token.lfg.role) {
+                        const role = token.lfg.role;
+                        if (!lfgRoles[role]) lfgRoles[role] = [];
+                        lfgRoles[role].push(token);
+                    }
+                    if (token.sfl && token.sfl.process) {
+                        const process = token.sfl.process;
+                        if (!sflRoles[process]) sflRoles[process] = [];
+                        sflRoles[process].push(token);
+                    }
+                    if (token.sfl && token.sfl.textual) {
+                        const textual = token.sfl.textual;
+                        const textualKey = `${textual}_${token.sfl.process || 'null'}`;
+                        if (!sflRoles[textualKey]) sflRoles[textualKey] = [];
+                        sflRoles[textualKey].push(token);
+                    }
+                });
+
+                // Render LFG Groups
+                for (const role in lfgRoles) {
+                    const group = this.createFunctionalGroup('LFG', role, lfgRoles[role]);
+                    lfgGroupsDiv.appendChild(group);
+                }
+
+                // Render SFL Groups
+                for (const role in sflRoles) {
+                    const group = this.createFunctionalGroup('SFL', role, sflRoles[role]);
+                    sflGroupsDiv.appendChild(group);
+                }
+            }
+
+            createFunctionalGroup(framework, role, tokens) {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'functional-group';
+
+                const header = document.createElement('div');
+                header.className = `group-header ${framework.toLowerCase()}`;
+                header.textContent = role.charAt(0).toUpperCase() + role.slice(1);
+                groupDiv.appendChild(header);
+
+                const tokensContainer = document.createElement('div');
+                tokensContainer.className = 'tokens-container';
+                tokens.forEach(token => {
+                    const tokenItem = this.createTokenItem(token, framework);
+                    tokensContainer.appendChild(tokenItem);
+                });
+                groupDiv.appendChild(tokensContainer);
+
+                return groupDiv;
+            }
+
+            createTokenItem(token, framework) {
+                const tokenItem = document.createElement('div');
+                tokenItem.className = `token-item ${framework.toLowerCase()}`;
+                
+                const roleData = framework === 'LFG' ? token.lfg.role : (token.sfl.process || token.sfl.textual);
+                if (roleData) {
+                    tokenItem.dataset.role = roleData.toLowerCase();
+                    tokenItem.dataset.process = token.sfl ? token.sfl.process : null;
+                    tokenItem.dataset.textual = token.sfl ? token.sfl.textual : null;
+                }
+
+                const greekSpan = document.createElement('span');
+                greekSpan.className = 'token-greek';
+                greekSpan.textContent = token.text;
+                tokenItem.appendChild(greekSpan);
+
+                const glossSpan = document.createElement('span');
+                glossSpan.className = 'token-gloss';
+                glossSpan.textContent = token.gloss;
+                tokenItem.appendChild(glossSpan);
+
+                const roleSpan = document.createElement('span');
+                roleSpan.className = 'token-role';
+                roleSpan.textContent = roleData;
+                tokenItem.appendChild(roleSpan);
+                
+                tokenItem.addEventListener('click', () => this.showTokenDetails(token));
+
+                return tokenItem;
+            }
+
+            selectToken(index) {
+                const allTokens = document.querySelectorAll('.greek-word');
+                allTokens.forEach(token => token.classList.remove('selected'));
+                const selectedToken = allTokens[index];
+                if (selectedToken) {
+                    selectedToken.classList.add('selected');
+                    const sentence = this.data.sentences[this.currentSentenceIndex];
+                    this.showTokenDetails(sentence.tokens[index]);
+                }
+            }
+
+            showTokenDetails(token) {
+                const detailsContainer = document.getElementById('detailsContent');
+                detailsContainer.innerHTML = '';
+                document.getElementById('detailsTitle').textContent = token.text;
+
+                // Create and populate the morphological details section
+                const morphologySection = document.createElement('div');
+                morphologySection.className = 'detail-section';
+                morphologySection.innerHTML = `<h4>Morphology</h4>`;
+                const morphologyList = document.createElement('div');
+                morphologyList.className = 'details-list';
+                
+                for (const key in token.morphology) {
+                    const item = this.createDetailItem(key.charAt(0).toUpperCase() + key.slice(1), token.morphology[key]);
+                    morphologyList.appendChild(item);
+                }
+                morphologySection.appendChild(morphologyList);
+                detailsContainer.appendChild(morphologySection);
+                
+                // Create and populate the LFG analysis section
+                const lfgSection = document.createElement('div');
+                lfgSection.className = 'detail-section';
+                lfgSection.innerHTML = `<h4>LFG Analysis</h4>`;
+                const lfgList = document.createElement('div');
+                lfgList.className = 'details-list';
+                
+                if (token.lfg) {
+                    for (const key in token.lfg) {
+                        const item = this.createDetailItem(key.charAt(0).toUpperCase() + key.slice(1), token.lfg[key]);
+                        lfgList.appendChild(item);
+                    }
+                }
+                lfgSection.appendChild(lfgList);
+                detailsContainer.appendChild(lfgSection);
+                
+                // Create and populate the SFL analysis section
+                const sflSection = document.createElement('div');
+                sflSection.className = 'detail-section';
+                sflSection.innerHTML = `<h4>SFL Analysis</h4>`;
+                const sflList = document.createElement('div');
+                sflList.className = 'details-list';
+                
+                if (token.sfl) {
+                    for (const key in token.sfl) {
+                        const item = this.createDetailItem(key.charAt(0).toUpperCase() + key.slice(1), token.sfl[key]);
+                        sflList.appendChild(item);
+                    }
+                }
+                sflSection.appendChild(sflList);
+                detailsContainer.appendChild(sflSection);
+
+                document.getElementById('tokenDetails').classList.add('show');
+                document.getElementById('overlay').classList.add('show');
+            }
+
+            createDetailItem(label, value) {
+                const item = document.createElement('div');
+                item.className = 'detail-item';
+                const labelSpan = document.createElement('span');
+                labelSpan.className = 'detail-label';
+                labelSpan.textContent = label + ':';
+                const valueSpan = document.createElement('span');
+                valueSpan.className = 'detail-value';
+                valueSpan.textContent = value;
+                item.appendChild(labelSpan);
+                item.appendChild(valueSpan);
+                return item;
+            }
+
+            hideTokenDetails() {
+                document.getElementById('tokenDetails').classList.remove('show');
+                document.getElementById('overlay').classList.remove('show');
+            }
+
+            setFramework(framework) {
+                this.currentFramework = framework;
+                document.querySelectorAll('.framework-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector(`.framework-btn[data-framework="${framework}"]`).classList.add('active');
+                
+                document.querySelectorAll('.framework-view').forEach(view => {
+                    view.classList.remove('active');
+                });
+                document.getElementById(`${framework}View`).classList.add('active');
+            }
+
+            previousSentence() {
+                if (this.currentSentenceIndex > 0) {
+                    this.currentSentenceIndex--;
+                    this.renderSentence();
+                }
+            }
+
+            nextSentence() {
+                if (this.currentSentenceIndex < this.data.sentences.length - 1) {
+                    this.currentSentenceIndex++;
+                    this.renderSentence();
+                }
+            }
+
+            updateNavigationButtons() {
+                const prevBtn = document.getElementById('prevBtn');
+                const nextBtn = document.getElementById('nextBtn');
+                prevBtn.disabled = this.currentSentenceIndex === 0;
+                nextBtn.disabled = this.currentSentenceIndex === this.data.sentences.length - 1;
+                document.getElementById('sentenceCounter').textContent = `Sentence ${this.currentSentenceIndex + 1} of ${this.data.sentences.length}`;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const analyzer = new FunctionalGrammarAnalyzer();
+        });
+    </script>
+</body>
+</html>
