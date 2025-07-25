@@ -86,19 +86,6 @@
         color: #6c757d;
         font-style: italic;
     }
-    
-    /* New styles for the menu */
-    .example-label {
-        font-weight: 600;
-        color: #495057;
-        font-size: 1rem;
-    }
-    .divider {
-        height: 30px;
-        width: 1px;
-        background: #dee2e6;
-        margin: 0 5px;
-    }
 
     .view-controls {
         display: flex;
@@ -471,8 +458,8 @@
     }
 
     .legend {
-        margin-top: 5px;
-        padding: 10px;
+        margin-top: 30px;
+        padding: 20px;
         background: #f8f9fa;
         border-radius: 8px;
     }
@@ -480,14 +467,14 @@
     .legend-title {
         font-size: 1rem;
         font-weight: 600;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
         color: #2c3e50;
     }
 
     .legend-items {
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 15px;
     }
 
     .legend-item {
@@ -726,6 +713,10 @@
         }
     }
 </style>
+
+
+
+
 </head>
 <body>
     <div class="container">
@@ -733,6 +724,7 @@
             <h1>🏛️ Functional Grammar Analyzer</h1>
             <p>Interactive visualization of LFG and SFL analysis for Ancient/Koine Greek texts</p>
         </div>
+
         <div class="controls">
             <div class="file-section">
                 <label for="fileInput" class="file-input">
@@ -740,22 +732,14 @@
                 </label>
                 <input type="file" id="fileInput" accept=".json" style="display: none;">
                 <span class="file-info" id="fileInfo">No file selected</span>
-                
-                <div class="divider"></div>
-                
-                <span class="example-label">📚 Examples:</span>
-                <select id="example-select" style="padding: 6px 8px; font-size: 0.85rem; border-radius: 4px; border: 1px solid #ced4da; min-width: 120px;">
-                    <option value="">Select...</option>
-                    <option value="example1.json">Excerpts 92.2</option>
-                    <option value="example2.json">Job 2:9</option>
-                    <option value="example3.json">Hebrews 2:9</option>
-                </select>
             </div>
+
             <div class="view-controls">
                 <div class="framework-toggle">
                     <button class="framework-btn active" data-framework="lfg">LFG</button>
                     <button class="framework-btn" data-framework="sfl">SFL</button>
                 </div>
+
                 <div class="sentence-nav" id="sentenceNav" style="display: none;">
                     <button class="nav-btn" id="prevBtn">← Previous</button>
                     <div class="sentence-counter" id="sentenceCounter">Sentence 1 of 1</div>
@@ -763,6 +747,7 @@
                 </div>
             </div>
         </div>
+
         <div class="content">
             <div id="emptyState" class="empty-state">
                 <h3>Welcome to the Functional Grammar Analyzer</h3>
@@ -774,6 +759,7 @@
                 <p>• Color-coded functional roles and processes</p>
                 <p>• Navigation between multiple sentences</p>
             </div>
+
             <div id="analysisContent" style="display: none;">
                 <div class="main-layout">
                     <div class="text-display">
@@ -783,17 +769,19 @@
                             <div class="translation" id="translation"></div>
                         </div>
                     </div>
+
                     <div class="analysis-container">
-                        <div class="framework-view active" data-framework="lfg" id="lfgView">
+                        <div class="framework-view active" id="lfgView">
                             <div class="framework-panel lfg">
-                                <h4 class="framework-title lfg">LFG Analysis</h4>
-                                <div class="functional-groups" id="lfgGroups"></div>
+                                <div class="framework-title lfg">Lexical Functional Grammar Analysis</div>
+                                <div id="lfgOnlyContent"></div>
                             </div>
                         </div>
-                        <div class="framework-view" data-framework="sfl" id="sflView">
+
+                        <div class="framework-view" id="sflView">
                             <div class="framework-panel sfl">
-                                <h4 class="framework-title sfl">SFL Analysis</h4>
-                                <div class="functional-groups" id="sflGroups"></div>
+                                <div class="framework-title sfl">Systemic Functional Linguistics Analysis</div>
+                                <div id="sflOnlyContent"></div>
                             </div>
                         </div>
                     </div>
@@ -801,363 +789,506 @@
             </div>
         </div>
     </div>
-    
+
     <div class="overlay" id="overlay"></div>
     <div class="token-details" id="tokenDetails">
         <div class="details-header">
-            <div class="details-title" id="detailsTitle">Token Details</div>
-            <button class="close-btn" id="closeDetailsBtn">&times;</button>
+            <div class="details-title" id="detailsTitle"></div>
+            <button class="close-btn" id="closeDetails">×</button>
         </div>
         <div class="details-content" id="detailsContent"></div>
     </div>
-    
+
     <script>
         class FunctionalGrammarAnalyzer {
             constructor() {
                 this.data = null;
-                this.currentSentenceIndex = 0;
-                this.currentFramework = 'lfg';
-                this.selectedToken = null;
+                this.currentSentence = 0;
+                this.currentView = 'lfg';
+                
                 this.initializeEventListeners();
             }
 
             initializeEventListeners() {
-                document.getElementById('fileInput').addEventListener('change', (e) => this.loadFile(e.target.files[0]));
-                
-                document.getElementById('example-select').addEventListener('change', (e) => {
-                    this.loadSelectedExample(e.target.value);
+                // File input
+                document.getElementById('fileInput').addEventListener('change', (e) => {
+                    this.loadFile(e.target.files[0]);
                 });
 
+                // Framework toggle
                 document.querySelectorAll('.framework-btn').forEach(btn => {
-                    btn.addEventListener('click', (e) => this.setFramework(e.target.dataset.framework));
+                    btn.addEventListener('click', (e) => {
+                        this.setFrameworkView(e.target.dataset.framework);
+                    });
                 });
-                document.getElementById('prevBtn').addEventListener('click', () => this.previousSentence());
-                document.getElementById('nextBtn').addEventListener('click', () => this.nextSentence());
-                document.getElementById('closeDetailsBtn').addEventListener('click', () => this.hideTokenDetails());
-                document.getElementById('overlay').addEventListener('click', () => this.hideTokenDetails());
-            }
 
-            async loadSelectedExample(filename) {
-                if (!filename) return;
-                try {
-                    const response = await fetch(`json_examples/${filename}`);
-                    if (!response.ok) {
-                        throw new Error(`Failed to load ${filename}: ${response.status} ${response.statusText}`);
-                    }
-                    const jsonData = await response.json();
-                    const displayName = filename;
-                    this.processData(jsonData, displayName);
-                } catch (error) {
-                    alert(`Error loading example:\n${error.message}`);
-                    document.getElementById('example-select').value = "";
-                    this.resetUI();
-                }
+                // Navigation
+                document.getElementById('prevBtn').addEventListener('click', () => {
+                    this.previousSentence();
+                });
+                
+                document.getElementById('nextBtn').addEventListener('click', () => {
+                    this.nextSentence();
+                });
+
+                // Modal close
+                document.getElementById('closeDetails').addEventListener('click', () => {
+                    this.hideTokenDetails();
+                });
+
+                document.getElementById('overlay').addEventListener('click', () => {
+                    this.hideTokenDetails();
+                });
             }
 
             async loadFile(file) {
                 if (!file) return;
+
                 try {
                     const text = await this.readFileAsText(file);
                     const jsonData = JSON.parse(text);
-                    const displayName = file.name;
-                    this.processData(jsonData, displayName);
+                    
+                    this.data = jsonData;
+                    this.currentSentence = 0;
+                    
+                    document.getElementById('fileInfo').textContent = 
+                        `${file.name} (${this.data.sentences.length} sentence${this.data.sentences.length > 1 ? 's' : ''})`;
+                    
+                    this.showAnalysis();
+                    this.displayCurrentSentence();
+                    this.updateNavigation();
+                    
                 } catch (error) {
                     alert('Error loading file: ' + error.message);
-                    this.resetUI();
                 }
             }
 
-            async readFileAsText(file) {
+            readFileAsText(file) {
                 return new Promise((resolve, reject) => {
                     const reader = new FileReader();
-                    reader.onload = (e) => resolve(e.target.result);
-                    reader.onerror = (e) => reject(e);
+                    reader.onload = e => resolve(e.target.result);
+                    reader.onerror = () => reject(new Error('Failed to read file'));
                     reader.readAsText(file);
                 });
             }
 
-            processData(jsonData, filename) {
-                if (!jsonData || !jsonData.sentences || !Array.isArray(jsonData.sentences)) {
-                    alert('Invalid JSON file. It must contain a "sentences" array.');
-                    this.resetUI();
-                    return;
-                }
-                
-                this.data = jsonData;
-                this.currentSentenceIndex = 0;
-                this.updateFileInfo(filename);
-                this.renderSentence();
+            showAnalysis() {
                 document.getElementById('emptyState').style.display = 'none';
                 document.getElementById('analysisContent').style.display = 'block';
                 document.getElementById('sentenceNav').style.display = 'flex';
             }
-            
-            resetUI() {
-                this.data = null;
-                this.currentSentenceIndex = 0;
-                document.getElementById('fileInfo').textContent = 'No file selected';
-                document.getElementById('example-select').value = '';
-                document.getElementById('emptyState').style.display = 'block';
-                document.getElementById('analysisContent').style.display = 'none';
-                document.getElementById('sentenceNav').style.display = 'none';
-                document.getElementById('lfgGroups').innerHTML = '';
-                document.getElementById('sflGroups').innerHTML = '';
+
+            setFrameworkView(framework) {
+                this.currentView = framework;
+                
+                // Update buttons
+                document.querySelectorAll('.framework-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.framework === framework);
+                });
+
+                // Show/hide views
+                document.getElementById('lfgView').classList.toggle('active', framework === 'lfg');
+                document.getElementById('sflView').classList.toggle('active', framework === 'sfl');
+
+                if (this.data) {
+                    this.displayCurrentSentence();
+                }
             }
 
-            updateFileInfo(filename) {
-                document.getElementById('fileInfo').textContent = filename;
+            displayCurrentSentence() {
+                if (!this.data) return;
+
+                const sentence = this.data.sentences[this.currentSentence];
+                
+                // Update text display
+                document.getElementById('sentenceId').textContent = `Sentence ${sentence.sentence_id}`;
+                document.getElementById('translation').textContent = sentence.translation_en || 'Translation not available';
+
+                // Render Greek text with highlighting
+                this.renderHighlightedGreekText(sentence);
+
+                // Update analysis based on current view
+                if (this.currentView === 'lfg') {
+                    this.renderLFGView(sentence, 'lfgOnlyContent');
+                } else if (this.currentView === 'sfl') {
+                    this.renderSFLView(sentence, 'sflOnlyContent');
+                }
             }
 
-            renderSentence() {
-                const sentence = this.data.sentences[this.currentSentenceIndex];
-                if (!sentence) return;
+            renderHighlightedGreekText(sentence) {
+                const greekTextEl = document.getElementById('greekText');
+                const textDisplayEl = document.querySelector('.text-display');
+                
+                // Update framework class on text display container
+                textDisplayEl.className = `text-display ${this.currentView}`;
+                
+                // Create a map of tokens to their analysis
+                const tokenMap = new Map();
+                sentence.analysis.forEach(token => {
+                    tokenMap.set(token.token, token);
+                });
 
-                document.getElementById('sentenceId').textContent = `Sentence ${this.currentSentenceIndex + 1} of ${this.data.sentences.length}`;
-                document.getElementById('greekText').textContent = '';
-                document.getElementById('translation').textContent = sentence.translation;
+const words = sentence.sentence_text.split(/(\s+)/);
 
-                const greekTextDiv = document.getElementById('greekText');
-                sentence.tokens.forEach((token, index) => {
-                    const wordSpan = document.createElement('span');
-                    wordSpan.className = 'greek-word';
-                    wordSpan.textContent = token.text + ' ';
-                    wordSpan.dataset.index = index;
+let html = '';
+words.forEach(word => {
+    if (word.trim() === '') {
+        html += word;
+    } else {
+        // Remove trailing punctuation (but NOT apostrophes)
+        const baseWord = word.replace(/[.,;;·—‘’“”"!?…]+$/u, '');
+        const token = tokenMap.get(baseWord);
 
-                    // Add LFG and SFL specific data for highlighting
-                    if (token.lfg && token.lfg.role) {
-                        wordSpan.dataset.role = token.lfg.role.toLowerCase().replace(/\s/g, '_');
-                    }
-                    if (token.sfl && token.sfl.process) {
-                        wordSpan.dataset.process = token.sfl.process.toLowerCase();
-                    }
-                    if (token.sfl && token.sfl.textual) {
-                        wordSpan.dataset.textual = token.sfl.textual.toLowerCase();
-                    }
+        if (token) {
+            const dataAttr = this.currentView === 'lfg'
+                ? `data-role="${token.clause_role || 'other'}"`
+                : `data-process="${(token.process_type || 'other').toLowerCase()}" data-textual="${(token.textual_role || 'other').toLowerCase()}"`;
+
+            html += `<span class="greek-word" ${dataAttr} data-token-index="${token.token}">${word}</span>`;
+        } else {
+            html += `<span class="greek-word">${word}</span>`;
+        }
+    }
+});
+
+                greekTextEl.innerHTML = html;
+                
+                // Add click listeners to Greek words
+                greekTextEl.querySelectorAll('.greek-word[data-token-index]').forEach(wordEl => {
+                    wordEl.addEventListener('click', (e) => {
+                        this.showTokenDetails(e.currentTarget.dataset.tokenIndex);
+                    });
+                });
+            }
+
+            renderLFGView(sentence, containerId) {
+                const container = document.getElementById(containerId);
+                
+                // Group tokens by clause role and semantic role
+                const roleGroups = this.groupTokensByLFG(sentence.analysis);
+                
+                let html = '<div class="functional-groups">';
+                
+                for (const [groupName, tokens] of Object.entries(roleGroups)) {
+                    if (tokens.length === 0) continue;
                     
-                    wordSpan.addEventListener('click', () => this.selectToken(index));
-                    greekTextDiv.appendChild(wordSpan);
-                });
-
-                this.renderFunctionalGroups(sentence.tokens);
-                this.updateNavigationButtons();
+                    html += `
+                        <div class="functional-group">
+                            <div class="group-header lfg">${groupName}</div>
+                            <div class="tokens-container">
+                                ${tokens.map(token => this.renderToken(token, 'lfg')).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                html += '</div>';
+                html += this.renderLFGLegend();
+                
+                container.innerHTML = html;
+                this.attachTokenListeners(containerId);
             }
 
-            renderFunctionalGroups(tokens) {
-                const lfgGroupsDiv = document.getElementById('lfgGroups');
-                const sflGroupsDiv = document.getElementById('sflGroups');
-                lfgGroupsDiv.innerHTML = '';
-                sflGroupsDiv.innerHTML = '';
+            renderSFLView(sentence, containerId) {
+                const container = document.getElementById(containerId);
                 
-                const lfgRoles = {};
-                const sflRoles = {};
+                // Group tokens by experiential roles and process types
+                const sflGroups = this.groupTokensBySFL(sentence.analysis);
+                
+                let html = '<div class="functional-groups">';
+                
+                for (const [groupName, tokens] of Object.entries(sflGroups)) {
+                    if (tokens.length === 0) continue;
+                    
+                    html += `
+                        <div class="functional-group">
+                            <div class="group-header sfl">${groupName}</div>
+                            <div class="tokens-container">
+                                ${tokens.map(token => this.renderToken(token, 'sfl')).join('')}
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Add Process Types legend right after the 'Processes' group
+                    if (groupName === 'Processes') {
+                        html += this.renderSFLProcessLegend();
+                    }
+                }
+                
+                html += '</div>';
+                // Add only the Textual Roles legend at the bottom
+                html += this.renderSFLTextualLegend();
+                
+                container.innerHTML = html;
+                this.attachTokenListeners(containerId);
+            }
+
+            groupTokensByLFG(tokens) {
+                const groups = {
+                    'Core Arguments': [],
+                    'Predicates': [],
+                    'Adjuncts & Modifiers': [],
+                    'Functional Elements': []
+                };
 
                 tokens.forEach(token => {
-                    if (token.lfg && token.lfg.role) {
-                        const role = token.lfg.role;
-                        if (!lfgRoles[role]) lfgRoles[role] = [];
-                        lfgRoles[role].push(token);
-                    }
-                    if (token.sfl && token.sfl.process) {
-                        const process = token.sfl.process;
-                        if (!sflRoles[process]) sflRoles[process] = [];
-                        sflRoles[process].push(token);
-                    }
-                    if (token.sfl && token.sfl.textual) {
-                        const textual = token.sfl.textual;
-                        const textualKey = `${textual}_${token.sfl.process || 'null'}`;
-                        if (!sflRoles[textualKey]) sflRoles[textualKey] = [];
-                        sflRoles[textualKey].push(token);
+                    const role = token.clause_role;
+                    
+                    if (role === 'subject' || role === 'object' || role === 'complement') {
+                        groups['Core Arguments'].push(token);
+                    } else if (role === 'predicate') {
+                        groups['Predicates'].push(token);
+                    } else if (role === 'adjunct') {
+                        groups['Adjuncts & Modifiers'].push(token);
+                    } else {
+                        groups['Functional Elements'].push(token);
                     }
                 });
 
-                // Render LFG Groups
-                for (const role in lfgRoles) {
-                    const group = this.createFunctionalGroup('LFG', role, lfgRoles[role]);
-                    lfgGroupsDiv.appendChild(group);
-                }
-
-                // Render SFL Groups
-                for (const role in sflRoles) {
-                    const group = this.createFunctionalGroup('SFL', role, sflRoles[role]);
-                    sflGroupsDiv.appendChild(group);
-                }
+                return groups;
             }
 
-            createFunctionalGroup(framework, role, tokens) {
-                const groupDiv = document.createElement('div');
-                groupDiv.className = 'functional-group';
+            groupTokensBySFL(tokens) {
+                const groups = {
+                    'Processes': [],
+                    'Participants': [],
+                    'Circumstances': [],
+                    'Textual Elements': []
+                };
 
-                const header = document.createElement('div');
-                header.className = `group-header ${framework.toLowerCase()}`;
-                header.textContent = role.charAt(0).toUpperCase() + role.slice(1);
-                groupDiv.appendChild(header);
-
-                const tokensContainer = document.createElement('div');
-                tokensContainer.className = 'tokens-container';
                 tokens.forEach(token => {
-                    const tokenItem = this.createTokenItem(token, framework);
-                    tokensContainer.appendChild(tokenItem);
+                    if (token.process_type) {
+                        groups['Processes'].push(token);
+                    } else if (token.experiential_role && token.experiential_role.includes('Participant')) {
+                        groups['Participants'].push(token);
+                    } else if (token.experiential_role && token.experiential_role.includes('Circumstance')) {
+                        groups['Circumstances'].push(token);
+                    } else {
+                        groups['Textual Elements'].push(token);
+                    }
                 });
-                groupDiv.appendChild(tokensContainer);
 
-                return groupDiv;
+                return groups;
             }
 
-            createTokenItem(token, framework) {
-                const tokenItem = document.createElement('div');
-                tokenItem.className = `token-item ${framework.toLowerCase()}`;
+            renderToken(token, framework) {
+                const dataAttr = framework === 'lfg' ? 
+                    `data-role="${token.clause_role || 'other'}"` :
+                    `data-process="${(token.process_type || 'other').toLowerCase()}" data-textual="${(token.textual_role || 'other').toLowerCase()}"`;
                 
-                const roleData = framework === 'LFG' ? token.lfg.role : (token.sfl.process || token.sfl.textual);
-                if (roleData) {
-                    tokenItem.dataset.role = roleData.toLowerCase();
-                    tokenItem.dataset.process = token.sfl ? token.sfl.process : null;
-                    tokenItem.dataset.textual = token.sfl ? token.sfl.textual : null;
-                }
-
-                const greekSpan = document.createElement('span');
-                greekSpan.className = 'token-greek';
-                greekSpan.textContent = token.text;
-                tokenItem.appendChild(greekSpan);
-
-                const glossSpan = document.createElement('span');
-                glossSpan.className = 'token-gloss';
-                glossSpan.textContent = token.gloss;
-                tokenItem.appendChild(glossSpan);
-
-                const roleSpan = document.createElement('span');
-                roleSpan.className = 'token-role';
-                roleSpan.textContent = roleData;
-                tokenItem.appendChild(roleSpan);
-                
-                tokenItem.addEventListener('click', () => this.showTokenDetails(token));
-
-                return tokenItem;
+                return `
+                    <div class="token-item" ${dataAttr} data-token-index="${token.token}">
+                        <div class="token-greek">${token.token}</div>
+                        <div class="token-gloss">${token.gloss || ''}</div>
+                        <div class="token-role">
+                            ${framework === 'lfg' ? 
+                                (token.clause_role || 'N/A') : 
+                                (token.experiential_role || token.textual_role || 'N/A')
+                            }
+                        </div>
+                    </div>
+                `;
             }
 
-            selectToken(index) {
-                const allTokens = document.querySelectorAll('.greek-word');
-                allTokens.forEach(token => token.classList.remove('selected'));
-                const selectedToken = allTokens[index];
-                if (selectedToken) {
-                    selectedToken.classList.add('selected');
-                    const sentence = this.data.sentences[this.currentSentenceIndex];
-                    this.showTokenDetails(sentence.tokens[index]);
-                }
+            renderLFGLegend() {
+                const legend = {
+                    'subject': '#2196f3',
+                    'object': '#9c27b0', 
+                    'predicate': '#f44336',
+                    'adjunct': '#4caf50',
+                    'complement': '#ff9800',
+                    'determiner': '#8bc34a',
+                    'conjunction': '#009688'
+                };
+
+                return this.createLegend('LFG Clause Roles', legend);
             }
 
-            showTokenDetails(token) {
-                const detailsContainer = document.getElementById('detailsContent');
-                detailsContainer.innerHTML = '';
-                document.getElementById('detailsTitle').textContent = token.text;
+            renderSFLProcessLegend() {
+                const processLegend = {
+                    'verbal': '#ffc107',
+                    'mental': '#3f51b5',
+                    'relational': '#03a9f4',
+                    'material': '#e91e63',
+                    'existential': '#673ab7'
+                };
 
-                // Create and populate the morphological details section
-                const morphologySection = document.createElement('div');
-                morphologySection.className = 'detail-section';
-                morphologySection.innerHTML = `<h4>Morphology</h4>`;
-                const morphologyList = document.createElement('div');
-                morphologyList.className = 'details-list';
-                
-                for (const key in token.morphology) {
-                    const item = this.createDetailItem(key.charAt(0).toUpperCase() + key.slice(1), token.morphology[key]);
-                    morphologyList.appendChild(item);
-                }
-                morphologySection.appendChild(morphologyList);
-                detailsContainer.appendChild(morphologySection);
-                
-                // Create and populate the LFG analysis section
-                const lfgSection = document.createElement('div');
-                lfgSection.className = 'detail-section';
-                lfgSection.innerHTML = `<h4>LFG Analysis</h4>`;
-                const lfgList = document.createElement('div');
-                lfgList.className = 'details-list';
-                
-                if (token.lfg) {
-                    for (const key in token.lfg) {
-                        const item = this.createDetailItem(key.charAt(0).toUpperCase() + key.slice(1), token.lfg[key]);
-                        lfgList.appendChild(item);
-                    }
-                }
-                lfgSection.appendChild(lfgList);
-                detailsContainer.appendChild(lfgSection);
-                
-                // Create and populate the SFL analysis section
-                const sflSection = document.createElement('div');
-                sflSection.className = 'detail-section';
-                sflSection.innerHTML = `<h4>SFL Analysis</h4>`;
-                const sflList = document.createElement('div');
-                sflList.className = 'details-list';
-                
-                if (token.sfl) {
-                    for (const key in token.sfl) {
-                        const item = this.createDetailItem(key.charAt(0).toUpperCase() + key.slice(1), token.sfl[key]);
-                        sflList.appendChild(item);
-                    }
-                }
-                sflSection.appendChild(sflList);
-                detailsContainer.appendChild(sflSection);
+                return this.createLegend('SFL Process Types', processLegend);
+            }
 
-                document.getElementById('tokenDetails').classList.add('show');
+            renderSFLTextualLegend() {
+                const textualLegend = {
+                    'theme': '#4caf50',
+                    'rheme': '#f44336'
+                };
+
+                return this.createLegend('SFL Textual Roles', textualLegend);
+            }
+
+            renderSFLLegend() {
+                return this.renderSFLProcessLegend() + this.renderSFLTextualLegend();
+            }
+
+            createLegend(title, items) {
+                let html = `
+                    <div class="legend">
+                        <div class="legend-title">${title}</div>
+                        <div class="legend-items">
+                `;
+
+                for (const [key, color] of Object.entries(items)) {
+                    html += `
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: ${color}"></div>
+                            <div class="legend-label">${key}</div>
+                        </div>
+                    `;
+                }
+
+                html += '</div></div>';
+                return html;
+            }
+
+            attachTokenListeners(containerId) {
+                const container = document.getElementById(containerId);
+                container.querySelectorAll('.token-item').forEach(tokenEl => {
+                    tokenEl.addEventListener('click', (e) => {
+                        this.showTokenDetails(e.currentTarget.dataset.tokenIndex);
+                    });
+                });
+            }
+
+            showTokenDetails(tokenText) {
+                const sentence = this.data.sentences[this.currentSentence];
+                const token = sentence.analysis.find(t => t.token === tokenText);
+                
+                if (!token) return;
+
+                document.getElementById('detailsTitle').textContent = `${token.token} (${token.transliteration || ''})`;
+                
+                const content = `
+                    <div class="detail-section">
+                        <h4>Basic Information</h4>
+                        <div class="detail-item">
+                            <span class="detail-label">Lemma:</span>
+                            <span class="detail-value">${token.lemma}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Part of Speech:</span>
+                            <span class="detail-value">${token.part_of_speech}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Gloss:</span>
+                            <span class="detail-value">${token.gloss}</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>LFG Analysis</h4>
+                        <div class="detail-item">
+                            <span class="detail-label">Clause Role:</span>
+                            <span class="detail-value">${token.clause_role || 'N/A'}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Semantic Role:</span>
+                            <span class="detail-value">${token.semantic_role || 'N/A'}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Syntactic Head:</span>
+                            <span class="detail-value">${token.syntactic_head || 'ROOT'}</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>SFL Analysis</h4>
+                        <div class="detail-item">
+                            <span class="detail-label">Experiential Role:</span>
+                            <span class="detail-value">${token.experiential_role || 'N/A'}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Interpersonal Role:</span>
+                            <span class="detail-value">${token.interpersonal_role || 'N/A'}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Textual Role:</span>
+                            <span class="detail-value">${token.textual_role || 'N/A'}</span>
+                        </div>
+                        ${token.process_type && token.process_type !== 'N/A' ? `
+                        <div class="detail-item">
+                            <span class="detail-label">Process Type:</span>
+                            <span class="detail-value">${token.process_type}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+
+                document.getElementById('detailsContent').innerHTML = content;
                 document.getElementById('overlay').classList.add('show');
-            }
-
-            createDetailItem(label, value) {
-                const item = document.createElement('div');
-                item.className = 'detail-item';
-                const labelSpan = document.createElement('span');
-                labelSpan.className = 'detail-label';
-                labelSpan.textContent = label + ':';
-                const valueSpan = document.createElement('span');
-                valueSpan.className = 'detail-value';
-                valueSpan.textContent = value;
-                item.appendChild(labelSpan);
-                item.appendChild(valueSpan);
-                return item;
+                document.getElementById('tokenDetails').classList.add('show');
             }
 
             hideTokenDetails() {
-                document.getElementById('tokenDetails').classList.remove('show');
                 document.getElementById('overlay').classList.remove('show');
-            }
-
-            setFramework(framework) {
-                this.currentFramework = framework;
-                document.querySelectorAll('.framework-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                document.querySelector(`.framework-btn[data-framework="${framework}"]`).classList.add('active');
-                
-                document.querySelectorAll('.framework-view').forEach(view => {
-                    view.classList.remove('active');
-                });
-                document.getElementById(`${framework}View`).classList.add('active');
+                document.getElementById('tokenDetails').classList.remove('show');
             }
 
             previousSentence() {
-                if (this.currentSentenceIndex > 0) {
-                    this.currentSentenceIndex--;
-                    this.renderSentence();
+                if (this.currentSentence > 0) {
+                    this.currentSentence--;
+                    this.displayCurrentSentence();
+                    this.updateNavigation();
                 }
             }
 
             nextSentence() {
-                if (this.currentSentenceIndex < this.data.sentences.length - 1) {
-                    this.currentSentenceIndex++;
-                    this.renderSentence();
+                if (this.currentSentence < this.data.sentences.length - 1) {
+                    this.currentSentence++;
+                    this.displayCurrentSentence();
+                    this.updateNavigation();
                 }
             }
 
-            updateNavigationButtons() {
+            updateNavigation() {
+                if (!this.data) return;
+                
                 const prevBtn = document.getElementById('prevBtn');
                 const nextBtn = document.getElementById('nextBtn');
-                prevBtn.disabled = this.currentSentenceIndex === 0;
-                nextBtn.disabled = this.currentSentenceIndex === this.data.sentences.length - 1;
-                document.getElementById('sentenceCounter').textContent = `Sentence ${this.currentSentenceIndex + 1} of ${this.data.sentences.length}`;
+                const counter = document.getElementById('sentenceCounter');
+                
+                prevBtn.disabled = this.currentSentence === 0;
+                nextBtn.disabled = this.currentSentence === this.data.sentences.length - 1;
+                counter.textContent = `Sentence ${this.currentSentence + 1} of ${this.data.sentences.length}`;
             }
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const analyzer = new FunctionalGrammarAnalyzer();
+
+        // Initialize the application
+        new FunctionalGrammarAnalyzer();
+
+        // Scroll sync
+        const leftPanel = document.querySelector('.text-display');
+        const rightPanel = document.querySelector('.analysis-container');
+
+        let isSyncingLeftScroll = false;
+        let isSyncingRightScroll = false;
+
+        leftPanel.addEventListener('scroll', () => {
+            if (!isSyncingLeftScroll) {
+                isSyncingRightScroll = true;
+                rightPanel.scrollTop = leftPanel.scrollTop;
+            }
+            isSyncingLeftScroll = false;
         });
+
+        rightPanel.addEventListener('scroll', () => {
+            if (!isSyncingRightScroll) {
+                isSyncingLeftScroll = true;
+                leftPanel.scrollTop = rightPanel.scrollTop;
+            }
+            isSyncingRightScroll = false;
+        });
+
+
     </script>
 </body>
 </html>
