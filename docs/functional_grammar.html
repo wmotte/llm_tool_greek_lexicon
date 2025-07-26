@@ -805,7 +805,7 @@
                 <p>Load a JSON file containing LFG and SFL analysis to explore the functional structure of Ancient Greek texts.</p>
                 <br>
                 <p><strong>Features:</strong></p>
-                <p>• Compare LFG and SFL frameworks side by side</p>
+                <p>• Compare LFG and SFL frameworks</p>
                 <p>• Interactive token exploration with detailed analysis</p>
                 <p>• Color-coded functional roles and processes</p>
                 <p>• Navigation between multiple sentences</p>
@@ -1028,10 +1028,11 @@
                     if (word.trim() === '') {
                         html += word;
                     } else {
-                        // Remove trailing punctuation (but NOT apostrophes)
+                        // Remove trailing punctuation (but NOT apostrophes), for kat', etc.
                         //const baseWord = word.replace(/[.,;;·—''"""!?…]+$/u, '');
-                        const baseWord = word.replace(/[.,;;·—‘’“”"!?…]+$/u, '');
-                        
+                        //const baseWord = word.replace(/[.,;;·—‘’“”"!?…]+$/u, '');
+                        const baseWord = word.replace(/[.,;;·—‘“”"!?…]+$/u, '');
+
                         // Get the current count for this word
                         const currentCount = wordCounts.get(baseWord) || 0;
                         wordCounts.set(baseWord, currentCount + 1);
