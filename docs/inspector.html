@@ -553,12 +553,28 @@
                     
                     <div class="divider"></div>
                     
-                    <span class="example-label">📚 Examples:</span>
+                    <span class="example-label">📚</span>
                     <select id="example-select" style="padding: 6px 8px; font-size: 0.85rem; border-radius: 4px; border: 1px solid #ced4da; min-width: 120px;">
-                        <option value="">Select...</option>
-                        <option value="example1.json">Excerpts 92.2</option>
-                        <option value="example2.json">Job 2:9</option>
-                        <option value="example3.json">Hebrews 2:9</option>
+                        <option value="">Select data...</option>
+
+                        <option value="gemini_hebrews_2_9_scholarly.json">GEMINI: Hebrews 2:9</option>
+                        <option value="gemini_hebrews_2_9_minority.json">GEMINI: Hebrews 2:9 (minor.)</option>
+                        <option value="gemini_job_2_9.json">GEMINI: Job 2:9 (LXX)</option>
+                        <option value="gemini_job_2_9.json">GEMINI: Job 2:9 (LXX)</option>
+                        <option value="gemini_stromata_66_1_2.json">GEMINI: Stromata III 66:1-2</option>
+
+                        <option value="claude_hebrews_2_9_scholarly.json">CLAUDE: Hebrews 2:9</option>
+                        <option value="claude_hebrews_2_9_minority.json">CLAUDE: Hebrews 2:9 (minor.)</option>
+                        <option value="claude_job_2_9.json">CLAUDE: Job 2:9 (LXX)</option>
+                        <option value="claude_job_2_9.json">CLAUDE: Job 2:9 (LXX)</option>
+                        <option value="claude_stromata_66_1_2.json">CLAUDE: Stromata III 66:1-2</option>
+
+                        <option value="claude_desk_hebrews_2_9_scholarly.json">CLAUDE D.: Hebrews 2:9</option>
+                        <option value="claude_desk_hebrews_2_9_minority.json">CLAUDE D.: Hebrews 2:9 (minor.)</option>
+                        <option value="claude_desk_job_2_9.json">CLAUDE D.: Job 2:9 (LXX)</option>
+                        <option value="claude_desk_job_2_9.json">CLAUDE D.: Job 2:9 (LXX)</option>
+                        <option value="claude_desk_stromata_66_1_2.json">CLAUDE D.: Stromata III 66:1-2</option>
+
                     </select>
                     
                     <div class="divider"></div>
@@ -719,9 +735,11 @@
                     const text = await this.readFileAsText(file);
                     const jsonData = JSON.parse(text);
                     
-                    const displayName = file.name.length > 50
-                        ? `${file.name.substring(0, 25)}...${file.name.substring(file.name.length - 20)}`
-                        : file.name;
+                    // crop too long file names
+                    const displayName = file.name.length > 20
+                        ? `${file.name.substring(0, 12)}...${file.name.substring(file.name.length - 10, file.name.length - 5)}`
+                        : `${file.name.substring(0, file.name.length - 5)}` // remove .json
+                        //: file.name;
                     
                     this.processData(jsonData, displayName);
                     

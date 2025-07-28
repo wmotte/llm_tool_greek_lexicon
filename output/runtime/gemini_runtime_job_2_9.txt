@@ -1,0 +1,22 @@
+Gemini CLI run on Job 2:9 text:
+
+│  Interaction Summary                                                                                                                                                                               │
+│  Tool Calls:                 8 ( ✔ 8 ✖ 0 )                                                                                                                                                         │
+│  Success Rate:               100.0%                                                                                                                                                                │
+│  User Agreement:             100.0% (3 reviewed)                                                                                                                                                   │
+│                                                                                                                                                                                                    │
+│  Performance                                                                                                                                                                                       │
+│  Wall Time:                  12m 6s                                                                                                                                                                │
+│  Agent Active:               9m 11s                                                                                                                                                                │
+│    » API Time:               4m 37s (50.4%)                                                                                                                                                        │
+│    » Tool Time:              4m 33s (49.6%)                                                                                                                                                        │
+│                                                                                                                                                                                                    │
+│                                                                                                                                                                                                    │
+│  Model Usage                  Reqs   Input Tokens  Output Tokens                                                                                                                                   │
+│  ───────────────────────────────────────────────────────────────                                                                                                                                   │
+│  gemini-2.5-pro                  9        220,768         26,837                                                                                                                                   │
+│                                                                                                                                                                                                    │
+│  Savings Highlight: 114,043 (51.7%) of input tokens were served from the cache, reducing costs.                                                                                                    │
+│                                                                                                                                                                                                    │
+│  » Tip: For a full token breakdown, run `/stats model`.   
+
