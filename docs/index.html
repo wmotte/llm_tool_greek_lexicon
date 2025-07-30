@@ -760,7 +760,7 @@
                 this.data = jsonData;
                 
                 document.getElementById('fileInfo').textContent = `${filename} (sentences: ${this.data.sentences.length})`;
-                document.getElementById('fileInfoCollapsed').textContent = `${filename} (${this.data.sentences.length} sentences)`;
+                document.getElementById('fileInfoCollapsed').textContent = `${filename} sentences: ${this.data.sentences.length})`;
                 document.getElementById('navigation').style.display = 'flex';
                 
                 this.currentSentence = 0;
