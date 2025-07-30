@@ -48,7 +48,7 @@ This query finds a lemma by matching its normalized, accent-free form.
 // This query locates the exact lemma λόγος by matching its normalized form ‘logos’
 MATCH (l:Lemma)-[:HAS_ENTRY]->(e:Entry)-[:BELONGS_TO]->(d:Dictionary)
 WHERE l.text_no_accents = "logos"
-AND d.name = "SvBKR "
+AND d.name = "SvBKR"
 RETURN l.text, e.text
 ````
 
