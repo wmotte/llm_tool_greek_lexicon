@@ -716,7 +716,18 @@
                     }
                     
                     const jsonData = await response.json();
-                    this.processData(jsonData, filename);
+
+                    // crop too long file names
+                    const displayName = filename.length > 20
+                        ? `${filename.substring(0, 12)}...${filename.substring(filename.length - 10, filename.length - 5)}`
+                        : `${filename.substring(0, filename.length - 5)}` // remove .json
+                    
+                    
+                    this.processData(jsonData, displayName);
+
+
+
+                    //this.processData(jsonData, filename);
                     
                 } catch (error) {
                     alert(`Error loading example:\n${error.message}`);
