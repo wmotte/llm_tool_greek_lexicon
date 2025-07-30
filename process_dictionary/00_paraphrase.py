@@ -8,7 +8,6 @@ This script reads a JSON file containing Greek-Dutch dictionary entries,
 paraphrases the explanations using the Google Gemini API, and saves the
 results to a new JSON file.
 
-*** NEW: This script is now robust against interruptions. ***
 If the script stops, you can simply run it again. It will load the
 work that was already completed from the output file and resume
 where it left off, saving you time and API calls.
@@ -36,7 +35,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 from tqdm import tqdm
 
-# --- Configuration ---
+# Configuration
 # Load environment variables from .env file
 load_dotenv()
 
@@ -51,7 +50,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# --- Main Paraphrasing Class ---
+# Main Paraphrasing Class
 
 class DictionaryParaphraser:
     """
@@ -219,7 +218,7 @@ def main():
     """
     logger.info("Starting the dictionary paraphrasing process...")
     
-    # --- User Configuration ---
+    # User Configuration
     # IMPORTANT: Update this to your actual dictionary file name
     input_filename = "svbkr_dictionary.json" 
     output_filename = "paraphrased_dictionary_output.json"
