@@ -1,6 +1,3 @@
-Of course. Here is an updated and more detailed README.md, incorporating the rationale and technical specifics from the provided manuscript.
-
-````markdown
 # Tool-Augmented Language Models for Precision Analysis of Ancient Greek Texts
 
 [![License: MIT](httpss://img.shields.io/badge/License-MIT-yellow.svg)](httpss://opensource.org/licenses/MIT)
@@ -10,7 +7,7 @@ Of course. Here is an updated and more detailed README.md, incorporating the rat
 The project introduces a novel methodology that enhances Large Language Models (LLMs) with a dedicated, real-time lexical tool to achieve high-precision morphosyntactic and functional grammar analysis of Ancient Greek texts.
 
 An interactive website to explore the parsed results is available here:
-**[https://wmotte.github.io/llm_tool_greek_lexicon/docs/](https://wmotte.github.io/llm_tool_greek_lexicon/docs/)**
+** [https://wmotte.github.io/llm_tool_greek_lexicon/docs/](https://wmotte.github.io/llm_tool_greek_lexicon/docs/)**
 
 ---
 
@@ -83,16 +80,9 @@ RETURN l.text, l.text_no_accents, e.text
 
 [cite\_start]The results, which can be explored on the **[interactive website](https://wmotte.github.io/llm_tool_greek_lexicon/docs/)**, demonstrate that the tool-augmented approach provides strong performance in both morphosyntactic parsing and functional grammar analysis across all test cases[cite: 209, 156].
 
-## Installation & Usage
+## Usage
 
 To replicate the knowledge graph construction or adapt the code, you can clone the repository and install the necessary Python packages.
-
-```bash
-git clone httpss://[github.com/wmotte/llm_tool_greek_lexicon.git](https://github.com/wmotte/llm_tool_greek_lexicon.git)
-cd llm_tool_greek_lexicon
-# It is recommended to create a virtual environment first
-pip install -r requirements.txt
-```
 
 [cite\_start]The analytical workflow was executed using command-line interface (CLI) tools (Gemini CLI, Claude Code) connected to the Neo4j database via a local MCP server implementation[cite: 127, 130]. [cite\_start]The prompt instructions and JSON output schema are detailed in the manuscript's supplemental data[cite: 138, 478].
 
@@ -102,16 +92,10 @@ If you use this work in your research, please cite the following manuscript:
 
 Otte, W. M., van Wieringen, A. L. H. M., & Koet, B. J. (in preparation). *Tool-Augmented Language Models for Precision Analysis of Ancient/Koine Greek Texts Using a Graph-based Lexicon*. [cite\_start]To be submitted to *Natural Language Processing Journal*. [cite: 2, 3, 14]
 
-## Author & Contact
-
-  * [cite\_start]**Willem M. Otte, PhD** [cite: 3, 8]
-      * [cite\_start]Tilburg University, Tilburg School of Catholic Theology, Tilburg, The Netherlands [cite: 5]
-      * [cite\_start]Utrecht University, UMC Utrecht Brain Center, Utrecht, The Netherlands [cite: 6]
-      * [cite\_start]Contact: `w.m.otte@umcutrecht.nl` [cite: 13]
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the CC0 1.0 Universal License. See the `LICENSE` file for details.
 
 ```
 ```
